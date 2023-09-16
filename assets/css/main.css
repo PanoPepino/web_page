@@ -2591,10 +2591,11 @@ input, select, textarea {
 				-moz-transition: -moz-transform 0.5s ease;
 				-webkit-transition: -webkit-transform 0.5s ease;
 				-ms-transition: -ms-transform 0.5s ease;
-				transition: transform 0.6s ease;
+				transition: transform 0.3s ease;
 				position: relative;
 				display: block;
 				width: 100%;
+				height: 100%; /* Change the size of the box*/
 				border-radius: 25px;
 				overflow: hidden;
 			}
@@ -2668,7 +2669,7 @@ input, select, textarea {
 				top: 0;
 				left: 0;
 				width: 100%;
-				height: 100%;
+				height: 100%; /* Modifies position of heading of box */
 				padding: 0em;
 				border-radius: 4px;
 				border-bottom: 0;
@@ -2696,11 +2697,11 @@ input, select, textarea {
 					-webkit-transition: max-height 0.5s ease, opacity 0.5s ease;
 					-ms-transition: max-height 0.5s ease, opacity 0.5s ease;
 					transition: max-height 0.5s ease, opacity 0.5s ease;
-					width: 100%;
+					width: 100%; /*Controls size of text inside box */
 					max-height: 0;
 					line-height: 1.5em;
 					margin-top: 1em;
-					opacity: 0;
+					opacity: 0; /* Controls if one can see the text before hovering */
 				}
 
 					.tiles article > a .content > :last-child {
@@ -2760,7 +2761,7 @@ input, select, textarea {
 			-moz-transform: scale(0.9);
 			-webkit-transform: scale(0.9);
 			-ms-transform: scale(0.9);
-			transform: scale(0.9);
+			transform: scale(0.9); /* if less 1, creates boxes from center. If greater than 1, creates at infinite and compactify. */
 			opacity: 0;
 		}
 

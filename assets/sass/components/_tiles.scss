@@ -8,12 +8,12 @@
 
 	.tiles {
 		$gutter: _size(gutter);
-		$duration: 0.5s;
+		$duration: 1s;
 		$ease: 'ease';
 
 		@include vendor('display', 'flex');
 		@include vendor('flex-wrap', 'wrap');
-		postiion: relative;
+		position: relative;
 		margin: ($gutter * -1) 0 0 ($gutter * -1);
 
 		article {
@@ -22,7 +22,7 @@
 				'opacity #{$duration} #{$ease}'
 			));
 			position: relative;
-			width: calc(#{(100% / 3)} - #{$gutter * 1});
+			width: calc(#{(100% / 3)} - #{$gutter * 2});
 			margin: $gutter 0 0 $gutter;
 
 			> .image {
