@@ -2567,13 +2567,14 @@ input, select, textarea {
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
-		display: flex;
+		display: wrap;
 		-moz-flex-wrap: wrap;
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		position: relative;
-		margin: 5em 0 0 -1.5em; /*  BOXES STUFF This changes alignment with title */
+		position: wrap;
+		
+		margin: 0em 0em 0em 0em; /*  BOXES STUFF This changes alignment with title */
 	}
 
 		
@@ -2584,7 +2585,7 @@ input, select, textarea {
 			transition: transform 0.5s ease, opacity 0.5s ease;
 			position: relative;
 			width: calc(25% - 2em); /* This changes how many boxes per line */
-			margin: 2em 0 0 2em;
+			margin: 2em 0em 0em 2em; /* First controlls vertical separation between tiles and last horizontal sep*/
 		}
 
 			.tiles article > .image {
@@ -2595,13 +2596,13 @@ input, select, textarea {
 				position: relative;
 				display: block;
 				width: 100%;
-				height: 60%; /* Change the size of the box*/
+				height: 100%; /* Change the size background of the box!*/
 				border-radius: 20px;
   				overflow: hidden;
 			}
 
 				.tiles article > .image img {
-					display: block;
+					display: border-box;
 					width: 100%;
 				}
 
@@ -2669,9 +2670,9 @@ input, select, textarea {
 				top:0;
 				left: 0;
 				width: 100%;
-				height: 50%; /* Modifies position of heading of box */
-				padding: 0em;
-				border-radius: 4px;
+				height: 100%; /* Modifies position of heading of box */
+				padding: 1em;
+				border-radius: 3px;
 				border-bottom: 0;
 				color: #ffffff;
 				text-align: center;
