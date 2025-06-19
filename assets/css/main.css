@@ -74,6 +74,40 @@ input, select, textarea {
 
 /* Basic */
 
+.tiles article {
+    aspect-ratio: 14/9; /* Creates rectangular 16:9 tiles */
+}
+
+.tiles article > .image {
+    height: 100%;
+}
+
+.tiles article > .image img {
+    height: 100%;
+    object-fit: cover; /* Ensures image covers container without distortion */
+}
+
+@media screen and (max-width: 980px) {
+    .tiles article {
+        aspect-ratio: 14/9; /* Slightly less wide on tablets */
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .tiles article {
+        aspect-ratio: 14/9; /* More square on mobile for readability */
+    }
+}
+
+.tiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0px; /* Adjust based on your existing spacing */
+}
+
+
+
 	@-ms-viewport {
 		width: device-width;
 	}
@@ -2597,7 +2631,7 @@ input, select, textarea {
 				display: block;
 				width: 100%;
 				height: 100%; /* Change the size background of the box!*/
-				border-radius: 20px;
+				border-radius: 10px;
   				overflow: hidden;
 			}
 
@@ -2620,8 +2654,8 @@ input, select, textarea {
 					width: 100%;
 					height: 100%;
 					opacity: 1.0;
-					z-index: 1;
-					opacity: 0; /* This makes an X to appear crossing the image */
+					z-index: 0;
+					opacity: 0.5; /* This makes an X to appear crossing the image */
 				}
 
 				.tiles article > .image:after {
@@ -2642,7 +2676,7 @@ input, select, textarea {
 					background-repeat: no-repeat;
 					background-size: 100% 100%;
 					opacity: 0;
-					z-index: 2;
+					z-index: 0;
 				}
 
 			.tiles article > a {
@@ -2657,7 +2691,7 @@ input, select, textarea {
 				-moz-align-items: center;
 				-webkit-align-items: center;
 				-ms-align-items: center;
-				align-items: center;
+				align-items: normal;
 				-moz-justify-content: center;
 				-webkit-justify-content: center;
 				-ms-justify-content: center;
@@ -2671,7 +2705,7 @@ input, select, textarea {
 				left: 0;
 				width: 100%;
 				height: 100%; /* Modifies position of heading of box */
-				padding: -1.5em;
+				padding: 0em;
 				border-radius: 3px;
 				border-bottom: 0;
 				color: #f8f8f8;
