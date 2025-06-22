@@ -74,46 +74,12 @@ input, select, textarea {
 
 /* Basic */
 
-.tiles article {
-    aspect-ratio: 14/9; /* Creates rectangular 16:9 tiles */
-}
-
-.tiles article > .image {
-    height: 100%;
-}
-
-.tiles article > .image img {
-    height: 100%;
-    object-fit: cover; /* Ensures image covers container without distortion */
-}
-
-@media screen and (max-width: 980px) {
-    .tiles article {
-        aspect-ratio: 14/9; /* Slightly less wide on tablets */
-    }
-}
-
-@media screen and (max-width: 736px) {
-    .tiles article {
-        aspect-ratio: 14/9; /* More square on mobile for readability */
-    }
-}
-
-.tiles {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0px; /* Adjust based on your existing spacing */
-}
-
-
-
 	@-ms-viewport {
 		width: device-width;
 	}
 
 	body {
-		-ms-overflow-style: scrollbar;
+		-ms-overflow-style: auto;
 	}
 
 	@media screen and (max-width: 480px) {
@@ -123,7 +89,6 @@ input, select, textarea {
 		}
 
 	}
-
 	html {
 		box-sizing: border-box;
 	}
@@ -132,9 +97,78 @@ input, select, textarea {
 		box-sizing: inherit;
 	}
 
-	body {
-		background: #202020;
+	/* To define the gradient of each webpage and the specific hyperlink color*/
+	body.index {
+  	background: linear-gradient(
+    to top,
+     #202020 96.5%,
+	 #575757 100%,
+	 #202020 7%
+  	);
+	min-height: 300vh;
 	}
+
+	body.cv_documents {
+  	background: linear-gradient(
+    to top,
+     #202020 96.5%,
+	 #00ff44 100%,
+	 #202020 7%
+  	);
+	min-height: 300vh;
+	}
+
+	body.slides {
+  	background: linear-gradient(
+    to top,
+     #202020 96.5%,
+	 #0a91ff 100%,
+	 #202020 7%
+  	);
+	min-height: 300vh;
+	}
+	.highlight_slides {
+  	color: #0a91ff; /* Color of hyperlinks for slides */
+	}
+
+	body.outreach {
+  	background: linear-gradient(
+    to top,
+     #202020 96.5%,
+	 #ffdd00 100%,
+	 #202020 7%
+  	);
+	min-height: 300vh;
+	}
+	.highlight_outreach {
+  	color:  #ffdd00; /* Color of hyperlinks for outreach */
+	}
+
+	body.didactical {
+  	background: linear-gradient(
+    to top,
+     #202020 96.5%,
+	 #ff0000 100%,
+	 #202020 7%
+  	);
+	min-height: 300vh;
+	}
+	.highlight_didactical {
+  	color: #ff0000; /* Color of hyperlinks for didactical */
+	}
+	
+	body.magic {
+  	background: linear-gradient(
+    to top,
+     #202020 96.5%,
+	 #ff00cc 100%,
+	 #202020 7%
+  	);
+	min-height: 400vh;
+	}
+
+
+		
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
@@ -185,7 +219,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #e709e4 !important;
+			color: #ffffff !important;
 		}
 
 	strong, b {
@@ -233,8 +267,8 @@ input, select, textarea {
 		font-weight: 900;
 		line-height: 1.5;
 		margin: 0 0 2em 0;
-		text-transform: uppercase;
-		letter-spacing: 0.1em;
+		text-transform: capitalize;
+		letter-spacing: 0.05em;
 	}
 
 		h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -242,7 +276,7 @@ input, select, textarea {
 		}
 
 	h2 {
-		font-size: 1.1em;
+		font-size: 1.2em;
 	}
 
 	h3 {
@@ -269,10 +303,22 @@ input, select, textarea {
 
 	}
 
-	@media screen and (max-width: 736px) {
+	@media screen and (max-width: 1280px) {
 
 		h2 {
 			font-size: 1em;
+		}
+
+		h3 {
+			font-size: 0.8em;
+		}
+
+	}
+
+	@media screen and (max-width: 736px) {
+
+		h2 {
+			font-size: 0.7em;
 		}
 
 		h3 {
@@ -1850,7 +1896,8 @@ input, select, textarea {
 			line-height: 1;
 			text-transform: none !important;
 			font-family: 'Font Awesome 5 Free';
-			font-weight: 400;
+			font-weight: 5;
+			
 		}
 
 		.icon > .label {
@@ -1859,10 +1906,12 @@ input, select, textarea {
 
 		.icon:before {
 			line-height: inherit;
+			
+			
 		}
 
 		.icon.solid:before {
-			font-weight: 900;
+			font-weight: 800;
 		}
 
 		.icon.brands:before {
@@ -1877,8 +1926,8 @@ input, select, textarea {
 			background-color: transparent;
 			border: solid 1px #f8f8f800;
 			border-radius: 4px;
-			width: 4.5em;
-			height: 4.5em;
+			width: 5em;
+			height: 5em;
 			display: inline-block;
 			text-align: center;
 			line-height: 2.65em;
@@ -1887,16 +1936,24 @@ input, select, textarea {
 
 			.icon.style2:before {
 				font-size: 3.0em;
+				
 			}
 
 			.icon.style2:hover {
-				color: #ff0000;
+				color: #5c5151;
 				border-color: #fc0000;
+  
 			}
 
 			.icon.style2:active {
 				background-color: rgba(0, 0, 0, 0);
 			}
+
+
+
+
+
+
 
 /* List */
 
@@ -2074,16 +2131,14 @@ input, select, textarea {
 /* Icons */
 
 	ul.icons {
-		cursor: default;
 		list-style: none;
-		padding-left: 0;
-		margin: -1em 0 2em -1em;
-	}
-
-		ul.icons li {
-			display: inline-block;
-			padding: 1em 0 0 1em;
+  		padding: 0;
+  		margin: 0;
+  		color: #ffffff93;               /* Base color */  
+  		transition: color 0.3s ease;  /* Smooth color transition */  
 		}
+
+
 
 /* Form */
 
@@ -2345,16 +2400,20 @@ input, select, textarea {
 /* Image */
 
 	.image {
-		border-radius: 4px;
+		border-radius: 15px;
 		border: 0;
 		display: inline-block;
 		position: relative;
 	}
 
 		.image img {
-			border-radius: 7px;
+			border-radius: 15px;
 			display: block;
-		}
+			box-shadow: 0 0px 8px rgba(151, 150, 150, 0.921), 0 0px 0px rgba(236, 6, 6, 0.939);
+			border-radius: 15px;
+  		
+	}
+		
 
 		.image.left, .image.right {
 			max-width: 40%;
@@ -2595,7 +2654,142 @@ input, select, textarea {
 			opacity: 0.25;
 		}
 
-/* Tiles */
+/* Tiles (WHERE THE GOOD STUFF HAPPENS)*/
+
+	.tiles article {
+    aspect-ratio: 18/9; /* This fixes the ratio of horizontal rectangular 16:9 tiles */
+	}
+
+	.tiles article > .image {
+    height: 100%;
+	}
+
+	.tiles article > .image img {
+    height: 100%;
+    object-fit: cover; /* Ensures image covers container without distortion */
+	}
+
+	@media screen and (max-width: 980px) {
+    .tiles article {
+        aspect-ratio: 18/9; /* This fixes the ratio at any given resolution */
+    }
+	}
+
+	@media screen and (max-width: 736px) {
+    .tiles article {
+        aspect-ratio: 16/9; /* This fixes the ratio at any given resolution */
+    }
+	}
+
+	.tiles { /* This makes the tiles to be centered in the screen if the row is not completely full*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0px; /* Adjust based on your existing spacing */
+	}
+	
+	/* This creates a tile that is horizontal */
+	.tiles article.landscape {
+    aspect-ratio: 17/9;
+	}
+	/* This creates a tile that is vertical (size of a mtg card (88 x 64 = 8/11)) */
+	.tiles article.portrait {
+    aspect-ratio: 8/11;
+	
+	}
+
+	/* Ensure images fill the container properly */
+	.tiles article > .image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+	}
+
+	.tiles article > .image img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+	}
+
+	@media screen and (max-width: 1280px) {
+    .tiles article.landscape,
+    .tiles article.portrait {
+        width: calc(20% - 0em);
+    }
+	}
+
+	@media screen and (max-width: 980px) {
+    .tiles article.landscape,
+    .tiles article.portrait {
+        width: calc(40% - 2.5em);
+    }
+	}
+
+	@media screen and (max-width: 736px) {
+    .tiles article.landscape,
+    .tiles article.portrait {
+        width: calc(50% - 2.5em);
+    }
+	}
+
+	.tiles article {
+  	box-shadow: 0 0px 8px rgba(150, 151, 150, 0.921), 0 0px 0px rgba(236, 6, 6, 0.939);
+	border-radius: 15px;
+  	transition: box-shadow 0.4s ease-in-out;
+	}
+	.tiles article:hover {
+  	box-shadow: 0 7px 0px rgba(12, 12, 12, 0), 0 0px 40px rgb(230, 246, 225);
+	border-radius: 15px;
+	transition: box-shadow 0.1s;
+	}
+
+	/* Default text color for landscape tiles */
+	.tiles article.landscape a,
+	.tiles article.landscape a h2,
+	.tiles article.landscape a .content {
+	    color: #ffffffa7; /* Default: white */
+	    transition: color 0.1s ease-in-out;
+	}
+
+	/* Change text color on hover (desktop) */
+	.tiles article.landscape:hover a,
+	.tiles article.landscape:hover a h2,
+	.tiles article.landscape:hover a .content {
+	    color: #ffffff; /* Example: blue on hover */
+	}
+	/* Default text color for portrait tiles */
+	.tiles article.portrait a,
+	.tiles article.portrait a h2,
+	.tiles article.portrait a .content {
+	    color: #ffffff91; /* Default: white */
+	    transition: color 0.1s ease-in-out;
+	}
+
+	/* Change text color on hover (desktop) */
+	.tiles article.portrait:hover a,
+	.tiles article.portrait:hover a h2,
+	.tiles article.portrait:hover a .content {
+	    color: #ffffff; /* Example: blue on hover */
+	}
+
+	/* On small screens, always use the alternate color */
+	@media screen and (max-width: 1280px) {
+    .tiles article.portrait a,
+    .tiles article.portrait a h2,
+    .tiles article.portrait a .content {
+        color: #ffffff !important; /* Example: blue on mobile */
+    }
+	}
+
+/* On small screens, always use the alternate color */
+	@media screen and (max-width: 1280px) {
+    .tiles article.landscape a,
+    .tiles article.landscape a h2,
+    .tiles article.landscape a .content {
+        color: #ffffff !important; /* Example: blue on mobile */
+    }
+	}
 
 	.tiles {
 		display: -moz-flex;
@@ -2619,8 +2813,9 @@ input, select, textarea {
 			transition: transform 0.5s ease, opacity 0.5s ease;
 			position: relative;
 			width: calc(25% - 2.5em); /* This changes how many boxes per line */
-			margin: 2em 0em 0em 2em; /* First controlls vertical separation between tiles and last horizontal sep*/
-		}
+			margin: 2em 0em 0em 2em; /* First controlls vertical separation between tiles and last horizontal sep*/  
+}
+
 
 			.tiles article > .image {
 				-moz-transition: -moz-transform 0.5s ease;
@@ -2631,7 +2826,7 @@ input, select, textarea {
 				display: block;
 				width: 100%;
 				height: 100%; /* Change the size background of the box!*/
-				border-radius: 10px;
+				border-radius: 15px;
   				overflow: hidden;
 			}
 
@@ -2708,11 +2903,48 @@ input, select, textarea {
 				padding: 0em;
 				border-radius: 3px;
 				border-bottom: 0;
-				color: #f8f8f8;
+				color: #202020;
 				text-align: center;
 				text-decoration: none;
 				z-index: 03;
 			}
+
+			.tiles article.portrait > a {
+				display: -moz-flex;
+				display: -webkit-flex;
+				display: -ms-flex;
+				display: flex;
+				-moz-flex-direction: column;
+				-webkit-flex-direction: column;
+				-ms-flex-direction: column;
+				flex-direction: column;
+				-moz-align-items: center;
+				-webkit-align-items: center;
+				-ms-align-items: center;
+				align-items: normal;
+				-moz-justify-content: center;
+				-webkit-justify-content: center;
+				-ms-justify-content: center;
+				justify-content: center;
+				-moz-transition: background-color 0.5s ease, -moz-transform 0.5s ease;
+				-webkit-transition: background-color 0.5s ease, -webkit-transform 0.5s ease;
+				-ms-transition: background-color 0.5s ease, -ms-transform 0.5s ease;
+				transition: background-color 0.5s ease, transform 0.5s ease;
+				position: absolute;
+				top:0;
+				left: 0;
+				width: 100%;
+				height: 160%; /* Modifies position of heading of box */
+				padding: 0em;
+				border-radius: 3px;
+				border-bottom: 0;
+				color: #202020;
+				text-align: center;
+				text-decoration: none;
+				z-index: 03;
+			}
+
+			
 
 
 				.tiles article > a > :last-child {
@@ -2720,7 +2952,7 @@ input, select, textarea {
 				}
 
 				.tiles article > a:hover {
-					color: #f8f8f8 !important;
+					color: #ffffff !important;
 				}
 
 				.tiles article > a h2 {
@@ -2732,7 +2964,7 @@ input, select, textarea {
 					-webkit-transition: max-height 0.5s ease, opacity 0.5s ease;
 					-ms-transition: max-height 0.5s ease, opacity 0.5s ease;
 					transition: max-height 0.5s ease, opacity 0.5s ease;
-					width: 80%; /*Controls size of text inside box */
+					width: 20%; /*Controls size of text inside box */
 					max-height: 0em;
 					line-height: 1em;
 					margin-top: 0em;
@@ -2768,10 +3000,10 @@ input, select, textarea {
 			}
 
 			body:not(.is-touch) .tiles article:hover > .image {
-				-moz-transform: scale(1.05);
-				-webkit-transform: scale(1.05);
-				-ms-transform: scale(1.05);
-				transform: scale(1.05);
+				-moz-transform: scale(1.10);
+				-webkit-transform: scale(1.10);
+				-ms-transform: scale(1.10);
+				transform: scale(1.10);
 			}
 
 				body:not(.is-touch) .tiles article:hover > .image:before {
@@ -2796,8 +3028,8 @@ input, select, textarea {
 			-moz-transform: scale(0.9);
 			-webkit-transform: scale(0.9);
 			-ms-transform: scale(0.9);
-			transform: scale(0.9); /* if less 1, creates boxes from center. If greater than 1, creates at infinite and compactify. */
-			opacity: 0;
+			transform: scale(0.8); /* if less 1, creates boxes from center. If greater than 1, creates at infinite and compactify. */
+			opacity: 1;
 		}
 
 		body.is-touch .tiles article .content {
