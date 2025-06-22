@@ -97,10 +97,7 @@ input, select, textarea {
 		box-sizing: inherit;
 	}
 
-	:root {
-  	--safe-area-top: env(safe-area-inset-top, 0px);
-  	--safe-area-bottom: env(safe-area-inset-bottom, 0px);
-	}
+
 
 
 	/* To define the gradient of each webpage and the specific hyperlink color*/
@@ -111,9 +108,7 @@ input, select, textarea {
 	 #575757 100%,
 	 #202020 7%
   	);
-	min-height: calc(100vh + var(--safe-area-top) + var(--safe-area-bottom));
-  	margin: 0;
-  	padding: var(--safe-area-top) 0 var(--safe-area-bottom) 0;
+	min-height: 300vh;
 	}
 
 	body.cv_documents {
@@ -123,9 +118,7 @@ input, select, textarea {
 	 #00ff44 100%,
 	 #202020 7%
   	);
-	min-height: calc(100vh + var(--safe-area-top) + var(--safe-area-bottom));
-  margin: 0;
-  padding: var(--safe-area-top) 0 var(--safe-area-bottom) 0;
+	min-height: 300vh;
 	}
 
 	body.slides {
@@ -135,9 +128,7 @@ input, select, textarea {
 	 #0a91ff 100%,
 	 #202020 7%
   	);
-	min-height: calc(100vh + var(--safe-area-top) + var(--safe-area-bottom));
-  margin: 0;
-  padding: var(--safe-area-top) 0 var(--safe-area-bottom) 0;
+	min-height: 300vh;
 	}
 	.highlight_slides {
   	color: #0a91ff; /* Color of hyperlinks for slides */
@@ -150,9 +141,7 @@ input, select, textarea {
 	 #ffdd00 100%,
 	 #202020 7%
   	);
-	min-height: calc(100vh + var(--safe-area-top) + var(--safe-area-bottom));
-  margin: 0;
-  padding: var(--safe-area-top) 0 var(--safe-area-bottom) 0;
+	min-height: 300vh;
 	}
 	.highlight_outreach {
   	color:  #ffdd00; /* Color of hyperlinks for outreach */
@@ -165,9 +154,7 @@ input, select, textarea {
 	 #ff0000 100%,
 	 #202020 7%
   	);
-	min-height: calc(100vh + var(--safe-area-top) + var(--safe-area-bottom));
-  margin: 0;
-  padding: var(--safe-area-top) 0 var(--safe-area-bottom) 0;
+	min-height: 300vh;
 	}
 	.highlight_didactical {
   	color: #ff0000; /* Color of hyperlinks for didactical */
@@ -180,9 +167,7 @@ input, select, textarea {
 	 #ff00cc 100%,
 	 #202020 7%
   	);
-	min-height: calc(100vh + var(--safe-area-top) + var(--safe-area-bottom));
-  margin: 0;
-  padding: var(--safe-area-top) 0 var(--safe-area-bottom) 0;
+	min-height: 100vh;
 	}
 
 
