@@ -97,6 +97,12 @@ input, select, textarea {
 		box-sizing: inherit;
 	}
 
+	html, body {
+  	height: 100%;
+  	margin: 0;
+  	padding: 0;
+	}
+
 	/* To define the gradient of each webpage and the specific hyperlink color*/
 	body.index {
   	background: linear-gradient(
