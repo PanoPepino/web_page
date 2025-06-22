@@ -97,9 +97,6 @@ input, select, textarea {
 		box-sizing: inherit;
 	}
 
-
-
-
 	/* To define the gradient of each webpage and the specific hyperlink color*/
 	body.index {
   	background: linear-gradient(
@@ -167,7 +164,7 @@ input, select, textarea {
 	 #ff00cc 100%,
 	 #202020 7%
   	);
-	min-height: 300vh;
+	min-height: 400vh;
 	}
 
 
