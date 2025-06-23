@@ -93,11 +93,15 @@ input, select, textarea {
 		box-sizing: border-box;
 	}
 
+
 	*, *:before, *:after {
 		box-sizing: inherit;
 	}
 
 	/* To define the gradient of each webpage and the specific hyperlink color*/
+	body {
+  	background: linear-gradient(.25turn, #575757 0%, #202020 1%, #202020 99%, #575757 100%);
+	}
 	
 
 	body.index {
@@ -105,58 +109,34 @@ input, select, textarea {
 	}
 
 	body.cv_documents {
-	background: linear-gradient(.25turn, #00ff44 0%, #025f0a 0.5%, #202020 3%, #202020 97%,#025f0a 99.5%, #00ff44 100%);
+	background: linear-gradient(.25turn, #00ff44 0%,  #202020 1%, #202020 99%, #00ff44 100%);
 	}
 
 	/*IT SEEMS IT REQUIRES A SYMMETRIC BEHAVIOUR BY HAND. NOTICE THE GRADIENT!!!!*/
 
 	body.slides {
-  	background: linear-gradient(
-    to top,
-     #202020 96.5%,
-	 #0a91ff 100%,
-	 #202020 7%
-  	);
-	min-height: 300vh;
+		background: linear-gradient(.25turn, #0a91ff 0%,  #202020 1%, #202020 99%, #0a91ff 100%);
 	}
 	.highlight_slides {
   	color: #0a91ff; /* Color of hyperlinks for slides */
 	}
 
 	body.outreach {
-  	background: linear-gradient(
-    to top,
-     #202020 96.5%,
-	 #ffdd00 100%,
-	 #202020 7%
-  	);
-	min-height: 300vh;
+		background: linear-gradient(.25turn, #ffdd00 0%,  #202020 1%, #202020 99%, #ffdd00 100%);
 	}
 	.highlight_outreach {
   	color:  #ffdd00; /* Color of hyperlinks for outreach */
 	}
 
 	body.didactical {
-  	background: linear-gradient(
-    to top,
-     #202020 96.5%,
-	 #ff0000 100%,
-	 #202020 7%
-  	);
-	min-height: 300vh;
+  	background: linear-gradient(.25turn,  #ff0000 0%,  #202020 1%, #202020 99%, #ff0000 100%);
 	}
 	.highlight_didactical {
   	color: #ff0000; /* Color of hyperlinks for didactical */
 	}
 	
 	body.magic {
-  	background: linear-gradient(
-    to top,
-     #202020 96.5%,
-	 #ff00cc 100%,
-	 #202020 7%
-  	);
-	min-height: 400vh;
+		background: linear-gradient(.25turn,  #ff00cc 0%,  #202020 1%, #202020 99%, #ff00cc 100%);
 	}
 
 
@@ -212,7 +192,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #ffffff !important;
+			color: #080505 !important;
 		}
 
 	strong, b {
@@ -2267,7 +2247,7 @@ input, select, textarea {
 	}
 
 		select option {
-			background: #f8f8f8;
+			background: #dc0f0f;
 		}
 
 		select:focus::-ms-value {
