@@ -98,25 +98,17 @@ input, select, textarea {
 	}
 
 	/* To define the gradient of each webpage and the specific hyperlink color*/
+	
+
 	body.index {
-  	background: linear-gradient(
-    to top,
-     #202020 96.5%,
-	 #575757 100%,
-	 #202020 7%
-  	);
-	min-height: 300vh;
+  	background: linear-gradient(.25turn, #575757 0%, #202020 1%, #202020 99%, #575757 100%);
 	}
 
 	body.cv_documents {
-  	background: linear-gradient(
-    to top,
-     #202020 96.5%,
-	 #00ff44 100%,
-	 #202020 7%
-  	);
-	min-height: 300vh;
+	background: linear-gradient(.25turn, #00ff44 0%, #025f0a 0.5%, #202020 3%, #202020 97%,#025f0a 99.5%, #00ff44 100%);
 	}
+
+	/*IT SEEMS IT REQUIRES A SYMMETRIC BEHAVIOUR BY HAND. NOTICE THE GRADIENT!!!!*/
 
 	body.slides {
   	background: linear-gradient(
@@ -180,6 +172,7 @@ input, select, textarea {
 			-ms-transition: none !important;
 			transition: none !important;
 		}
+
 
 /* Type */
 
