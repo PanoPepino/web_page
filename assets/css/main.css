@@ -76,6 +76,7 @@ input, select, textarea {
 
 	@-ms-viewport {
 		width: device-width;
+		content: "#0077b6";
 	}
 
 	body {
@@ -192,7 +193,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #080505 !important;
+			color: #f8f8f8 !important;
 		}
 
 	strong, b {
