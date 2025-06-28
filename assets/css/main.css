@@ -80,7 +80,7 @@ input, select, textarea {
 	}
 
 	body {
-		-ms-overflow-style: auto;
+		-ms-overflow-style: note;
 	}
 
 	@media screen and (max-width: 480px) {
@@ -107,6 +107,10 @@ input, select, textarea {
 
 	body.index {
   	background: linear-gradient(.25turn, #575757 0%, #202020 1%, #202020 99%, #575757 100%);
+	padding-top: env(safe-area-inset-top);
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+    padding-bottom: env(safe-area-inset-bottom);
 	}
 
 	body.cv_documents {
@@ -138,6 +142,10 @@ input, select, textarea {
 	
 	body.magic {
 		background: linear-gradient(.25turn,  #ff00cc 0%,  #202020 1%, #202020 99%, #ff00cc 100%);
+		padding-top: env(safe-area-inset-top);
+       	padding-left: env(safe-area-inset-left);
+    	padding-right: env(safe-area-inset-right);
+    	padding-bottom: env(safe-area-inset-bottom);
 	}
 
 
