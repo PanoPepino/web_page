@@ -1,0 +1,176 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: "Manrope", "Helvetica Neue", sans-serif;
+  --font-display: "Sora", "Helvetica Neue", sans-serif;
+  --color-background: var(--background); --color-foreground: var(--foreground);
+  --color-card: var(--card); --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover); --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary); --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary); --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted); --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent); --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive); --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border); --color-input: var(--input); --color-ring: var(--ring);
+  --color-ink: var(--ink); --color-paper: var(--paper); --color-cyan: var(--cyan);
+  --radius-sm: calc(var(--radius) - 2px); --radius-md: var(--radius); --radius-lg: calc(var(--radius) + 4px);
+}
+
+:root {
+  --radius: 0.5rem;
+  --background: oklch(0.135 0.006 250); --foreground: oklch(0.94 0.008 175);
+  --card: oklch(0.18 0.008 250); --card-foreground: var(--foreground);
+  --popover: var(--card); --popover-foreground: var(--foreground);
+  --primary: oklch(0.78 0.105 166); --primary-foreground: oklch(0.135 0.006 250);
+  --secondary: oklch(0.205 0.01 250); --secondary-foreground: var(--foreground);
+  --muted: oklch(0.22 0.008 250); --muted-foreground: oklch(0.67 0.018 180);
+  --accent: oklch(0.72 0.13 35); --accent-foreground: oklch(0.13 0.01 250);
+  --destructive: oklch(0.63 0.19 28); --destructive-foreground: oklch(0.98 0 0);
+  --border: oklch(0.28 0.012 250); --input: var(--border); --ring: var(--primary);
+  --ink: oklch(0.105 0.008 250); --paper: oklch(0.94 0.008 175); --cyan: oklch(0.78 0.105 166);
+  --spacetime-grid: oklch(0.78 0.105 166 / 0.2); --spacetime-purple: oklch(0.72 0.16 300); --spacetime-particle: var(--spacetime-purple); --spacetime-vector: oklch(0.84 0.11 166); --spacetime-horizon: oklch(0.72 0.16 300 / 0.76); --spacetime-black-hole: oklch(0.045 0.004 250);
+}
+
+@layer base {
+  * { border-color: var(--color-border); }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--color-background); color: var(--color-foreground); font-family: var(--font-sans); letter-spacing: 0; }
+  a { text-decoration: none; }
+  ::selection { background: var(--color-primary); color: var(--color-primary-foreground); }
+}
+
+@layer components {
+  .font-display { font-family: var(--font-display); }
+  .eyebrow { font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .16em; color: var(--color-muted-foreground); }
+  .nav-link { position: relative; font-size: .76rem; font-weight: 700; color: var(--color-muted-foreground); transition: color .2s ease; }
+  .nav-link:hover { color: var(--color-foreground); }
+  .section-index { font-family: ui-monospace, monospace; font-size: .68rem; color: var(--color-primary); }
+  .trajectory { position: relative; display: grid; gap: 1.25rem; padding-left: 1rem; list-style: none; }
+  .trajectory-entry { position: relative; min-width: 0; }
+  .trajectory-entry::before { content: ""; position: absolute; top: .5rem; bottom: calc(-1.25rem - .3rem); left: -.75rem; width: 1px; background: var(--color-border); }
+  .trajectory-entry:last-child::before { bottom: auto; height: 2.5rem; background: linear-gradient(to bottom, var(--color-border), transparent); }
+  .trajectory-dot { position: absolute; z-index: 1; top: .25rem; left: -1rem; width: 9px; height: 9px; border: 2px solid var(--color-background); border-radius: 50%; background: color-mix(in oklab, var(--spacetime-particle) calc(var(--dot-glow, 0) * 100%), var(--color-primary)); box-shadow: 0 0 7px color-mix(in oklab, var(--spacetime-particle) calc(var(--dot-glow, 0) * 85%), transparent); }
+  .trajectory-copy { display: flex; flex-direction: column; gap: .25rem; min-width: 0; }
+  .panel { border: 1px solid var(--color-border); border-radius: 1rem; background: color-mix(in oklab, var(--card) 76%, transparent); }
+  .panel-link { border: 1px solid var(--color-border); border-radius: .75rem; background: color-mix(in oklab, var(--card) 68%, transparent); transition: border-color .2s, background .2s, transform .2s; }
+  .panel-link:hover { border-color: color-mix(in oklab, var(--primary) 55%, var(--border)); background: var(--color-secondary); transform: translateY(-2px); }
+  .zoom-tile:hover { transform: none; }
+  .zoom-tile.zoom-tile--lift:hover { transform: translateY(-2px); }
+  .zoom-tile-image { transition: opacity .3s ease, scale .4s ease-in-out; }
+  .footer-link { font-size: .72rem; font-weight: 700; color: var(--color-muted-foreground); transition: color .2s; }
+  .footer-link:hover { color: var(--color-primary); }
+  .science-grid { background-image: linear-gradient(var(--color-border) 1px, transparent 1px), linear-gradient(90deg, var(--color-border) 1px, transparent 1px); background-size: 32px 32px; mask-image: linear-gradient(to bottom left, black, transparent 78%); }
+  .orbit-mark { position: absolute; border: 1px solid color-mix(in oklab, var(--primary) 42%, transparent); border-radius: 999px; }
+  .orbit-mark::after { content: ""; position: absolute; width: .55rem; height: .55rem; border-radius: 999px; background: var(--color-accent); top: 18%; left: 5%; }
+  .location-pulse { transform-box: fill-box; transform-origin: center; }
+  .question-bubble { position: absolute; z-index: 0; left: var(--bubble-left); top: var(--bubble-top); width: clamp(2.5rem, 5vw, 3.5rem); aspect-ratio: 1; transform: translate(-50%, -50%); border: 1px solid color-mix(in oklab, var(--spacetime-purple) 57.5%, transparent); border-radius: 50%; background: radial-gradient(circle at 34% 28%, color-mix(in oklab, var(--spacetime-purple) 23%, transparent), color-mix(in oklab, var(--spacetime-purple) 9.2%, transparent) 58%, transparent 76%); box-shadow: inset 0 0 .6rem color-mix(in oklab, var(--spacetime-purple) 23%, transparent), 0 0 .8rem color-mix(in oklab, var(--spacetime-purple) 20.7%, transparent); pointer-events: none; }
+  .question-bubble--animated { animation: question-bubble-flight 6s ease-out forwards; }
+  .signal-line { height: 1px; background: linear-gradient(90deg, var(--color-primary), transparent); }
+  .magic-reader-art { mask-image: linear-gradient(to bottom, black 70%, transparent 100%); }
+  .postcard-gallery-card { grid-column: span 12 / span 12; }
+  .postcard-reader-art { height: auto; max-height: 75vh; mask-image: linear-gradient(to bottom, black 76%, transparent 100%); }
+  .postcard-gallery-art { mask-image: linear-gradient(to bottom, black 65%, transparent 100%); }
+  .timeless-dragon { position: absolute; right: -1.5rem; bottom: -2.5rem; width: min(90%, 20rem); aspect-ratio: 1; overflow: hidden; background: color-mix(in oklab, var(--color-primary) 18%, transparent); pointer-events: none; mask-repeat: no-repeat; mask-position: center; mask-size: contain; -webkit-mask-repeat: no-repeat; -webkit-mask-position: center; -webkit-mask-size: contain; }
+  .timeless-dragon::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, transparent 25%, color-mix(in oklab, var(--color-primary) 70%, transparent) 50%, transparent 75%); opacity: 0; transform: translateX(-110%); }
+  .magic-primer { font-size: .92rem; line-height: 1.7; color: var(--color-muted-foreground); }
+  .magic-primer > * + * { margin-top: .9rem; }
+  .magic-primer h1, .magic-primer h2, .magic-primer h3 { font-family: var(--font-display); color: var(--color-foreground); font-weight: 600; }
+  .magic-primer h1 { font-size: 1.6rem; } .magic-primer h2 { font-size: 1.35rem; } .magic-primer h3 { font-size: 1.05rem; margin-top: 1.5rem; }
+  .magic-primer strong, .magic-primer b { color: var(--color-foreground); font-weight: 700; }
+  .magic-primer a { color: var(--color-primary); text-decoration: none; }
+  .magic-primer ul { list-style: disc; padding-left: 1.25rem; } .magic-primer ol { list-style: decimal; padding-left: 1.25rem; }
+  .magic-primer blockquote { border-left: 2px solid var(--color-primary); padding-left: 1rem; font-style: italic; }
+  .magic-primer table { width: 100%; border-collapse: collapse; font-size: .85rem; }
+  .magic-primer th, .magic-primer td { border: 1px solid var(--color-border); padding: .4rem .6rem; text-align: left; }
+}
+
+@media (min-width: 40rem) and (orientation: landscape) {
+  .postcard-gallery-card { grid-column: span 6 / span 6; }
+}
+
+@media (min-width: 64rem) and (orientation: landscape) {
+  .postcard-gallery-card { grid-column: span 4 / span 4; }
+  .postcard-reader-layout { height: 100dvh; grid-template-columns: minmax(0, 7fr) minmax(20rem, 3fr); grid-template-rows: minmax(0, 1fr); }
+  .postcard-reader-image { position: sticky; top: 0; min-height: 0; height: 100dvh; }
+  .postcard-reader-art { position: absolute; inset: 0; width: 100%; height: 100%; max-width: 100%; max-height: 100%; object-fit: cover; object-position: center; mask-image: linear-gradient(to right, black 76%, transparent 100%); }
+  .postcard-reader-art--vertical { position: relative; inset: auto; width: auto; height: 100dvh; object-fit: contain; }
+}
+
+@media (max-width: 39.999rem) and (orientation: portrait) {
+  .postcard-reader-art { mask-image: linear-gradient(to bottom, black 0%, black 76%, transparent 100%); }
+}
+
+@media (min-width: 48rem) {
+
+  .trajectory { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0; min-height: 19rem; padding-left: 0; }
+  .trajectory::before { content: ""; position: absolute; top: 50%; right: 10%; left: 10%; height: 1px; background: var(--color-border); }
+  .trajectory-entry { order: var(--timeline-order); min-height: 19rem; padding: 0 .375rem; }
+  .trajectory-entry::before { display: none; }
+  .trajectory-entry:first-child::before, .trajectory-entry:last-child::before { display: block; top: calc(50% - 1.5px); bottom: auto; height: 3px; width: auto; background-color: transparent; background-repeat: no-repeat; }
+  .trajectory-entry:first-child::before { left: 50%; right: 0; background-image: linear-gradient(to right, var(--color-border), transparent), radial-gradient(circle, color-mix(in oklab, var(--color-border) 75%, transparent) 1px, transparent 1.1px), radial-gradient(circle, color-mix(in oklab, var(--color-border) 50%, transparent) 1px, transparent 1.1px), radial-gradient(circle, color-mix(in oklab, var(--color-border) 25%, transparent) 1px, transparent 1.1px); background-size: 24% 1px, 2px 2px, 2px 2px, 2px 2px; background-position: left center, 34% center, 60% center, 95% center; }
+  .trajectory-entry:last-child::before { left: 0; right: 50%; background-image: linear-gradient(to left, var(--color-border), transparent), radial-gradient(circle, color-mix(in oklab, var(--color-border) 75%, transparent) 1px, transparent 1.1px), radial-gradient(circle, color-mix(in oklab, var(--color-border) 50%, transparent) 1px, transparent 1.1px), radial-gradient(circle, color-mix(in oklab, var(--color-border) 25%, transparent) 1px, transparent 1.1px); background-size: 24% 1px, 2px 2px, 2px 2px, 2px 2px; background-position: right center, 66% center, 40% center, 5% center; }
+  .trajectory-entry::after { content: ""; position: absolute; left: 50%; width: 1px; height: .75rem; background: var(--color-border); transform: translateX(-50%); }
+  .trajectory-entry--down::after { top: calc(50% + .3rem); }
+  .trajectory-entry--up::after { bottom: calc(50% + .3rem); }
+  .trajectory-dot { top: 50%; left: 50%; transform: translate(-50%, -50%); }
+  .trajectory-copy { position: absolute; right: .375rem; left: calc(50% - 2.25rem); align-items: flex-start; gap: .625rem; text-align: left; }
+  .trajectory-entry--down .trajectory-copy { top: calc(50% + 1.125rem); }
+  .trajectory-entry--up .trajectory-copy { bottom: calc(50% + 1.125rem); flex-direction: column-reverse; }
+  .trajectory-copy .section-index { white-space: nowrap; }
+  .trajectory-description { width: 100%; overflow-wrap: break-word; }
+}
+
+@media (min-width: 64rem) {
+  .trajectory, .trajectory-entry { min-height: 16rem; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .timeless-tile:hover .timeless-dragon::after, .timeless-tile:focus-within .timeless-dragon::after { animation: timeless-dragon-glow 1.5s ease-in-out both; }
+  @keyframes timeless-dragon-glow { 0% { opacity: 0; transform: translateX(-110%); } 12%, 88% { opacity: 1; } 100% { opacity: 0; transform: translateX(110%); } }
+  .trajectory::after { content: ""; position: absolute; top: .5rem; bottom: 0; left: calc(.25rem - .5px); width: 2px; pointer-events: none; opacity: var(--trajectory-glow-opacity, 0); background: linear-gradient(to top, transparent 0%, color-mix(in oklab, var(--spacetime-particle) 3%, transparent) 10%, color-mix(in oklab, var(--spacetime-particle) 15%, transparent) 20%, color-mix(in oklab, var(--spacetime-particle) 40%, transparent) 30%, color-mix(in oklab, var(--spacetime-particle) 75%, transparent) 40%, var(--spacetime-particle) 50%, color-mix(in oklab, var(--spacetime-particle) 75%, transparent) 60%, color-mix(in oklab, var(--spacetime-particle) 40%, transparent) 70%, color-mix(in oklab, var(--spacetime-particle) 15%, transparent) 80%, color-mix(in oklab, var(--spacetime-particle) 3%, transparent) 90%, transparent 100%) center calc(100% + 3rem) / 2px var(--trajectory-glow-size, 4rem) no-repeat; background-position: var(--trajectory-position, center calc(100% + 3rem)); }
+  .orbit-mark { animation: drift 12s ease-in-out infinite alternate; }
+  .location-pulse { animation: location-pulse 2.8s ease-out infinite; }
+  @keyframes drift { to { transform: rotate(12deg) translateY(-6px); } }
+  @keyframes question-bubble-flight {
+    0% { transform: translate(-50%, -50%) scale(.08); opacity: 0; }
+    8% { transform: translate(-50%, -50%) scale(.78); opacity: 1; }
+    14% { transform: translate(-50%, -50%) scale(.92); }
+    20% { transform: translate(-50%, -50%) scale(.86); }
+    83.33% { transform: translate(calc(-50% + var(--bubble-dx)), calc(-50% + var(--bubble-dy))) scale(1.1); opacity: 1; }
+    100% { transform: translate(calc(-50% + var(--bubble-dx)), calc(-50% + var(--bubble-dy))) scale(1.16); opacity: 0; }
+  }
+  @keyframes location-pulse {
+    0% { transform: scale(.55); opacity: .8; }
+    70%, 100% { transform: scale(1.8); opacity: 0; }
+  }
+}
+
+@media (min-width: 48rem) and (prefers-reduced-motion: no-preference) {
+  .trajectory::after { top: calc(50% - 1px); right: 10%; bottom: auto; left: 10%; width: auto; height: 2px; background: linear-gradient(to right, transparent 0%, color-mix(in oklab, var(--spacetime-particle) 3%, transparent) 10%, color-mix(in oklab, var(--spacetime-particle) 15%, transparent) 20%, color-mix(in oklab, var(--spacetime-particle) 40%, transparent) 30%, color-mix(in oklab, var(--spacetime-particle) 75%, transparent) 40%, var(--spacetime-particle) 50%, color-mix(in oklab, var(--spacetime-particle) 75%, transparent) 60%, color-mix(in oklab, var(--spacetime-particle) 40%, transparent) 70%, color-mix(in oklab, var(--spacetime-particle) 15%, transparent) 80%, color-mix(in oklab, var(--spacetime-particle) 3%, transparent) 90%, transparent 100%) -3rem center / var(--trajectory-glow-size, 4rem) 2px no-repeat; background-position: var(--trajectory-position, -3rem center); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .timeless-tile:hover .timeless-dragon, .timeless-tile:focus-within .timeless-dragon { background: color-mix(in oklab, var(--color-primary) 30%, transparent); }
+  .zoom-tile-image { transition: opacity .3s ease; }
+  .zoom-tile:hover .zoom-tile-image { scale: 1; }
+}
+
+.magic-reader-scroll { max-height: 60dvh; }
+@media (min-width: 64rem), (min-width: 48rem) and (orientation: landscape) {
+  .magic-reader-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); overflow: hidden; }
+  .magic-reader-image { min-height: 0; overflow: hidden; }
+  .magic-reader-art { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; mask-image: linear-gradient(to right, black 66%, transparent 100%); }
+  .magic-reader-scroll { max-height: none; }
+}
+
+.magic-reader-content { container-type: inline-size; container-name: deck-content; }
+.deck-list-group { display: flow-root; break-inside: avoid; margin-bottom: 1.25rem; }
+@container deck-content (min-width: 34rem) {
+  .deck-list-groups { column-count: 2; column-gap: 1.5rem; }
+}
+
+.postcard-reader-art--vertical, .postcard-gallery-art--vertical { mask-image: none; -webkit-mask-image: none; }

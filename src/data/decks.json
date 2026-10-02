@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Werewolves",
+    "image": "tovolar.jpg",
+    "moxfieldId": "ZxtW1VpiP0GMH35fwlxiqA"
+  },
+  {
+    "name": "Vampires",
+    "image": "elenda.jpg",
+    "moxfieldId": "zVlzsMZdz0SCsXssPb_x_Q"
+  },
+  {
+    "name": "Demons",
+    "image": "demons.jpg",
+    "moxfieldId": "6MiGHQoE-0awnIUf30-jgg"
+  },
+  {
+    "name": "Angels",
+    "image": "sigarda.jpg",
+    "moxfieldId": "W5-gXmh4CU67_2M1mG-pLg",
+    "primerCardIds": {
+      "Starheirn Aspirant": "ea007a18-b31a-4881-92c4-86120dc5729b"
+    }
+  },
+  {
+    "name": "Wizards",
+    "image": "wizards.jpg",
+    "moxfieldId": "xY8EAxZBX0aZkQI8zW2V3A"
+  },
+  {
+    "name": "Warriors",
+    "image": "warriors.jpg",
+    "moxfieldId": "zydoid1aJk28Y4gMS0VWiw"
+  },
+  {
+    "name": "Ninjas",
+    "image": "ninjas.jpg",
+    "moxfieldId": "1qiZaqxm2UKbEAqijzaUKQ"
+  },
+  {
+    "name": "Druids",
+    "image": "druids.jpg",
+    "moxfieldId": "uUX9CLKHJ0q7oW9Jty2sWQ",
+    "primerLanguage": "es"
+  },
+  {
+    "name": "Slivers",
+    "image": "slivers.jpg",
+    "moxfieldId": "HeEyzrVWeU6gy_OYnV0hWw"
+  }
+]

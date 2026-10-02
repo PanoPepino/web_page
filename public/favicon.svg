@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="light" x1="4" y1="0" x2="60" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6f9dff"/>
+      <stop offset=".28" stop-color="#d7e2ff"/>
+      <stop offset=".5" stop-color="#fff9f7"/>
+      <stop offset=".72" stop-color="#ffd0c3"/>
+      <stop offset="1" stop-color="#ff7467"/>
+    </linearGradient>
+    <filter id="glow" x="-35%" y="-55%" width="170%" height="210%">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#020306"/>
+  <path d="M7 33 C16 31 18 12 32 12 C46 12 48 31 57 33" fill="none" stroke="url(#light)" stroke-width="7" opacity=".55" filter="url(#glow)"/>
+  <path d="M7 33 C16 31 18 12 32 12 C46 12 48 31 57 33" fill="none" stroke="url(#light)" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="32" cy="33" r="13" fill="none" stroke="url(#light)" stroke-width="7" opacity=".4" filter="url(#glow)"/>
+  <circle cx="32" cy="33" r="13" fill="none" stroke="url(#light)" stroke-width="2.8"/>
+  <path d="M3 34 C13 30 22 30 32 31 C42 30 51 30 61 34 C51 36 42 35 32 34 C22 35 13 36 3 34Z" fill="url(#light)" opacity=".9"/>
+  <circle cx="32" cy="33" r="10.8" fill="#020306"/>
+  <path d="M5 34 Q32 32 59 34" fill="none" stroke="url(#light)" stroke-width="2.2" stroke-linecap="round"/>
+</svg>

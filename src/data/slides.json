@@ -1,0 +1,44 @@
+[
+  {
+    "year": "2025",
+    "title": "Munich",
+    "path": "2025_12_munich/mpp_slides.html",
+    "preview": "munich-first-slide.jpg",
+    "videoIndex": 0
+  },
+  {
+    "year": "2025",
+    "title": "JSPS Dialogue",
+    "path": "2025_06_jsps/jsps_slide.html",
+    "preview": "jsps-first-slide.jpg",
+    "videoIndex": 0
+  },
+  {
+    "year": "2024",
+    "title": "Madrid SUSY",
+    "path": "2024_06_madrid/susy_24.html",
+    "preview": "susy-first-slide.jpg",
+    "videoIndex": 1
+  },
+  {
+    "year": "2024",
+    "title": "PhD · Accessible",
+    "path": "2024_05_easy/definitive.html",
+    "preview": "easy-first-slide.jpg",
+    "videoIndex": 0
+  },
+  {
+    "year": "2024",
+    "title": "PhD · Technical",
+    "path": "2024_05_hard/definitive.html",
+    "preview": "hard-first-slide.jpg",
+    "videoIndex": 1
+  },
+  {
+    "year": "2023",
+    "title": "Kyoto",
+    "path": "2023_07_japan/js.html",
+    "preview": "kyoto-first-slide.jpg",
+    "videoIndex": 2
+  }
+]
