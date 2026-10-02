@@ -1,7 +1,5 @@
 .github/workflows/deploy-pages.yml
 .gitignore
-.prettierignore
-.prettierrc
 AGENTS.md
 CLEANUP.md
 DEPLOYMENT.md

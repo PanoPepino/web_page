@@ -5,7 +5,7 @@
 Repository: `PanoPepino/web_page`
 Site: `https://panopepino.github.io/web_page/`
 
-Use **contents of `web_page_2/` as repository root** when replacing the old website. Preserve the existing repository's `.git` history. Do not publish this directory as a nested `new_webpage/` folder inside the repository.
+Use this directory as the repository root when replacing the old website. Preserve the existing repository's `.git` history. Place these files directly at the repository root.
 
 One-time GitHub setup: choose **Settings → Pages → Build and deployment → Source → GitHub Actions**. In **Settings → Actions → General → Workflow permissions**, allow the workflow to write repository contents. The repository’s default branch is `main`; allow the workflow bot to push to it if branch rules restrict pushes.
 
@@ -55,12 +55,12 @@ Run `bun run build:pages`, inspect changes, then replace source in the existing 
 `GITHUB_UPLOAD.txt` records the exact source-file inventory prepared during cleanup, including `.github/workflows/deploy-pages.yml` and `.gitignore`. Regenerate this inventory when adding or removing source files; it is not used by the build. From this directory, run:
 
 ```sh
-rg --files --hidden --no-require-git | LC_ALL=C sort > GITHUB_UPLOAD.txt
+git ls-files --cached --others --exclude-standard | LC_ALL=C sort > GITHUB_UPLOAD.txt
 ```
 
-This respects `.gitignore`, includes the inventory itself, and requires ripgrep.
+This follows `.gitignore`, includes the inventory itself, and excludes `.git` internals.
 
-Copy listed files from `web_page_2/` into the existing `PanoPepino/web_page` repository root while preserving its `.git/` directory and history. Review and remove obsolete tracked website files during replacement. Do not upload a nested `new_webpage/` directory.
+Commit this directory’s files at the root of the existing `PanoPepino/web_page` repository while preserving its `.git/` directory and history. Review and remove obsolete tracked website files during replacement. Do not upload this directory as a nested folder.
 
 The inventory excludes installed dependencies, output, caches, editor metadata, backups, OS metadata and credentials. Only `.output/public` belongs in the Pages artifact. Local preparation does not publish the site or alter sibling checkouts.
 

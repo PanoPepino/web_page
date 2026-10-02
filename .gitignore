@@ -1,0 +1,17 @@
+node_modules/
+dist/
+dist-ssr/
+.output/
+.vinxi/
+.tanstack/
+.nitro/
+.wrangler/
+.lovable/
+*.local
+.dev.vars
+.env
+.env.*
+!.env.example
+!.env.sample
+.DS_Store
+*.log
