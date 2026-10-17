@@ -1,0 +1,48 @@
+[
+  {
+    "id": "da-timeless",
+    "title": "Da Timeless",
+    "technologies": [
+      "Python",
+      "PostgreSQL",
+      "dbt",
+      "FastAPI",
+      "asyncio",
+      "React",
+      "TypeScript",
+      "Cloudflare R2"
+    ],
+    "description": "I built a data platform for competitive MTG Arena Timeless,\ncovering data collection, validation, storage, analysis,\nDiscord integration and web presentation.\n\nThe platform brings together tournament and league results\nwith community-submitted Metagame Challenge runs.\n\nIncoming records pass through validation and review before\npublication. PostgreSQL stores published facts. Separate source\nevidence allows records to be traced and checked.\n\nA shared Python backend provides reporting and administrative\ntools for the React website and Discord bot. Analysis covers\nevent results, deck performance and leaderboards.\n\nSource code is private.",
+    "url": "https://www.datimeless.com/",
+    "preview": null
+  },
+  {
+    "id": "pokeml",
+    "title": "PokéML",
+    "technologies": [
+      "Python",
+      "pandas",
+      "scikit-learn",
+      "CatBoost",
+      "LightGBM",
+      "XGBoost",
+      "Jupyter"
+    ],
+    "description": "Can Pokémon attributes predict base stat total:\nthe sum of six base stats?\n\nThis project covers data preparation, exploratory analysis,\nfeature engineering, model comparison and predictions.\nIt compares direct regression with a baseline-plus-correction\napproach using CatBoost, LightGBM and XGBoost.\n\nModels train on earlier generations and are evaluated on later\ngenerations. Target-derived rules learn from training data only.\n\nResults remain retrospective. All validation generations guide\nmodel selection, so no untouched final test exists. Predictions\nalso depend on supplied evolution-stage and rarity assumptions.",
+    "url": "https://github.com/PanoPepino/pokeml",
+    "preview": null
+  },
+  {
+    "id": "beanim",
+    "title": "Beanim",
+    "technologies": [
+      "Python",
+      "Manim",
+      "Manim Slides",
+      "LaTeX"
+    ],
+    "description": "Create Beamer-like styles for Manim presentations.\nShared themes and reusable components give titles, equations,\ntables and references a consistent appearance.",
+    "url": "https://github.com/PanoPepino/beanim",
+    "preview": null
+  }
+]

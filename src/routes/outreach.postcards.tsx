@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowLeft, ArrowRight, ChevronLeft, ChevronRight, Maximize2, X } from "lucide-react";
+import { ArrowLeft, ArrowRight, ChevronLeft, ChevronRight, X } from "lucide-react";
 import { useRef, type TouchEvent } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle } from "@/components/ui/sheet";
@@ -42,7 +42,15 @@ function PostcardReader({ index, open, onOpenChange, onNavigate }: { index: numb
   };
 
   return <Sheet open={open} onOpenChange={onOpenChange}>
-    <SheetContent side="right" className="inset-0 h-full w-full max-w-none overflow-y-auto border-0 p-0 [&>button]:hidden sm:max-w-none">
+    <SheetContent side="right" aria-keyshortcuts="ArrowLeft ArrowRight" onKeyDown={event => {
+      if (event.defaultPrevented || event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
+      if ((event.target as Element).closest("input, textarea, select, [contenteditable]:not([contenteditable='false']), [role='textbox']")) return;
+      if (event.key === "ArrowLeft" || event.key === "ArrowRight") {
+        event.preventDefault();
+        event.stopPropagation();
+        onNavigate(event.key === "ArrowLeft" ? -1 : 1);
+      }
+    }} className="inset-0 h-full w-full max-w-none overflow-y-auto border-0 p-0 [&>button]:hidden sm:max-w-none">
       <div className="fixed right-4 top-4 z-[80] md:right-6 md:top-6">
         <Button type="button" variant="secondary" size="icon" onClick={() => onOpenChange(false)} aria-label="Close postcard" className="size-10 rounded-full bg-background/90 shadow-lg backdrop-blur"><X className="size-5" /></Button>
       </div>
@@ -92,10 +100,15 @@ function PostcardsPage() {
     setSelected((selected + direction + postcardKeys.length) % postcardKeys.length);
   };
 
-  return <div className="mx-auto max-w-6xl px-4 pb-12 pt-16 md:px-8 md:pt-20">
-    <Link to="/outreach" className="footer-link inline-flex items-center gap-2"><ArrowLeft className="size-4" />Back to Outreach</Link>
-    <header className="pb-8 pt-8"><p className="eyebrow">From Cosmology to Dark Bubbles</p><h1 className="mt-3 font-display text-3xl font-semibold md:text-5xl">Six postcards, one story</h1><p className="mt-4 max-w-2xl text-muted-foreground">Select an illustration to enlarge it and read its story.</p></header>
-    <section className="grid grid-cols-12 gap-4">{postcardKeys.map((key, index) => { const source = outreachContent[key] as PostcardSource; const copy = source.eng; return <button key={key} type="button" onClick={() => setSelected(index)} className="panel-link postcard-gallery-card group relative grid aspect-[4/3] grid-rows-[minmax(0,1fr)_5rem] overflow-hidden p-0 text-left"><span className="relative min-h-0 overflow-hidden bg-background"><img src={postcardImages[index]} alt={copy.title} className={`postcard-gallery-art size-full object-cover opacity-70 transition-opacity duration-300 group-hover:opacity-90 ${index === 5 ? "postcard-gallery-art--vertical object-[50%_80%]" : "object-center"}`} loading="lazy" decoding="async" /><span className="absolute right-3 top-3 grid size-8 place-items-center rounded-full border border-border bg-background/80 transition-colors group-hover:border-primary group-hover:text-primary"><Maximize2 className="size-3.5" /></span></span><span className="grid min-w-0 grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5"><span className="min-w-0 font-display text-lg font-semibold leading-tight">{copy.title}</span><span className="section-index shrink-0">{String(index + 1).padStart(2, "0")}</span></span></button>; })}</section>
+  return <div className="overview-page mx-auto max-w-6xl px-4 pb-5 pt-2 md:px-8 md:pb-8 md:pt-3"><div className="postcard-overview-grid overview-grid grid grid-cols-12 gap-4">
+    <header className="postcard-gallery-intro col-span-12 py-4"><Link to="/outreach" className="footer-link inline-flex items-center gap-2"><ArrowLeft className="size-4" />Back to Outreach</Link>
+    <p className="eyebrow mt-4">From Cosmology to Dark Bubbles</p><h1 className="mt-3 font-display text-3xl font-semibold md:text-5xl">Six postcards, one story</h1><p className="mt-4 max-w-2xl text-muted-foreground">Select an illustration to enlarge it and read its story.</p></header>
+    <section aria-label="Postcards" className="postcard-gallery-grid col-span-12 grid grid-cols-12 gap-4">{postcardKeys.map((key, index) => {
+      const copy = (outreachContent[key] as PostcardSource).eng;
+      return <button key={key} type="button" aria-label={`Open postcard ${index + 1}: ${copy.title}`} onClick={() => setSelected(index)} className="panel-link postcard-gallery-card group relative block aspect-[4/3] overflow-hidden p-0">
+        <img src={postcardImages[index]} alt={copy.title} className={`postcard-gallery-art absolute inset-0 size-full object-cover opacity-70 transition-opacity duration-300 group-hover:opacity-90 group-focus-visible:opacity-90 ${index === 5 ? "postcard-gallery-art--vertical object-[50%_80%]" : "object-center"}`} loading="lazy" decoding="async" />
+      </button>;
+    })}</section>
     {selected !== null && <PostcardReader index={selected} open onOpenChange={open => { if (!open) setSelected(null); }} onNavigate={navigatePostcards} />}
-  </div>;
+  </div></div>;
 }

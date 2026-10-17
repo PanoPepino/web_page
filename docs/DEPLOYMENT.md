@@ -11,6 +11,8 @@ One-time GitHub setup: choose **Settings → Pages → Build and deployment → 
 
 After setup, each push to `main` installs the locked Bun 1.4.2 dependencies, builds and checks the site, then deploys `.output/public` through GitHub Pages Actions. Schedule runs each Friday at 05:00 Europe/Stockholm and refresh every deck. They commit refreshed snapshots and deploy them within that run. Manual dispatch on the default branch runs the same refresh and deployment. Runs dispatched from other branches are skipped, avoiding feature-branch deployment or writes to `main`.
 
+Every deployment also refreshes `/projects` descriptions and its complete navigation tree from the approved project registry in `PanoPepino/PanoPepino` and each public project repository. `projects.json` contains the selected project cards; `project-tree.json` contains every registered project and its ecosystem nesting. Until that registry is published, the checked-in profile source copy supplies the two profile-owned entries; public repository entries still refresh. Source validation failure stops deployment before either snapshot is replaced. Optional project GIFs belong in `public/assets/projects/{project-id}.gif`.
+
 GitHub Actions supports IANA timezone schedules such as `Europe/Stockholm`; runs can be delayed during high load. [Schedule documentation](https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax#onschedule)
 
 ## Build
@@ -52,10 +54,10 @@ Run `bun run build:pages`, inspect changes, then replace source in the existing 
 
 ## Prepared source upload
 
-`GITHUB_UPLOAD.txt` records the exact source-file inventory prepared during cleanup, including `.github/workflows/deploy-pages.yml` and `.gitignore`. Regenerate this inventory when adding or removing source files; it is not used by the build. From this directory, run:
+`docs/GITHUB_UPLOAD.txt` records the source-file inventory for upload, including `.github/workflows/deploy-pages.yml` and `.gitignore`. Regenerate it when adding or removing source files; the build does not use it. From repository root, run:
 
 ```sh
-git ls-files --cached --others --exclude-standard | LC_ALL=C sort > GITHUB_UPLOAD.txt
+python3 -c 'import subprocess; from pathlib import Path; files=subprocess.check_output(["git", "ls-files", "--cached", "--others", "--exclude-standard"], text=True).splitlines(); Path("docs/GITHUB_UPLOAD.txt").write_text("\n".join(sorted(path for path in files if Path(path).exists())) + "\n")'
 ```
 
 This follows `.gitignore`, includes the inventory itself, and excludes `.git` internals.
@@ -64,4 +66,15 @@ Commit this directory’s files at the root of the existing `PanoPepino/web_page
 
 The inventory excludes installed dependencies, output, caches, editor metadata, backups, OS metadata and credentials. Only `.output/public` belongs in the Pages artifact. Local preparation does not publish the site or alter sibling checkouts.
 
-See `CLEANUP.md` for exact removals and verification limits.
+
+## Weekly change receipt
+
+The existing deployment workflow saves deck, project-card and project-tree snapshots before refresh.
+Its Actions summary and downloadable `website-changes` Markdown artifact list
+only card quantity changes, changed deck names/primer paragraphs and changed
+project tile text, technologies or links, plus project-tree entries, hierarchy and URLs. Refresh timestamps, image metadata and
+whitespace-only edits are ignored. Failed builds/deployments are labelled in the
+summary; a computed diff alone does not prove publication. Scheduled/manual runs
+save deck and both generated project snapshots to avoid reporting the same refresh
+again. Enable GitHub Actions Email notifications for a status email linking to
+the receipt; no email service or additional token is required.

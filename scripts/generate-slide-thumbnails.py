@@ -1,6 +1,6 @@
 """Create slide tile previews with macOS Quick Look and sips.
 
-Run from new_webpage: python3 scripts/generate-slide-thumbnails.py
+Run from web_page: python3 scripts/generate-slide-thumbnails.py
 Presentation videos and generated previews both live inside this project.
 """
 

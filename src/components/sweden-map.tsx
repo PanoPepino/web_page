@@ -91,7 +91,7 @@ export function SwedenMap() {
           <circle cx={marker[0]} cy={marker[1]} r="2" className="fill-background" />
         </>}
       </svg>
-      <span className="absolute bottom-5 right-5 rounded-full border border-primary/20 bg-background/80 px-2.5 py-1 text-[10px] font-medium text-primary backdrop-blur-sm sm:right-6">
+      <span className="absolute bottom-5 right-5 rounded-full border border-primary/20 bg-background/80 px-2.5 py-1 text-sm font-medium text-primary backdrop-blur-sm sm:right-6">
         {currentLocation.label}
       </span>
     </div>

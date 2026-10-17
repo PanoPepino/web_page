@@ -1,0 +1,38 @@
+[
+  {
+    "id": "da-timeless",
+    "title": "Da Timeless",
+    "url": "https://www.datimeless.com/"
+  },
+  {
+    "id": "pokeml",
+    "title": "PokéML",
+    "url": "https://github.com/PanoPepino/pokeml"
+  },
+  {
+    "id": "daiana",
+    "title": "dAIana",
+    "url": "https://github.com/PanoPepino/dAIana"
+  },
+  {
+    "id": "manim-ecosystem",
+    "title": "Manim Ecosystem",
+    "children": [
+      {
+        "id": "beanim",
+        "title": "Beanim",
+        "url": "https://github.com/PanoPepino/beanim"
+      },
+      {
+        "id": "digital-presenter",
+        "title": "Digital Presenter",
+        "url": "https://github.com/PanoPepino/digital_presenter"
+      },
+      {
+        "id": "string-cosmo",
+        "title": "String Cosmo",
+        "url": "https://github.com/PanoPepino/string_cosmo_communication"
+      }
+    ]
+  }
+]

@@ -27,16 +27,12 @@ const timeline: Array<[string, string, string]> = [
   ["2016—2019", "MSc in Physics", "Uppsala University"],
   ["2010—2016", "BSc in Physics", "Universidad Complutense de Madrid"],
 ];
-function Outline(){const timelineRef = useTimelineFlow(); return <SiteShell><div className="mx-auto max-w-6xl px-4 py-5 md:px-8 md:py-8"><div className="grid grid-cols-12 gap-4">
+function Outline(){const timelineRef = useTimelineFlow(); return <SiteShell><div className="overview-page mx-auto max-w-6xl px-4 pb-5 pt-2 md:px-8 md:pb-8 md:pt-3"><div className="overview-grid grid grid-cols-12 gap-4">
   <PageIntro eyebrow="Professional outline" title="Physics trained. Industry focused."><p>Quantitative Researcher with 7+ years of experience, bringing rigorous mathematical modelling and clear technical judgement to complex industrial problems.</p></PageIntro>
-  <aside className="panel col-span-12 flex min-h-48 flex-col justify-between p-6 md:col-span-4"><p className="eyebrow">Transferable strengths</p><div className="space-y-3 text-sm text-muted-foreground"><p>Mathematical modelling</p><p>Complex problem solving</p><p>Parameter Estimation</p><p>Clear technical communication</p></div></aside>
-  {docs.map(({icon:Icon,label,note,href})=><a key={label} className="panel-link group col-span-12 flex min-h-40 flex-col justify-between p-5 sm:col-span-4" href={href} target="_blank" rel="noreferrer"><div className="flex items-center justify-between"><Icon className="size-4 text-primary" strokeWidth={1.5}/><ArrowUpRight className="size-4 transition-transform group-hover:-translate-y-1 group-hover:translate-x-1"/></div><div><h2 className="font-display text-lg font-semibold">{label}</h2><p className="mt-2 max-w-md text-xs leading-5 text-muted-foreground">{note}</p></div></a>)}
-  <section className="panel col-span-12 p-6 md:p-8">
-    <div className="flex items-center justify-between gap-4">
-      <p className="eyebrow">Trajectory</p>
-      <a href="https://inspirehep.net/authors/1804691?ui-citation-summary=true" target="_blank" rel="noreferrer" className="inline-flex items-center gap-1.5 text-xs font-bold text-primary">INSPIRE <ArrowUpRight className="size-3.5"/></a>
-    </div>
-    <ol ref={timelineRef} className="trajectory mt-8">
+  <aside className="strengths-tile tile-companion panel col-span-12 flex flex-col justify-between p-6 md:col-span-4"><p className="eyebrow">Transferable strengths</p><ul className="list-disc space-y-3 pl-5 text-sm text-muted-foreground"><li>Mathematical modelling</li><li>Complex problem solving</li><li>Parameter Estimation</li><li>Clear technical communication</li></ul></aside>
+  {docs.map(({icon:Icon,label,note,href})=><a key={label} className="tile-unit panel-link group col-span-12 flex flex-col justify-between gap-3 p-4 sm:col-span-4" href={href} target="_blank" rel="noreferrer"><div className="flex items-center justify-between"><Icon className="size-4 text-primary" strokeWidth={1.5}/><ArrowUpRight className="size-4 transition-transform group-hover:-translate-y-1 group-hover:translate-x-1"/></div><div><h2 className="font-display text-lg font-semibold">{label}</h2><p className="mt-2 max-w-md text-sm leading-5 text-muted-foreground">{note}</p></div></a>)}
+  <section aria-label="Career trajectory" className="tile-companion trajectory-tile panel col-span-12 flex flex-col p-4">
+    <ol ref={timelineRef} className="trajectory min-h-0 flex-1">
       {timeline.map(([year, role, place], index) => (
         <li key={year} className={`trajectory-entry trajectory-entry--${(timeline.length - 1 - index) % 2 === 0 ? "down" : "up"}`} style={{ "--timeline-order": timeline.length - index } as CSSProperties}>
           <span className="trajectory-dot" aria-hidden="true" />
@@ -44,7 +40,7 @@ function Outline(){const timelineRef = useTimelineFlow(); return <SiteShell><div
             <span className="section-index">{year}</span>
             <div className="trajectory-description">
               <h2 className="font-display text-base font-semibold md:text-sm">{role}</h2>
-              <p className="mt-1 text-xs text-muted-foreground">{place}</p>
+              <p className="mt-1 text-sm text-muted-foreground">{place}</p>
             </div>
           </div>
         </li>

@@ -14,6 +14,7 @@ import { Route as MagicRouteImport } from './routes/magic'
 import { Route as NotesRouteImport } from './routes/notes'
 import { Route as OutlineRouteImport } from './routes/outline'
 import { Route as OutreachRouteImport } from './routes/outreach'
+import { Route as ProjectsRouteImport } from './routes/projects'
 import { Route as SlidesRouteImport } from './routes/slides'
 import { Route as OutreachIndexRouteImport } from './routes/outreach.index'
 import { Route as OutreachHistoryRouteImport } from './routes/outreach.history'
@@ -44,6 +45,11 @@ const OutreachRoute = OutreachRouteImport.update({
   path: '/outreach',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ProjectsRoute = ProjectsRouteImport.update({
+  id: '/projects',
+  path: '/projects',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const SlidesRoute = SlidesRouteImport.update({
   id: '/slides',
   path: '/slides',
@@ -71,6 +77,7 @@ export interface FileRoutesByFullPath {
   '/notes': typeof NotesRoute
   '/outline': typeof OutlineRoute
   '/outreach': typeof OutreachRouteWithChildren
+  '/projects': typeof ProjectsRoute
   '/slides': typeof SlidesRoute
   '/outreach/history': typeof OutreachHistoryRoute
   '/outreach/postcards': typeof OutreachPostcardsRoute
@@ -81,6 +88,7 @@ export interface FileRoutesByTo {
   '/magic': typeof MagicRoute
   '/notes': typeof NotesRoute
   '/outline': typeof OutlineRoute
+  '/projects': typeof ProjectsRoute
   '/slides': typeof SlidesRoute
   '/outreach/history': typeof OutreachHistoryRoute
   '/outreach/postcards': typeof OutreachPostcardsRoute
@@ -93,6 +101,7 @@ export interface FileRoutesById {
   '/notes': typeof NotesRoute
   '/outline': typeof OutlineRoute
   '/outreach': typeof OutreachRouteWithChildren
+  '/projects': typeof ProjectsRoute
   '/slides': typeof SlidesRoute
   '/outreach/history': typeof OutreachHistoryRoute
   '/outreach/postcards': typeof OutreachPostcardsRoute
@@ -106,6 +115,7 @@ export interface FileRouteTypes {
     | '/notes'
     | '/outline'
     | '/outreach'
+    | '/projects'
     | '/slides'
     | '/outreach/history'
     | '/outreach/postcards'
@@ -116,6 +126,7 @@ export interface FileRouteTypes {
     | '/magic'
     | '/notes'
     | '/outline'
+    | '/projects'
     | '/slides'
     | '/outreach/history'
     | '/outreach/postcards'
@@ -127,6 +138,7 @@ export interface FileRouteTypes {
     | '/notes'
     | '/outline'
     | '/outreach'
+    | '/projects'
     | '/slides'
     | '/outreach/history'
     | '/outreach/postcards'
@@ -139,6 +151,7 @@ export interface RootRouteChildren {
   NotesRoute: typeof NotesRoute
   OutlineRoute: typeof OutlineRoute
   OutreachRoute: typeof OutreachRouteWithChildren
+  ProjectsRoute: typeof ProjectsRoute
   SlidesRoute: typeof SlidesRoute
 }
 
@@ -177,6 +190,13 @@ declare module '@tanstack/react-router' {
       path: '/outreach'
       fullPath: '/outreach'
       preLoaderRoute: typeof OutreachRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/projects': {
+      id: '/projects'
+      path: '/projects'
+      fullPath: '/projects'
+      preLoaderRoute: typeof ProjectsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/slides': {
@@ -232,6 +252,7 @@ const rootRouteChildren: RootRouteChildren = {
   NotesRoute: NotesRoute,
   OutlineRoute: OutlineRoute,
   OutreachRoute: OutreachRouteWithChildren,
+  ProjectsRoute: ProjectsRoute,
   SlidesRoute: SlidesRoute,
 }
 export const routeTree = rootRouteImport

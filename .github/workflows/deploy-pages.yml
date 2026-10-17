@@ -28,6 +28,24 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+      - name: Save content before refresh
+        run: |
+          mkdir -p "$RUNNER_TEMP/content-before"
+          cp src/data/moxfield-seeds.json src/data/projects.json src/data/project-tree.json "$RUNNER_TEMP/content-before/"
+      - name: Check out project copy sources
+        uses: actions/checkout@v4
+        with:
+          repository: PanoPepino/PanoPepino
+          ref: main
+          path: project-sources
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Refresh project descriptions
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/refresh-projects.py --remote --profile-root project-sources
       - name: Set up Bun
         uses: oven-sh/setup-bun@v2
         with:
@@ -43,22 +61,42 @@ jobs:
         run: bun run build
         env:
           GITHUB_PAGES: "true"
-      - name: Save verified deck snapshots
+      - name: Save verified content snapshots
         if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         env:
           TARGET_BRANCH: ${{ github.event.repository.default_branch }}
         run: |
-          git add src/data/moxfield-seeds.json
+          git add src/data/moxfield-seeds.json src/data/projects.json src/data/project-tree.json
           if ! git diff --cached --quiet; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git commit -m "Refresh all catalog deck snapshots"
+            git commit -m "Refresh deck and project content snapshots"
             git push origin "HEAD:$TARGET_BRANCH"
           fi
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: .output/public
+      - name: Change receipt
+        if: always()
+        env:
+          RESULT: ${{ job.status }}
+        run: |
+          if [ -d "$RUNNER_TEMP/content-before" ]; then
+            python3 scripts/refresh-projects.py --receipt-before "$RUNNER_TEMP/content-before" --receipt-output "$RUNNER_TEMP/website-changes.md"
+          fi
+          if [ "$RESULT" != success ]; then
+            echo '**Website build failed. Changes are not published.**' >> "$RUNNER_TEMP/website-changes.md"
+          fi
+          if [ -f "$RUNNER_TEMP/website-changes.md" ]; then
+            cat "$RUNNER_TEMP/website-changes.md" >> "$GITHUB_STEP_SUMMARY"
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: website-changes
+          path: ${{ runner.temp }}/website-changes.md
+          if-no-files-found: ignore
 
   deploy:
     environment:
@@ -67,6 +105,22 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
+      - uses: actions/download-artifact@v4
+        continue-on-error: true
+        with:
+          name: website-changes
+          path: ${{ runner.temp }}/receipt
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Published change receipt
+        if: always()
+        env:
+          RESULT: ${{ steps.deployment.outcome }}
+        run: |
+          if [ "$RESULT" != success ]; then
+            echo '**Website deployment failed. Changes below are not published.**' >> "$GITHUB_STEP_SUMMARY"
+          fi
+          if [ -f "$RUNNER_TEMP/receipt/website-changes.md" ]; then
+            cat "$RUNNER_TEMP/receipt/website-changes.md" >> "$GITHUB_STEP_SUMMARY"
+          fi

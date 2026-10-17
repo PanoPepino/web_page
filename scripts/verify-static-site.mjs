@@ -7,7 +7,7 @@ const output = join(project, ".output/public");
 const source = join(project, "public");
 const base = process.env.GITHUB_PAGES === "true" ? "/web_page/" : "/";
 const origin = "https://panopepino.github.io";
-const routes = ["", "outline", "slides", "notes", "magic", "outreach", "outreach/history", "outreach/postcards"];
+const routes = ["", "outline", "slides", "projects", "notes", "magic", "outreach", "outreach/history", "outreach/postcards"];
 const failures = new Set();
 
 async function files(directory) {

@@ -21,7 +21,7 @@ export function DeckCardPreview({ card, label, showQuantity = true, className = 
     <PopoverContent side="left" align="center" collisionPadding={12} className="z-[80] w-[min(15rem,calc(100vw-2rem))] p-2" onMouseEnter={clear} onMouseLeave={() => schedule(false)} onOpenAutoFocus={event => event.preventDefault()} onCloseAutoFocus={event => event.preventDefault()}>
       {image && !failed ? <img src={image.url} alt={image.name} onError={() => setFailed(true)} className="mx-auto max-h-[65dvh] w-auto max-w-full rounded-lg object-contain" /> : <p className="p-3 text-sm">Card preview unavailable.</p>}
       {(card.images?.length ?? 0) > 1 && <button type="button" className="mt-2 w-full text-sm text-primary" onClick={() => setFace(current => (current + 1) % (card.images?.length ?? 1))}>Show other face</button>}
-      {card.cardUrl && <a href={card.cardUrl} target="_blank" rel="noreferrer" className="mt-2 block text-center text-xs text-primary hover:underline">View on Scryfall</a>}
+      {card.cardUrl && <a href={card.cardUrl} target="_blank" rel="noreferrer" className="mt-2 block text-center text-sm text-primary hover:underline">View on Scryfall</a>}
     </PopoverContent>
   </Popover>;
 }

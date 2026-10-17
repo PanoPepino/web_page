@@ -1,68 +1,63 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, BookOpen, Play, Telescope } from "lucide-react";
-import { useEffect, useState, type CSSProperties } from "react";
-import { PageIntro } from "@/components/site-shell";
+import { useEffect, useRef, useState } from "react";
 import { postcardImages } from "@/components/outreach-content";
+import { QuestionBubble } from "@/components/question-bubble";
+import { makeOutreachBubble, type OutreachBubble } from "@/lib/outreach-bubbles";
 import { publicUrl, siteUrl } from "@/lib/site-url";
 
 const videoArtwork = publicUrl("assets/outreach/cosmo.jpg");
 const playlist = "https://www.youtube.com/watch?v=MEuX53M5mBU&list=PL7qJnArvRQzHci5IAHRqCuS2eF4_baHTR";
 
-type BubbleLane = "left" | "right";
-type QuestionBubble = { id: number; left: string; top: string; dx: string; dy: string; animated: boolean };
-
-function makeBubble(id: number, lane: BubbleLane, animated: boolean): QuestionBubble {
-  // Keep spawn points in separated lanes; travel always moves outward from each lane.
-  const left = lane === "left" ? 18 + Math.random() * 14 : 68 + Math.random() * 14;
-  const top = 18 + Math.random() * 64;
-  if (!animated) return { id, left: `${left}%`, top: `${top}%`, dx: "0px", dy: "0px", animated };
-  const angle = lane === "left" ? Math.PI / 2 + Math.random() * Math.PI : -Math.PI / 2 + Math.random() * Math.PI;
-  const distance = 28 + Math.random() * 16;
-  return {
-    id,
-    left: `${left}%`,
-    top: `${top}%`,
-    dx: `${Math.cos(angle) * distance}px`,
-    dy: `${Math.sin(angle) * distance}px`,
-    animated,
-  };
-}
-
 function QuestionBubbles() {
-  const [bubbles, setBubbles] = useState<QuestionBubble[]>([]);
+  const field = useRef<HTMLDivElement>(null);
+  const [bubbles, setBubbles] = useState<OutreachBubble[]>([]);
 
   useEffect(() => {
-    let nextId = 0;
-    let nextLane: BubbleLane = "left";
-    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const spawn = (animated: boolean) => {
-      const bubble = makeBubble(nextId++, nextLane, animated);
-      nextLane = nextLane === "left" ? "right" : "left";
-      setBubbles(current => [...current.slice(-1), bubble]);
+    const element = field.current;
+    if (!element) return;
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    let nextId = 0, width = 0, height = 0, diameter = 0;
+    let active: OutreachBubble[] = [];
+    let timer: number | undefined;
+    const spawn = () => {
+      const now = performance.now();
+      active = active.filter(bubble => !bubble.animated || now - bubble.born < 6000);
+      if (active.length < 3) {
+        const bubble = makeOutreachBubble(nextId++, width, height, diameter, active, !reducedMotion.matches, now);
+        if (bubble) active.push(bubble);
+      }
+      setBubbles([...active]);
     };
-
-    if (reducedMotion) {
-      setBubbles([makeBubble(nextId++, "left", false), makeBubble(nextId++, "right", false)]);
-      return;
-    }
-
-    spawn(true);
-    const timer = window.setInterval(() => spawn(true), 3000);
-    return () => window.clearInterval(timer);
+    const resize = (force = false) => {
+      const nextWidth = element.clientWidth, nextHeight = element.clientHeight;
+      const rem = parseFloat(getComputedStyle(document.documentElement).fontSize);
+      const nextDiameter = Math.max(2.5 * rem, Math.min(window.innerWidth * .05, 3.5 * rem));
+      if (!force && nextWidth === width && nextHeight === height && nextDiameter === diameter) return;
+      window.clearInterval(timer);
+      width = nextWidth; height = nextHeight; diameter = nextDiameter;
+      element.style.setProperty("--outreach-bubble-size", `${diameter}px`);
+      active = [];
+      spawn();
+      if (reducedMotion.matches) { spawn(); spawn(); }
+      else timer = window.setInterval(spawn, 2000);
+    };
+    const onResize = () => resize();
+    const onMotionChange = () => resize(true);
+    const observer = new ResizeObserver(onResize);
+    observer.observe(element);
+    window.addEventListener("resize", onResize);
+    reducedMotion.addEventListener("change", onMotionChange);
+    resize(true);
+    return () => {
+      window.clearInterval(timer);
+      observer.disconnect();
+      window.removeEventListener("resize", onResize);
+      reducedMotion.removeEventListener("change", onMotionChange);
+    };
   }, []);
 
-  return <>{bubbles.map(bubble => <span
-    key={bubble.id}
-    aria-hidden="true"
-    className={`question-bubble${bubble.animated ? " question-bubble--animated" : ""}`}
-    style={{
-      "--bubble-left": bubble.left,
-      "--bubble-top": bubble.top,
-      "--bubble-dx": bubble.dx,
-      "--bubble-dy": bubble.dy,
-    } as CSSProperties}
-    onAnimationEnd={() => setBubbles(current => current.filter(item => item.id !== bubble.id))}
-  />)}</>;
+  return <div ref={field} className="outreach-bubble-field pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">{bubbles.map(bubble => <QuestionBubble key={bubble.id} bubble={bubble} />)}</div>;
 }
 
 export const Route = createFileRoute("/outreach/")({
@@ -83,29 +78,65 @@ export const Route = createFileRoute("/outreach/")({
   component: OutreachHome,
 });
 
+function OutreachCardContents({ title, description, images, icon: Icon, rotate = false }: {
+  title: string; description: string; images: string[]; icon: typeof BookOpen; rotate?: boolean;
+}) {
+  const [imageOffset, setImageOffset] = useState(0);
+  useEffect(() => {
+    if (!rotate || images.length <= 1) return;
+    const motion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    let timer: number | undefined;
+    const update = () => {
+      window.clearInterval(timer);
+      if (!motion.matches && !document.hidden) {
+        timer = window.setInterval(() => setImageOffset(offset => (offset + 1) % images.length), 4000);
+      }
+    };
+    update();
+    motion.addEventListener("change", update);
+    document.addEventListener("visibilitychange", update);
+    return () => {
+      window.clearInterval(timer);
+      motion.removeEventListener("change", update);
+      document.removeEventListener("visibilitychange", update);
+    };
+  }, [rotate, images.length]);
+  const preview = (image: string) => <span key={image} className="relative min-w-0 overflow-hidden"><img src={image} alt="" className={`size-full object-cover ${image === postcardImages[5] ? "object-[50%_80%]" : "object-center"} opacity-70 transition-opacity duration-300 group-hover:opacity-90 group-focus-visible:opacity-90`} loading="lazy" decoding="async" /></span>;
+  return <>
+    <span className="outreach-card-art relative grid aspect-video w-full shrink-0 overflow-hidden bg-muted" style={{ gridTemplateColumns: `repeat(${rotate ? 1 : images.length}, minmax(0, 1fr))` }}>
+      {rotate ? images.map((image, index) => <span key={image} aria-hidden="true" className="absolute inset-0 grid transition-opacity duration-700 motion-reduce:transition-none" style={{ opacity: imageOffset === index ? 1 : 0 }}>{preview(image)}</span>) : images.map(preview)}
+    </span>
+    <span className="outreach-card-copy flex min-w-0 flex-1 flex-col justify-center gap-3 p-5 md:p-6">
+      <span className="flex items-start justify-between gap-3"><span className="font-display text-xl font-semibold leading-tight">{title}</span><Icon className="size-4 shrink-0 text-primary" aria-hidden="true" /></span>
+      <span className="text-sm leading-6 text-muted-foreground">{description}</span>
+      <span className="card-corner-arrow text-primary" aria-hidden="true"><ArrowRight className="size-4 transition-transform group-hover:translate-x-1" /></span>
+    </span>
+  </>;
+}
+
 function OutreachHome() {
-  return <div className="mx-auto max-w-6xl px-4 pb-8 pt-16 md:px-8 md:pb-10 md:pt-20"><div className="grid grid-cols-12 gap-4">
-    <PageIntro eyebrow="Science outreach" title="Strings, Cosmology and Dark Bubbles">
-      <p>From the history of cosmology to the open questions of quantum gravity.</p>
-    </PageIntro>
-    <aside className="panel relative isolate col-span-12 flex min-h-48 flex-col justify-end overflow-hidden p-6 md:col-span-4"><QuestionBubbles /><p className="eyebrow relative z-10">The question</p><p className="relative z-10 mt-4 max-w-xs font-display text-xl font-semibold">Can string theory explain the universe expansion?</p></aside>
-
-    <Link to="/outreach/history" className="panel-link group relative col-span-12 grid aspect-[4/3] grid-rows-[minmax(0,1fr)_5rem] overflow-hidden sm:col-span-6 lg:col-span-4">
-      <span className="relative min-h-0 overflow-hidden border-b border-border bg-muted"><img src={publicUrl("assets/outreach/history.jpg")} alt="" className="size-full object-cover object-center opacity-70 transition-opacity duration-300 group-hover:opacity-90" loading="lazy" decoding="async" /><span className="absolute right-3 top-3 grid size-8 place-items-center rounded-full border border-border bg-background/80 transition-colors group-hover:border-primary group-hover:text-primary"><BookOpen className="size-3.5" /></span></span>
-      <span className="grid min-w-0 grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5"><span className="min-w-0 font-display text-lg font-semibold leading-tight">History Of Cosmology</span><ArrowRight className="size-4 shrink-0 text-primary" /></span>
-    </Link>
-
-    <Link to="/outreach/postcards" className="panel-link group relative col-span-12 grid aspect-[4/3] grid-rows-[minmax(0,1fr)_5rem] overflow-hidden sm:col-span-6 lg:col-span-4">
-      <span className="relative grid min-h-0 grid-cols-2 overflow-hidden border-b border-border bg-muted">
-        {postcardImages.slice(0, 2).map(image => <span key={image} className="relative min-w-0 overflow-hidden border-r border-border last:border-r-0"><img src={image} alt="" className="size-full object-cover object-center opacity-70 transition-opacity duration-300 group-hover:opacity-90" loading="lazy" decoding="async" /></span>)}
-        <span className="absolute right-3 top-3 grid size-8 place-items-center rounded-full border border-border bg-background/80 transition-colors group-hover:border-primary group-hover:text-primary"><Telescope className="size-3.5" /></span>
-      </span>
-      <span className="grid min-w-0 grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5"><span className="min-w-0 font-display text-lg font-semibold leading-tight">Six postcards, one story</span><ArrowRight className="size-4 shrink-0 text-primary" /></span>
-    </Link>
-
-    <a href={playlist} target="_blank" rel="noreferrer" className="panel-link group relative col-span-12 grid aspect-[4/3] grid-rows-[minmax(0,1fr)_5rem] overflow-hidden sm:col-span-6 lg:col-span-4">
-      <span className="relative min-h-0 overflow-hidden border-b border-border bg-muted"><img src={videoArtwork} alt="Cosmology outreach videos" className="size-full object-cover object-center opacity-70 transition-opacity duration-300 group-hover:opacity-90" loading="lazy" decoding="async" /><span className="absolute right-3 top-3 grid size-8 place-items-center rounded-full border border-border bg-background/80 transition-colors group-hover:border-primary group-hover:text-primary"><Play className="size-3.5" /></span></span>
-      <span className="grid min-w-0 grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5"><span className="min-w-0 font-display text-lg font-semibold leading-tight">Cosmology videos</span><ArrowRight className="size-4 shrink-0 text-primary" /></span>
-    </a>
+  return <div className="overview-page mx-auto max-w-6xl px-4 pb-5 pt-2 md:px-8 md:pb-8 md:pt-3"><div className="overview-grid grid grid-cols-12 gap-4">
+    <section className="animation-tile panel relative isolate col-span-12 flex flex-col justify-between overflow-hidden p-6 sm:p-8 md:col-span-8" aria-labelledby="outreach-heading">
+      <QuestionBubbles />
+      <p className="eyebrow relative z-10">Science outreach</p>
+      <h1 id="outreach-heading" className="relative z-10 max-w-2xl font-display text-2xl font-semibold leading-tight sm:text-3xl md:text-4xl">Can string theory explain the expansion of the universe?</h1>
+    </section>
+    <aside className="outreach-introduction tile-companion panel col-span-12 flex items-center p-6 md:col-span-4" aria-label="About this material">
+      <div className="space-y-4 text-sm leading-6 text-muted-foreground">
+        <p>This page brings together science communication material I prepared for my <a className="font-semibold text-primary underline-offset-4 hover:underline" href="http://www.diva-portal.org/smash/record.jsf?pid=diva2%3A1847954" target="_blank" rel="noreferrer">thesis</a>.</p>
+        <p>It covers how cosmology emerged as a discipline and offers simple explanations of how string theory could explain the universe we observe.</p>
+      </div>
+    </aside>
+    <section aria-label="Explore outreach" className="outreach-list resource-card-list col-span-12 grid grid-cols-12 gap-4">
+      <Link to="/outreach/history" className="outreach-card panel-link group relative col-span-12 flex min-w-0 flex-col overflow-hidden sm:col-span-4">
+        <OutreachCardContents title="History Of Cosmology" description="Explore the history of cosmology." images={[publicUrl("assets/outreach/history.jpg")]} icon={BookOpen} />
+      </Link>
+      <Link to="/outreach/postcards" className="outreach-card panel-link group relative col-span-12 flex min-w-0 flex-col overflow-hidden sm:col-span-4">
+        <OutreachCardContents title="Six postcards, one story" description="Read six illustrated postcards about cosmology and dark bubbles." images={postcardImages} icon={Telescope} rotate />
+      </Link>
+      <a href={playlist} target="_blank" rel="noreferrer" className="outreach-card panel-link group relative col-span-12 flex min-w-0 flex-col overflow-hidden sm:col-span-4">
+        <OutreachCardContents title="Cosmology videos" description="Watch cosmology videos." images={[videoArtwork]} icon={Play} />
+      </a>
+    </section>
   </div></div>;
 }
