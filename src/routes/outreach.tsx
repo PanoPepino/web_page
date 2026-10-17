@@ -6,7 +6,9 @@ export const Route = createFileRoute("/outreach")({
 });
 
 function OutreachLayout() {
-  return <SiteShell>
-    <Outlet />
-  </SiteShell>;
+  return (
+    <SiteShell>
+      <Outlet />
+    </SiteShell>
+  );
 }

@@ -9,7 +9,9 @@ export function useTimelineFlow() {
     if (!timeline) return;
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
     const horizontalLayout = window.matchMedia("(min-width: 48rem)");
-    const dots = Array.from(timeline.querySelectorAll<HTMLElement>(".trajectory-dot"));
+    const dots = Array.from(
+      timeline.querySelectorAll<HTMLElement>(".trajectory-dot"),
+    );
     let frame = 0;
     let started = performance.now();
     let horizontal = false;
@@ -19,12 +21,14 @@ export function useTimelineFlow() {
 
     const measure = () => {
       const bounds = timeline.getBoundingClientRect();
-      const rem = parseFloat(getComputedStyle(document.documentElement).fontSize);
+      const rem = parseFloat(
+        getComputedStyle(document.documentElement).fontSize,
+      );
       horizontal = horizontalLayout.matches;
       size = rem * 4;
-      const origin = horizontal ? bounds.width * .1 : rem * .5;
-      length = horizontal ? bounds.width * .8 : bounds.height - origin;
-      positions = dots.map(dot => {
+      const origin = horizontal ? bounds.width * 0.1 : rem * 0.5;
+      length = horizontal ? bounds.width * 0.8 : bounds.height - origin;
+      positions = dots.map((dot) => {
         const rect = dot.getBoundingClientRect();
         return horizontal
           ? rect.left + rect.width / 2 - bounds.left - origin
@@ -39,27 +43,38 @@ export function useTimelineFlow() {
         ? -size + (length + size) * progress
         : length - (length + size) * progress;
       timeline.style.setProperty("--trajectory-glow-size", `${size}px`);
-      timeline.style.setProperty("--trajectory-glow-opacity", elapsed < 8000 ? ".95" : "0");
-      timeline.style.setProperty("--trajectory-position", horizontal ? `${position}px center` : `center ${position}px`);
+      timeline.style.setProperty(
+        "--trajectory-glow-opacity",
+        elapsed < 8000 ? ".95" : "0",
+      );
+      timeline.style.setProperty(
+        "--trajectory-position",
+        horizontal ? `${position}px center` : `center ${position}px`,
+      );
       dots.forEach((dot, index) => {
         const coordinate = positions[index];
         // Match the soft gradient stops: peak glow exactly at the pulse centre.
-        const distance = coordinate !== undefined && elapsed < 8000
-          ? Math.abs(coordinate - position - size / 2) / (size / 2)
-          : 1;
-        const stops = [1, .75, .4, .15, .03, 0];
+        const distance =
+          coordinate !== undefined && elapsed < 8000
+            ? Math.abs(coordinate - position - size / 2) / (size / 2)
+            : 1;
+        const stops = [1, 0.75, 0.4, 0.15, 0.03, 0];
         const segment = Math.min(4, Math.floor(Math.min(distance, 1) * 5));
         const fraction = Math.min(distance, 1) * 5 - segment;
-        const intensity = (stops[segment] ?? 0) * (1 - fraction) + (stops[segment + 1] ?? 0) * fraction;
-        if (intensity > 0) dot.style.setProperty("--dot-glow", intensity.toFixed(3));
-        else if (dot.style.getPropertyValue("--dot-glow")) dot.style.removeProperty("--dot-glow");
+        const intensity =
+          (stops[segment] ?? 0) * (1 - fraction) +
+          (stops[segment + 1] ?? 0) * fraction;
+        if (intensity > 0)
+          dot.style.setProperty("--dot-glow", intensity.toFixed(3));
+        else if (dot.style.getPropertyValue("--dot-glow"))
+          dot.style.removeProperty("--dot-glow");
       });
       frame = requestAnimationFrame(animate);
     };
 
     const restart = () => {
       cancelAnimationFrame(frame);
-      dots.forEach(dot => dot.style.removeProperty("--dot-glow"));
+      dots.forEach((dot) => dot.style.removeProperty("--dot-glow"));
       timeline.style.removeProperty("--trajectory-position");
       timeline.style.removeProperty("--trajectory-glow-opacity");
       timeline.style.removeProperty("--trajectory-glow-size");
@@ -82,7 +97,7 @@ export function useTimelineFlow() {
       window.removeEventListener("resize", measure);
       horizontalLayout.removeEventListener("change", measure);
       reducedMotion.removeEventListener("change", restart);
-      dots.forEach(dot => dot.style.removeProperty("--dot-glow"));
+      dots.forEach((dot) => dot.style.removeProperty("--dot-glow"));
       timeline.style.removeProperty("--trajectory-position");
       timeline.style.removeProperty("--trajectory-glow-opacity");
       timeline.style.removeProperty("--trajectory-glow-size");

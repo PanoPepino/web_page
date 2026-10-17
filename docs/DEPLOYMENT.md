@@ -5,13 +5,13 @@
 Repository: `PanoPepino/web_page`
 Site: `https://panopepino.github.io/web_page/`
 
-Use this directory as the repository root when replacing the old website. Preserve the existing repository's `.git` history. Place these files directly at the repository root.
+The workflow builds and deploys this repository's source to GitHub Pages. It preserves the existing repository history and publishes only `.output/public`.
 
 One-time GitHub setup: choose **Settings → Pages → Build and deployment → Source → GitHub Actions**. In **Settings → Actions → General → Workflow permissions**, allow the workflow to write repository contents. The repository’s default branch is `main`; allow the workflow bot to push to it if branch rules restrict pushes.
 
 After setup, each push to `main` installs the locked Bun 1.4.2 dependencies, builds and checks the site, then deploys `.output/public` through GitHub Pages Actions. Schedule runs each Friday at 05:00 Europe/Stockholm and refresh every deck. They commit refreshed snapshots and deploy them within that run. Manual dispatch on the default branch runs the same refresh and deployment. Runs dispatched from other branches are skipped, avoiding feature-branch deployment or writes to `main`.
 
-Every deployment also refreshes `/projects` descriptions and its complete navigation tree from the approved project registry in `PanoPepino/PanoPepino` and each public project repository. `projects.json` contains the selected project cards; `project-tree.json` contains every registered project and its ecosystem nesting. Until that registry is published, the checked-in profile source copy supplies the two profile-owned entries; public repository entries still refresh. Source validation failure stops deployment before either snapshot is replaced. Optional project GIFs belong in `public/assets/projects/{project-id}.gif`.
+Every deployment also refreshes `/projects` descriptions and its complete navigation tree from the approved project registry in `PanoPepino/PanoPepino` and each public project repository. `projects.json` contains the selected project cards; `project-tree.json` contains every registered project and its ecosystem nesting. Source validation failure stops deployment before either snapshot is replaced.
 
 GitHub Actions supports IANA timezone schedules such as `Europe/Stockholm`; runs can be delayed during high load. [Schedule documentation](https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax#onschedule)
 
@@ -47,25 +47,6 @@ Refresh uses Moxfield v3 for commanders, mainboard and card types, then `/v1/dec
 A failed deck fetch preserves its previous snapshot and timestamp. Other catalog decks still refresh. If every deck fetch fails, the run fails before deployment. Actions logs and job summary report successful and failed counts. A newly added deck with no successful fetch displays its Moxfield link until its first snapshot is saved.
 
 Local refresh remains available: `bun run refresh:decks`, inspect changes, then commit. Push-triggered deployments use committed snapshots. The weekly schedule becomes active when workflow reaches the repository default branch; GitHub may delay execution. The build job needs repository write permission to persist snapshots; branch rules must permit its bot commit. Commits made by the workflow token do not trigger another push deployment; this run already deploys refreshed output.
-
-## Before publishing
-
-Run `bun run build:pages`, inspect changes, then replace source in the existing repository while preserving its history. Push to `main` only when ready to deploy. This preparation does not publish or alter the old repository.
-
-## Prepared source upload
-
-`docs/GITHUB_UPLOAD.txt` records the source-file inventory for upload, including `.github/workflows/deploy-pages.yml` and `.gitignore`. Regenerate it when adding or removing source files; the build does not use it. From repository root, run:
-
-```sh
-python3 -c 'import subprocess; from pathlib import Path; files=subprocess.check_output(["git", "ls-files", "--cached", "--others", "--exclude-standard"], text=True).splitlines(); Path("docs/GITHUB_UPLOAD.txt").write_text("\n".join(sorted(path for path in files if Path(path).exists())) + "\n")'
-```
-
-This follows `.gitignore`, includes the inventory itself, and excludes `.git` internals.
-
-Commit this directory’s files at the root of the existing `PanoPepino/web_page` repository while preserving its `.git/` directory and history. Review and remove obsolete tracked website files during replacement. Do not upload this directory as a nested folder.
-
-The inventory excludes installed dependencies, output, caches, editor metadata, backups, OS metadata and credentials. Only `.output/public` belongs in the Pages artifact. Local preparation does not publish the site or alter sibling checkouts.
-
 
 ## Weekly change receipt
 

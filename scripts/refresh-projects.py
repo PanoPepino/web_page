@@ -17,7 +17,7 @@ from urllib.request import Request, urlopen
 ROOT = Path(__file__).resolve().parents[1]
 BLOCKS = ("SHARED", "WEBPAGE", "PANOPEPINO")
 OWNER = "PanoPepino"
-WEBSITE_PROJECT_IDS = {"da-timeless", "pokeml", "beanim"}
+WEBSITE_PROJECT_IDS = {"da-timeless", "pokeml", "manim-ecosystem"}
 
 
 def parse_source(text):
@@ -114,8 +114,6 @@ def build_entry(entry, reader, seen):
         raise ValueError(f"Invalid or duplicate project ID: {identifier}")
     seen.add(identifier)
     source = parse_source(reader.read(entry))
-    if identifier == "beanim":
-        source["title"] = "Beanim"
     project = {"id": identifier, **source}
     if "url" in entry:
         url = entry["url"]
@@ -127,8 +125,6 @@ def build_entry(entry, reader, seen):
         raise ValueError(f"Components must be a list: {identifier}")
     if components:
         project["components"] = [build_entry(item, reader, seen) for item in components]
-    preview = Path("assets") / "projects" / f"{identifier}.gif"
-    project["preview"] = preview.as_posix() if (ROOT / "public" / preview).is_file() else None
     return project
 
 
@@ -167,38 +163,25 @@ def content_receipt(before_decks, after_decks, before_projects, after_projects,
         return " ".join(str(value or "").split())
 
     def field_changes(label, old, new):
-        """Append old/new text only when the displayed field changes."""
+        """Return old/new lines only when displayed text changes."""
         old, new = text(old), text(new)
         if old != new:
-            changes.extend([f"- {label}: {old or '(empty)'}", f"+ {label}: {new or '(empty)'}"])
+            return [f"- {label}: {old or '(empty)'}", f"+ {label}: {new or '(empty)'}"]
+        return []
 
     def text_changes(label, old, new):
-        """Include only edited paragraphs from longer descriptions or primers."""
+        """Return only edited paragraphs from longer descriptions or primers."""
         old_lines = [text(part) for part in re.split(r"\n\s*\n", old or "") if part.strip()]
         new_lines = [text(part) for part in re.split(r"\n\s*\n", new or "") if part.strip()]
         diff = [line for line in difflib.ndiff(old_lines, new_lines) if line.startswith(("- ", "+ "))]
         if diff:
-            changes.append(label + ":")
-            changes.extend(diff)
+            return [label + ":", *diff]
+        return []
 
     def cards(deck):
-        """Count cards by section and name, including older decklist-only snapshots."""
+        """Count cards by section and name."""
         result = {}
-        sections = deck.get("sections")
-        if sections is None:
-            sections = []
-            current = None
-            for line in deck.get("decklist", "").splitlines():
-                if line.strip() in ("Commander", "Deck"):
-                    current = {"name": line.strip(), "cards": []}
-                    sections.append(current)
-                elif current is not None:
-                    match = re.fullmatch(r"(\d+)\s+(.+)", line.strip())
-                    if match:
-                        current["cards"].append({"name": match[2], "quantity": int(match[1])})
-                    elif line.strip():
-                        current = None
-        for section in sections:
+        for section in deck.get("sections", []):
             for card in section["cards"]:
                 key = (section["name"], text(card["name"]))
                 result[key] = result.get(key, 0) + card["quantity"]
@@ -212,9 +195,9 @@ def content_receipt(before_decks, after_decks, before_projects, after_projects,
             previous, current = old_cards.get((section, name), 0), new_cards.get((section, name), 0)
             if previous != current:
                 changes.append(f"{'+' if current > previous else '-'} {section}: {name} — {previous} → {current}")
-        field_changes("Name", old.get("name"), new.get("name"))
+        changes.extend(field_changes("Name", old.get("name"), new.get("name")))
         for field, label in (("primerEnglish", "Primer (English)"), ("primerSpanish", "Primer (Spanish)")):
-            text_changes(label, old.get(field), new.get(field))
+            changes.extend(text_changes(label, old.get(field), new.get(field)))
         if changes:
             output.append(f"## Magic — {text(new.get('name') or old.get('name') or identifier)}\n\n```diff\n" + "\n".join(changes) + "\n```")
 
@@ -231,8 +214,8 @@ def content_receipt(before_decks, after_decks, before_projects, after_projects,
         old, new = old_projects.get(identifier, {}), new_projects.get(identifier, {})
         changes = []
         for field in ("title", "url"):
-            field_changes(field.capitalize(), old.get(field), new.get(field))
-        text_changes("Description", old.get("description"), new.get("description"))
+            changes.extend(field_changes(field.capitalize(), old.get(field), new.get(field)))
+        changes.extend(text_changes("Description", old.get("description"), new.get("description")))
         old_tags, new_tags = set(old.get("technologies", [])), set(new.get("technologies", []))
         changes.extend(f"- Technology: {tag}" for tag in sorted(old_tags - new_tags))
         changes.extend(f"+ Technology: {tag}" for tag in sorted(new_tags - old_tags))
@@ -267,7 +250,7 @@ def main():
             parser.error("--receipt-before requires --receipt-output")
         before, after = args.receipt_before, ROOT / "src/data"
         read = lambda folder, name: json.loads((folder / name).read_text(encoding="utf-8"))
-        read_tree = lambda folder: read(folder, "project-tree.json") if (folder / "project-tree.json").is_file() else []
+        read_tree = lambda folder: read(folder, "project-tree.json")
         receipt = content_receipt(read(before, "moxfield-seeds.json"), read(after, "moxfield-seeds.json"),
                                   read(before, "projects.json"), read(after, "projects.json"),
                                   read_tree(before), read_tree(after))
@@ -278,11 +261,6 @@ def main():
     portfolio_root = args.portfolio_root or ROOT.parent / "portfolio"
     profile_root = profile_root.resolve()
     registry_path = profile_root / "content" / "projects.json"
-    if args.remote and not registry_path.is_file():
-        # Until the profile content repo is published, use the checked-in
-        # source snapshot; public project repositories still refresh remotely.
-        profile_root = (ROOT / "src" / "data" / "project-sources" / "profile").resolve()
-        registry_path = profile_root / "content" / "projects.json"
     registry = json.loads(registry_path.read_text(encoding="utf-8"))
     if registry.get("version") != 1 or not isinstance(registry.get("projects"), list):
         raise ValueError("Expected version 1 project registry")

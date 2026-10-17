@@ -1,13 +1,12 @@
 {
-  "beanim": {
+  "manim-ecosystem": {
     "kind": "animation",
-    "image": "assets/projects/beanim.gif",
-    "poster": "assets/projects/beanim-poster.png",
-    "alt": "Digital Presenter documentation demonstration"
+    "image": "assets/projects/manim-ecosystem.gif",
+    "poster": "assets/projects/manim-ecosystem-poster.png",
+    "alt": "Manim Ecosystem animated logo with digital presenter character"
   },
   "pokeml": {
     "kind": "pokemon",
-    "source": "https://github.com/PanoPepino/pokeml#predictions-for-three-new-pok%C3%A9mon",
     "frames": [
       {
         "name": "Browt",
@@ -26,94 +25,18 @@
       {
         "label": "LightGBM — direct",
         "shortLabel": "LightGBM",
-        "values": [
-          {
-            "estimate": 280,
-            "detail": "280 [246, 316]"
-          },
-          {
-            "estimate": 308,
-            "detail": "308 [311, 316] †"
-          },
-          {
-            "estimate": 310,
-            "detail": "310 [311, 312] †"
-          }
-        ]
+        "values": [{ "estimate": 280 }, { "estimate": 308 }, { "estimate": 310 }]
       },
       {
         "label": "CatBoost ordinal — direct",
         "shortLabel": "CatBoost",
-        "values": [
-          {
-            "estimate": 276,
-            "detail": "276 ± 16"
-          },
-          {
-            "estimate": 311,
-            "detail": "311 ± 12"
-          },
-          {
-            "estimate": 312,
-            "detail": "312 ± 10"
-          }
-        ]
-      },
-      {
-        "label": "CatBoost native — direct",
-        "shortLabel": "CatBoost native",
-        "values": [
-          {
-            "estimate": 263,
-            "detail": "263 ± 24"
-          },
-          {
-            "estimate": 305,
-            "detail": "305 ± 15"
-          },
-          {
-            "estimate": 307,
-            "detail": "307 ± 13"
-          }
-        ]
+        "values": [{ "estimate": 276 }, { "estimate": 311 }, { "estimate": 312 }]
       },
       {
         "label": "XGBoost — direct",
         "shortLabel": "XGBoost",
-        "trainedThroughGeneration": 8,
-        "modelVersion": "pokemon_tuned_60_v1/evaluation/direct_xgboost",
-        "artifactSha256": "6dca2352a36865ec2b4911519c119683b616a3e018bc95d53dc1a229647501e3",
-        "inputSha256": "ea78f963ceb4a76d324a6faace8f501272c286d38a94cc8f442c8bda5194942d",
-        "values": [
-          {
-            "estimate": 294,
-            "detail": "294 [284, 323]",
-            "rawEstimate": 293.6611022949219,
-            "lower80": 284.3946838378906,
-            "upper80": 323.39239501953125
-          },
-          {
-            "estimate": 315,
-            "detail": "315 [307, 325]",
-            "rawEstimate": 315.210205078125,
-            "lower80": 307.2358703613281,
-            "upper80": 324.88177490234375
-          },
-          {
-            "estimate": 311,
-            "detail": "311 [304, 320]",
-            "rawEstimate": 311.1546630859375,
-            "lower80": 303.7733459472656,
-            "upper80": 320.34747314453125
-          }
-        ]
+        "values": [{ "estimate": 294 }, { "estimate": 315 }, { "estimate": 311 }]
       }
-    ],
-    "notes": [
-      "Values are BST estimates. CatBoost uses ± one model-estimated standard deviation (sigma). LightGBM and XGBoost use [lower, upper] nominal 80% prediction ranges. These are different uncertainty measures, not calibrated guarantees or measured prediction errors.",
-      "† LightGBM fits its bounds separately; the marked ranges do not contain their point estimates.",
-      "README models were ranked by ordinary-Pokémon errors from saved pokemon_tuned_60_v1 experiments, then refitted on generations 1–9 with frozen settings. No new tuning or validation was performed. The original winning release remains unchanged. Predictions depend on supplied attributes and evolution stage.",
-      "XGBoost uses a saved evaluation model trained through generation 8. Its values were computed from the existing model and the supplied Pokémon attributes, without retraining. README models use generations 1–9."
     ],
     "previewModels": [
       "LightGBM — direct",

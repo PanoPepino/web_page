@@ -1,6 +1,6 @@
 # Daniel Panizo — website
 
-Self-contained React and TanStack Start website prepared to replace the existing `PanoPepino/web_page` GitHub Pages site. This directory contains portfolio artwork, downloads and presentations. Card miniatures use Scryfall hosting.
+Self-contained React and TanStack Start website published through GitHub Pages. This directory contains portfolio artwork, downloads and presentations. Card miniatures use Scryfall hosting.
 
 ## Develop and build
 
@@ -32,10 +32,8 @@ Use `publicUrl()` for public files and `siteUrl()` for canonical URLs. Keep each
 
 To add a visible talk, edit `src/data/slides.json` and put its HTML/media bundle in `public/main_page/presentations`. Generate previews with `python3 scripts/generate-slide-thumbnails.py` on macOS. The script reads this project's files and needs Quick Look and `sips`.
 
-Projects on `/projects` use the approved `README_FOR_WEBPAGE.md` copy in the portfolio registry. Local copy comes from `portfolio/PanoPepino/content/projects.json` and its listed sources; refresh with `bun run refresh:projects`. This generates `src/data/projects.json` for the three selected project cards and `src/data/project-tree.json` for the complete nested catalogue in the GitHub tile. New registry entries automatically join the tree. GitHub Pages refreshes both snapshots before each deploy. Add optional project animations as `public/assets/projects/{project-id}.gif`; the matching tile picks them up automatically.
+Projects on `/projects` use approved `README_FOR_WEBPAGE.md` copy from the portfolio registry and public project repositories. Refresh locally with `bun run refresh:projects`; GitHub Actions refreshes the selected project cards and full navigation tree before deployment. The registry defines nesting; preview artwork lives in `src/data/project-media.json`.
 
 Add decks in `src/data/decks.json` with unique Moxfield IDs and artwork filenames from `public/assets/magic/`. All catalog entries refresh Friday at 05:00 Stockholm time and on manual workflow dispatch. Refresh locally with `bun run refresh:decks`. Descriptions use English/Spanish Moxfield primer panels. Set optional `primerLanguage: "en"` or `"es"` for a single-language primer without marked panels. The description toggle remembers selection while browsing decks.
-
-`GITHUB_UPLOAD.txt` lists files prepared for upload.
 
 See [DEPLOYMENT.md](DEPLOYMENT.md) for replacement and publishing instructions.

@@ -73,6 +73,8 @@ jobs:
             git commit -m "Refresh deck and project content snapshots"
             git push origin "HEAD:$TARGET_BRANCH"
           fi
+      - name: Remove macOS metadata from Pages output
+        run: find .output/public -name .DS_Store -type f -delete
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:

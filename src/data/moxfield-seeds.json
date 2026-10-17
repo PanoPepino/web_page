@@ -10,9 +10,7 @@
         "name": "The first sliver",
         "quantity": 1,
         "layout": "normal",
-        "keywords": [
-          "Cascade"
-        ],
+        "keywords": ["Cascade"],
         "faceNames": [],
         "scryfallId": "06d4fbe1-8a2f-4958-bb85-1a1e5f1e8d87",
         "typeLine": "Legendary Creature — Sliver",
@@ -28,9 +26,7 @@
         "name": "Echocasting Symposium",
         "quantity": 1,
         "layout": "normal",
-        "keywords": [
-          "Paradigm"
-        ],
+        "keywords": ["Paradigm"],
         "faceNames": [],
         "scryfallId": "5d7086a7-dc42-468a-a2cf-a6f89030f947",
         "typeLine": "Sorcery — Lesson",
@@ -190,9 +186,7 @@
         "name": "Utopia Sprawl",
         "quantity": 1,
         "layout": "normal",
-        "keywords": [
-          "Enchant"
-        ],
+        "keywords": ["Enchant"],
         "faceNames": [],
         "scryfallId": "44d14297-f84b-40bd-bd0a-b67d13787ca0",
         "typeLine": "Enchantment — Aura",
@@ -224,9 +218,7 @@
         "name": "Dregscape Sliver",
         "quantity": 1,
         "layout": "normal",
-        "keywords": [
-          "Unearth"
-        ],
+        "keywords": ["Unearth"],
         "faceNames": [],
         "scryfallId": "4a835b7e-cd63-486d-8b58-2f443f686e32",
         "typeLine": "Creature — Sliver",
@@ -274,10 +266,7 @@
         "name": "Leyline Binding",
         "quantity": 1,
         "layout": "normal",
-        "keywords": [
-          "Domain",
-          "Flash"
-        ],
+        "keywords": ["Domain", "Flash"],
         "faceNames": [],
         "scryfallId": "3c3ac3dd-35db-447f-8674-37b4680a1ef7",
         "typeLine": "Enchantment",
@@ -356,9 +345,7 @@
         "name": "Thrumming Hivepool",
         "quantity": 1,
         "layout": "normal",
-        "keywords": [
-          "Affinity"
-        ],
+        "keywords": ["Affinity"],
         "faceNames": [],
         "scryfallId": "85caf659-7b43-462e-a342-34703d46eb57",
         "typeLine": "Artifact",
@@ -406,9 +393,7 @@
         "name": "The First Sliver",
         "quantity": 1,
         "layout": "normal",
-        "keywords": [
-          "Cascade"
-        ],
+        "keywords": ["Cascade"],
         "faceNames": [],
         "scryfallId": "06d4fbe1-8a2f-4958-bb85-1a1e5f1e8d87",
         "typeLine": "Legendary Creature — Sliver",
@@ -445,9 +430,7 @@
             "name": "The First Sliver",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Cascade"
-            ],
+            "keywords": ["Cascade"],
             "faceNames": [],
             "scryfallId": "06d4fbe1-8a2f-4958-bb85-1a1e5f1e8d87",
             "typeLine": "Legendary Creature — Sliver",
@@ -532,9 +515,7 @@
             "name": "Bladeback Sliver",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Hellbent"
-            ],
+            "keywords": ["Hellbent"],
             "faceNames": [],
             "scryfallId": "7066c9ab-9420-46f9-a6c7-ce4d5273e2fa",
             "typeLine": "Creature — Sliver",
@@ -726,9 +707,7 @@
             "name": "Dregscape Sliver",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Unearth"
-            ],
+            "keywords": ["Unearth"],
             "faceNames": [],
             "scryfallId": "4a835b7e-cd63-486d-8b58-2f443f686e32",
             "typeLine": "Creature — Sliver",
@@ -744,9 +723,7 @@
             "name": "Echocasting Symposium",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Paradigm"
-            ],
+            "keywords": ["Paradigm"],
             "faceNames": [],
             "scryfallId": "5d7086a7-dc42-468a-a2cf-a6f89030f947",
             "typeLine": "Sorcery — Lesson",
@@ -778,9 +755,7 @@
             "name": "Enduring Sliver",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Outlast"
-            ],
+            "keywords": ["Outlast"],
             "faceNames": [],
             "scryfallId": "6ed0f6a5-ed40-44fc-a5e1-3f8bb968d1d9",
             "typeLine": "Creature — Sliver",
@@ -861,10 +836,7 @@
             "quantity": 1,
             "layout": "modal_dfc",
             "keywords": [],
-            "faceNames": [
-              "Glasspool Mimic",
-              "Glasspool Shore"
-            ],
+            "faceNames": ["Glasspool Mimic", "Glasspool Shore"],
             "scryfallId": "5adcb500-8c77-4925-8e2c-1243502827d1",
             "typeLine": "Creature — Shapeshifter Rogue // Land",
             "frontTypeLine": "Creature — Shapeshifter Rogue",
@@ -916,9 +888,7 @@
             "name": "Jetmir's Garden",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Cycling"
-            ],
+            "keywords": ["Cycling"],
             "faceNames": [],
             "scryfallId": "26d40e03-6de4-4373-9fbf-04c1dd79e995",
             "typeLine": "Land — Mountain Forest Plains",
@@ -934,9 +904,7 @@
             "name": "Ketria Triome",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Cycling"
-            ],
+            "keywords": ["Cycling"],
             "faceNames": [],
             "scryfallId": "e5b1b1dc-523c-4fce-baea-6f13971cc03b",
             "typeLine": "Land — Forest Island Mountain",
@@ -984,10 +952,7 @@
             "name": "Leyline Binding",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Domain",
-              "Flash"
-            ],
+            "keywords": ["Domain", "Flash"],
             "faceNames": [],
             "scryfallId": "3c3ac3dd-35db-447f-8674-37b4680a1ef7",
             "typeLine": "Enchantment",
@@ -1083,9 +1048,7 @@
             "name": "Raugrin Triome",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Cycling"
-            ],
+            "keywords": ["Cycling"],
             "faceNames": [],
             "scryfallId": "02138fbb-3962-4348-8d31-faaefba0b8b2",
             "typeLine": "Land — Island Mountain Plains",
@@ -1293,9 +1256,7 @@
             "name": "Thrumming Hivepool",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Affinity"
-            ],
+            "keywords": ["Affinity"],
             "faceNames": [],
             "scryfallId": "85caf659-7b43-462e-a342-34703d46eb57",
             "typeLine": "Artifact",
@@ -1327,9 +1288,7 @@
             "name": "Utopia Sprawl",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Enchant"
-            ],
+            "keywords": ["Enchant"],
             "faceNames": [],
             "scryfallId": "44d14297-f84b-40bd-bd0a-b67d13787ca0",
             "typeLine": "Enchantment — Aura",
@@ -1440,7 +1399,6 @@
         ]
       }
     ],
-    "decklist": "Commander\n1 The First Sliver\n\nDeck\n1 Abrupt Decay\n1 Anguished Unmaking\n1 Arid Mesa\n1 Belligerent Sliver\n1 Bladeback Sliver\n1 Blood Crypt\n1 Bloodstained Mire\n1 Blur Sliver\n1 Bonescythe Sliver\n1 Breeding Pool\n1 Cavern of Souls\n1 Cleaving Sliver\n1 Cloudshredder Sliver\n1 Command Tower\n1 Cryptolith Rite\n1 Diffusion Sliver\n1 Dregscape Sliver\n1 Echocasting Symposium\n1 Eladamri's Call\n1 Enduring Sliver\n1 Farseek\n1 First Sliver's Chosen\n1 Flooded Strand\n1 Forest\n1 Glasspool Mimic\n1 Hive Stirrings\n1 Hollowhead Sliver\n1 Jetmir's Garden\n1 Ketria Triome\n1 Lancer Sliver\n1 Leeching Sliver\n1 Leyline Binding\n1 Manaweft Sliver\n1 Misty Rainforest\n1 Overgrown Tomb\n1 Phyrexian Metamorph\n1 Predatory Sliver\n1 Raugrin Triome\n1 Reflections of Littjara\n1 Sacred Foundry\n1 Scalding Tarn\n1 Sentinel Sliver\n1 Sliver Hive\n1 Sliver Hivelord\n1 Sliver Overlord\n1 Spiteful Sliver\n1 Stomping Ground\n1 Striking Sliver\n1 Tempered Sliver\n1 Temple Garden\n1 Thrumming Hivepool\n1 Urza's Incubator\n1 Utopia Sprawl\n1 Verdant Catacombs\n1 Void Rend\n1 Windswept Heath\n1 Wooded Foothills\n1 Worldly Tutor\n1 Yavimaya, Cradle of Growth",
     "lastSynced": "2026-10-02T16:37:06.402Z"
   },
   "zydoid1aJk28Y4gMS0VWiw": {
@@ -1454,9 +1412,7 @@
         "name": "Shadowspear",
         "quantity": 1,
         "layout": "normal",
-        "keywords": [
-          "Equip"
-        ],
+        "keywords": ["Equip"],
         "faceNames": [],
         "scryfallId": "939c6e19-4b27-4023-bb9c-ae440f91e21c",
         "typeLine": "Legendary Artifact — Equipment",
@@ -1473,9 +1429,7 @@
         "quantity": 1,
         "scryfallId": "3b6e5956-f795-451b-bb24-56462d1ced27",
         "layout": "normal",
-        "keywords": [
-          "Equip"
-        ],
+        "keywords": ["Equip"],
         "typeLine": "Legendary Artifact — Equipment",
         "cardUrl": "https://scryfall.com/card/bok/163/umezawas-jitte?utm_source=api",
         "images": [
@@ -1489,9 +1443,7 @@
         "name": "Buster Sword",
         "quantity": 1,
         "layout": "normal",
-        "keywords": [
-          "Equip"
-        ],
+        "keywords": ["Equip"],
         "faceNames": [],
         "scryfallId": "374d7383-a1a7-4eea-91f7-290180e14cc9",
         "typeLine": "Artifact — Equipment",
@@ -1507,9 +1459,7 @@
         "name": "Sword of Fire and Ice",
         "quantity": 1,
         "layout": "normal",
-        "keywords": [
-          "Equip"
-        ],
+        "keywords": ["Equip"],
         "faceNames": [],
         "scryfallId": "8eb613ee-8b8b-4a34-886c-6592b27672b3",
         "typeLine": "Artifact — Equipment",
@@ -1589,9 +1539,7 @@
         "name": "Goblin Gaveleer",
         "quantity": 1,
         "layout": "normal",
-        "keywords": [
-          "Trample"
-        ],
+        "keywords": ["Trample"],
         "faceNames": [],
         "scryfallId": "6f65af25-8007-415d-a3fa-7736f6118284",
         "typeLine": "Creature — Goblin Warrior",
@@ -1607,9 +1555,7 @@
         "name": "Bladegraft Aspirant",
         "quantity": 1,
         "layout": "normal",
-        "keywords": [
-          "Menace"
-        ],
+        "keywords": ["Menace"],
         "faceNames": [],
         "scryfallId": "2d6cf933-73fe-4e79-8d0b-29dc0f18b25d",
         "typeLine": "Creature — Phyrexian Warrior",
@@ -1641,9 +1587,7 @@
         "name": "Raubahn, Bull of Ala Mhigo",
         "quantity": 1,
         "layout": "normal",
-        "keywords": [
-          "Ward"
-        ],
+        "keywords": ["Ward"],
         "faceNames": [],
         "scryfallId": "7035d11b-525f-4120-8dcb-610095196681",
         "typeLine": "Legendary Creature — Human Warrior",
@@ -1659,9 +1603,7 @@
         "name": "Sokka, Swordmaster",
         "quantity": 1,
         "layout": "normal",
-        "keywords": [
-          "Vigilance"
-        ],
+        "keywords": ["Vigilance"],
         "faceNames": [],
         "scryfallId": "2fcfb238-121c-46b8-a4a9-1b45b4dbb4a0",
         "typeLine": "Legendary Creature — Human Warrior Ally",
@@ -1677,11 +1619,7 @@
         "name": "Diamond Pick-Axe",
         "quantity": 1,
         "layout": "normal",
-        "keywords": [
-          "Indestructible",
-          "Treasure",
-          "Equip"
-        ],
+        "keywords": ["Indestructible", "Treasure", "Equip"],
         "faceNames": [],
         "scryfallId": "4ae30fa7-3d1d-417f-80d7-a668236cb2c1",
         "typeLine": "Artifact — Equipment",
@@ -1697,10 +1635,7 @@
         "name": "Goldvein Pick",
         "quantity": 1,
         "layout": "normal",
-        "keywords": [
-          "Treasure",
-          "Equip"
-        ],
+        "keywords": ["Treasure", "Equip"],
         "faceNames": [],
         "scryfallId": "a241317d-2277-467e-a8f9-aa71c944e244",
         "typeLine": "Artifact — Equipment",
@@ -1780,9 +1715,7 @@
         "name": "Rebel Salvo",
         "quantity": 1,
         "layout": "normal",
-        "keywords": [
-          "Affinity"
-        ],
+        "keywords": ["Affinity"],
         "faceNames": [],
         "scryfallId": "cd37d1b1-70ce-466e-890d-36be82433035",
         "typeLine": "Instant",
@@ -1814,9 +1747,7 @@
         "quantity": 1,
         "scryfallId": "a5af083f-5820-4185-ac04-4c4368f7703c",
         "layout": "normal",
-        "keywords": [
-          "Enchant"
-        ],
+        "keywords": ["Enchant"],
         "typeLine": "Enchantment — Aura",
         "cardUrl": "https://scryfall.com/card/ths/4/chained-to-the-rocks?utm_source=api",
         "images": [
@@ -1830,9 +1761,7 @@
         "name": "Chainsaw",
         "quantity": 1,
         "layout": "normal",
-        "keywords": [
-          "Equip"
-        ],
+        "keywords": ["Equip"],
         "faceNames": [],
         "scryfallId": "54e0c2cd-fa5f-427d-8e15-6066f002a8e3",
         "typeLine": "Artifact — Equipment",
@@ -1848,9 +1777,7 @@
         "name": "Lightning Greaves",
         "quantity": 1,
         "layout": "normal",
-        "keywords": [
-          "Equip"
-        ],
+        "keywords": ["Equip"],
         "faceNames": [],
         "scryfallId": "61a28870-cf78-4323-9d82-cee764067764",
         "typeLine": "Artifact — Equipment",
@@ -1866,10 +1793,7 @@
         "name": "Celestial Armor",
         "quantity": 1,
         "layout": "normal",
-        "keywords": [
-          "Equip",
-          "Flash"
-        ],
+        "keywords": ["Equip", "Flash"],
         "faceNames": [],
         "scryfallId": "809ee8ad-1573-49e5-9e84-b7cdd29efcae",
         "typeLine": "Artifact — Equipment",
@@ -1918,9 +1842,7 @@
         "quantity": 1,
         "scryfallId": "3b6e5956-f795-451b-bb24-56462d1ced27",
         "layout": "normal",
-        "keywords": [
-          "Equip"
-        ],
+        "keywords": ["Equip"],
         "typeLine": "Legendary Artifact — Equipment",
         "cardUrl": "https://scryfall.com/card/bok/163/umezawas-jitte?utm_source=api",
         "images": [
@@ -1992,9 +1914,7 @@
             "name": "Basilisk Collar",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Equip"
-            ],
+            "keywords": ["Equip"],
             "faceNames": [],
             "scryfallId": "dcbf66e1-2318-423b-88d6-5b366840aa57",
             "typeLine": "Artifact — Equipment",
@@ -2042,9 +1962,7 @@
             "name": "Bladegraft Aspirant",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Menace"
-            ],
+            "keywords": ["Menace"],
             "faceNames": [],
             "scryfallId": "2d6cf933-73fe-4e79-8d0b-29dc0f18b25d",
             "typeLine": "Creature — Phyrexian Warrior",
@@ -2060,10 +1978,7 @@
             "name": "Bladehold War-Whip",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "For Mirrodin!",
-              "Equip"
-            ],
+            "keywords": ["For Mirrodin!", "Equip"],
             "faceNames": [],
             "scryfallId": "563e9ba5-e0ec-4fb3-8301-689aa145cc19",
             "typeLine": "Artifact — Equipment",
@@ -2079,9 +1994,7 @@
             "name": "Buster Sword",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Equip"
-            ],
+            "keywords": ["Equip"],
             "faceNames": [],
             "scryfallId": "374d7383-a1a7-4eea-91f7-290180e14cc9",
             "typeLine": "Artifact — Equipment",
@@ -2097,10 +2010,7 @@
             "name": "Celestial Armor",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Equip",
-              "Flash"
-            ],
+            "keywords": ["Equip", "Flash"],
             "faceNames": [],
             "scryfallId": "809ee8ad-1573-49e5-9e84-b7cdd29efcae",
             "typeLine": "Artifact — Equipment",
@@ -2116,9 +2026,7 @@
             "name": "Chainsaw",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Equip"
-            ],
+            "keywords": ["Equip"],
             "faceNames": [],
             "scryfallId": "54e0c2cd-fa5f-427d-8e15-6066f002a8e3",
             "typeLine": "Artifact — Equipment",
@@ -2134,9 +2042,7 @@
             "name": "Champion of the Flame",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Trample"
-            ],
+            "keywords": ["Trample"],
             "faceNames": [],
             "scryfallId": "460fa161-362f-406d-9149-d412bc51836c",
             "typeLine": "Creature — Human Warrior",
@@ -2168,9 +2074,7 @@
             "name": "Colossus Hammer",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Equip"
-            ],
+            "keywords": ["Equip"],
             "faceNames": [],
             "scryfallId": "fa35b2b5-3e91-4a6c-90b1-8581b4ecaf8b",
             "typeLine": "Artifact — Equipment",
@@ -2234,11 +2138,7 @@
             "name": "Diamond Pick-Axe",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Indestructible",
-              "Treasure",
-              "Equip"
-            ],
+            "keywords": ["Indestructible", "Treasure", "Equip"],
             "faceNames": [],
             "scryfallId": "4ae30fa7-3d1d-417f-80d7-a668236cb2c1",
             "typeLine": "Artifact — Equipment",
@@ -2254,9 +2154,7 @@
             "name": "Dwalin, Weaponmaster",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "First strike"
-            ],
+            "keywords": ["First strike"],
             "faceNames": [],
             "scryfallId": "196d9287-a37d-4b27-a83b-a5489a54f081",
             "typeLine": "Legendary Creature — Dwarf Warrior",
@@ -2288,9 +2186,7 @@
             "name": "Eiganjo, Seat of the Empire",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Channel"
-            ],
+            "keywords": ["Channel"],
             "faceNames": [],
             "scryfallId": "c375a022-5b57-496d-a802-e4ea8376e9e4",
             "typeLine": "Legendary Land",
@@ -2418,9 +2314,7 @@
             "name": "Goblin Gaveleer",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Trample"
-            ],
+            "keywords": ["Trample"],
             "faceNames": [],
             "scryfallId": "6f65af25-8007-415d-a3fa-7736f6118284",
             "typeLine": "Creature — Goblin Warrior",
@@ -2436,10 +2330,7 @@
             "name": "Goldvein Pick",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Treasure",
-              "Equip"
-            ],
+            "keywords": ["Treasure", "Equip"],
             "faceNames": [],
             "scryfallId": "a241317d-2277-467e-a8f9-aa71c944e244",
             "typeLine": "Artifact — Equipment",
@@ -2455,10 +2346,7 @@
             "name": "Hexgold Halberd",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "For Mirrodin!",
-              "Equip"
-            ],
+            "keywords": ["For Mirrodin!", "Equip"],
             "faceNames": [],
             "scryfallId": "f22108ec-28f0-44d3-ba6b-3075f5f6bc65",
             "typeLine": "Artifact — Equipment",
@@ -2506,9 +2394,7 @@
             "name": "Lightning Greaves",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Equip"
-            ],
+            "keywords": ["Equip"],
             "faceNames": [],
             "scryfallId": "61a28870-cf78-4323-9d82-cee764067764",
             "typeLine": "Artifact — Equipment",
@@ -2573,10 +2459,7 @@
             "quantity": 1,
             "layout": "modal_dfc",
             "keywords": [],
-            "faceNames": [
-              "Needleverge Pathway",
-              "Pillarverge Pathway"
-            ],
+            "faceNames": ["Needleverge Pathway", "Pillarverge Pathway"],
             "scryfallId": "6559047e-6ede-4815-a3a0-389062094f9d",
             "typeLine": "Land // Land",
             "frontTypeLine": "Land",
@@ -2596,9 +2479,7 @@
             "name": "Óin the Brave",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Storied"
-            ],
+            "keywords": ["Storied"],
             "faceNames": [],
             "scryfallId": "9984b9ef-e81c-48f4-aa33-0504171a2d3c",
             "typeLine": "Legendary Creature — Dwarf Warrior",
@@ -2662,9 +2543,7 @@
             "name": "Raubahn, Bull of Ala Mhigo",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Ward"
-            ],
+            "keywords": ["Ward"],
             "faceNames": [],
             "scryfallId": "7035d11b-525f-4120-8dcb-610095196681",
             "typeLine": "Legendary Creature — Human Warrior",
@@ -2680,9 +2559,7 @@
             "name": "Rebel Salvo",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Affinity"
-            ],
+            "keywords": ["Affinity"],
             "faceNames": [],
             "scryfallId": "cd37d1b1-70ce-466e-890d-36be82433035",
             "typeLine": "Instant",
@@ -2730,9 +2607,7 @@
             "name": "Shadowspear",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Equip"
-            ],
+            "keywords": ["Equip"],
             "faceNames": [],
             "scryfallId": "939c6e19-4b27-4023-bb9c-ae440f91e21c",
             "typeLine": "Legendary Artifact — Equipment",
@@ -2788,9 +2663,7 @@
             "name": "Sokka, Swordmaster",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Vigilance"
-            ],
+            "keywords": ["Vigilance"],
             "faceNames": [],
             "scryfallId": "2fcfb238-121c-46b8-a4a9-1b45b4dbb4a0",
             "typeLine": "Legendary Creature — Human Warrior Ally",
@@ -2806,10 +2679,7 @@
             "name": "Sting, Bilbo's Sword",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Equip",
-              "Flash"
-            ],
+            "keywords": ["Equip", "Flash"],
             "faceNames": [],
             "scryfallId": "d6a8d698-c454-42c4-ad4e-9a7625d5569f",
             "typeLine": "Legendary Artifact — Equipment",
@@ -2857,9 +2727,7 @@
             "name": "Sword of Fire and Ice",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Equip"
-            ],
+            "keywords": ["Equip"],
             "faceNames": [],
             "scryfallId": "8eb613ee-8b8b-4a34-886c-6592b27672b3",
             "typeLine": "Artifact — Equipment",
@@ -2890,7 +2758,6 @@
         ]
       }
     ],
-    "decklist": "Commander\n1 Bruenor Battlehammer\n\nDeck\n1 Akiri, Fearless Voyager\n1 Arid Mesa\n1 Basilisk Collar\n1 Battlefield Forge\n1 Blacksmith's Talent\n1 Bladegraft Aspirant\n1 Bladehold War-Whip\n1 Buster Sword\n1 Celestial Armor\n1 Chainsaw\n1 Champion of the Flame\n1 Clifftop Retreat\n1 Colossus Hammer\n1 Command Tower\n1 Dáin Ironfoot\n1 Dáin's Company\n1 Diamond Pick-Axe\n1 Dwalin, Weaponmaster\n1 Dwarven Mauler\n1 Eiganjo, Seat of the Empire\n1 Enlightened Tutor\n1 Erode\n1 Fighter Class\n1 Flawless Maneuver\n1 Forge Anew\n1 Frodo, Determined Hero\n1 Furycalm Snarl\n1 Goblin Gaveleer\n1 Goldvein Pick\n1 Hexgold Halberd\n1 Inspiring Vantage\n1 Kazuul's Toll Collector\n1 Lightning Greaves\n1 Monumental Henge\n3 Mountain\n1 Nahiri, Heir of the Ancients\n1 Needleverge Pathway\n1 Óin the Brave\n1 Open the Armory\n4 Plains\n1 Prismatic Vista\n1 Raubahn, Bull of Ala Mhigo\n1 Rebel Salvo\n1 Resistance Reunited\n1 Sacred Foundry\n1 Shadowspear\n1 Shatterskull Smashing\n1 Sigarda's Aid\n1 Sokka, Swordmaster\n1 Sting, Bilbo's Sword\n1 Sunbaked Canyon\n1 Sunbillow Verge\n1 Sword of Fire and Ice\n1 Swords to Plowshares",
     "lastSynced": "2026-10-02T16:37:02.221Z"
   },
   "ZxtW1VpiP0GMH35fwlxiqA": {
@@ -2908,11 +2775,7 @@
             "name": "Tovolar, Dire Overlord // Tovolar, the Midnight Scourge",
             "quantity": 1,
             "layout": "transform",
-            "keywords": [
-              "Daybound",
-              "Transform",
-              "Nightbound"
-            ],
+            "keywords": ["Daybound", "Transform", "Nightbound"],
             "faceNames": [
               "Tovolar, Dire Overlord",
               "Tovolar, the Midnight Scourge"
@@ -2941,9 +2804,7 @@
             "name": "Arena of Glory",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Exert"
-            ],
+            "keywords": ["Exert"],
             "faceNames": [],
             "scryfallId": "dd148edc-9e43-41aa-bb50-f912115d3e72",
             "typeLine": "Land",
@@ -2959,13 +2820,8 @@
             "name": "Arlinn Kord // Arlinn, Embraced by the Moon",
             "quantity": 1,
             "layout": "transform",
-            "keywords": [
-              "Transform"
-            ],
-            "faceNames": [
-              "Arlinn Kord",
-              "Arlinn, Embraced by the Moon"
-            ],
+            "keywords": ["Transform"],
+            "faceNames": ["Arlinn Kord", "Arlinn, Embraced by the Moon"],
             "scryfallId": "49ed8050-1c98-47a0-82dd-ce08ee372387",
             "typeLine": "Legendary Planeswalker — Arlinn // Legendary Planeswalker — Arlinn",
             "frontTypeLine": "Legendary Planeswalker — Arlinn",
@@ -2985,15 +2841,8 @@
             "name": "Arlinn, the Pack's Hope // Arlinn, the Moon's Fury",
             "quantity": 1,
             "layout": "transform",
-            "keywords": [
-              "Transform",
-              "Daybound",
-              "Nightbound"
-            ],
-            "faceNames": [
-              "Arlinn, the Pack's Hope",
-              "Arlinn, the Moon's Fury"
-            ],
+            "keywords": ["Transform", "Daybound", "Nightbound"],
+            "faceNames": ["Arlinn, the Pack's Hope", "Arlinn, the Moon's Fury"],
             "scryfallId": "50d4b0df-a1d8-494f-a019-70ce34161320",
             "typeLine": "Legendary Planeswalker — Arlinn // Legendary Planeswalker — Arlinn",
             "frontTypeLine": "Legendary Planeswalker — Arlinn",
@@ -3029,16 +2878,8 @@
             "name": "Avabruck Caretaker // Hollowhenge Huntmaster",
             "quantity": 1,
             "layout": "transform",
-            "keywords": [
-              "Transform",
-              "Daybound",
-              "Hexproof",
-              "Nightbound"
-            ],
-            "faceNames": [
-              "Avabruck Caretaker",
-              "Hollowhenge Huntmaster"
-            ],
+            "keywords": ["Transform", "Daybound", "Hexproof", "Nightbound"],
+            "faceNames": ["Avabruck Caretaker", "Hollowhenge Huntmaster"],
             "scryfallId": "c0c358b4-5af2-438f-8bd5-beb0ee6b518b",
             "typeLine": "Creature — Human Werewolf // Creature — Werewolf",
             "frontTypeLine": "Creature — Human Werewolf",
@@ -3074,10 +2915,7 @@
             "name": "Bejeweled Warg",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Treasure",
-              "Trample"
-            ],
+            "keywords": ["Treasure", "Trample"],
             "faceNames": [],
             "scryfallId": "e95eba5c-e0d6-46b4-a0be-8e373b2185ea",
             "typeLine": "Creature — Wolf",
@@ -3109,9 +2947,7 @@
             "name": "Boseiju, Who Endures",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Channel"
-            ],
+            "keywords": ["Channel"],
             "faceNames": [],
             "scryfallId": "2135ac5a-187b-4dc9-8f82-34e8d1603416",
             "typeLine": "Legendary Land",
@@ -3159,9 +2995,7 @@
             "name": "Chrome Mox",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Imprint"
-            ],
+            "keywords": ["Imprint"],
             "faceNames": [],
             "scryfallId": "da3b705c-a5c9-4e65-9a5e-31b7dc734623",
             "typeLine": "Artifact",
@@ -3193,9 +3027,7 @@
             "name": "Commercial District",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Surveil"
-            ],
+            "keywords": ["Surveil"],
             "faceNames": [],
             "scryfallId": "bf220c06-3cce-4bdd-aa58-83940c223e9c",
             "typeLine": "Land — Mountain Forest",
@@ -3228,10 +3060,7 @@
             "quantity": 1,
             "layout": "modal_dfc",
             "keywords": [],
-            "faceNames": [
-              "Cragcrown Pathway",
-              "Timbercrown Pathway"
-            ],
+            "faceNames": ["Cragcrown Pathway", "Timbercrown Pathway"],
             "scryfallId": "da57eb54-5199-4a56-95f7-f6ac432876b1",
             "typeLine": "Land // Land",
             "frontTypeLine": "Land",
@@ -3251,13 +3080,8 @@
             "name": "Duskwatch Recruiter // Krallenhorde Howler",
             "quantity": 1,
             "layout": "transform",
-            "keywords": [
-              "Transform"
-            ],
-            "faceNames": [
-              "Duskwatch Recruiter",
-              "Krallenhorde Howler"
-            ],
+            "keywords": ["Transform"],
+            "faceNames": ["Duskwatch Recruiter", "Krallenhorde Howler"],
             "scryfallId": "1031eeaa-6c21-4192-b185-85708819344d",
             "typeLine": "Creature — Human Warrior Werewolf // Creature — Werewolf",
             "frontTypeLine": "Creature — Human Warrior Werewolf",
@@ -3357,14 +3181,8 @@
             "name": "Huntmaster of the Fells // Ravager of the Fells",
             "quantity": 1,
             "layout": "transform",
-            "keywords": [
-              "Transform",
-              "Trample"
-            ],
-            "faceNames": [
-              "Huntmaster of the Fells",
-              "Ravager of the Fells"
-            ],
+            "keywords": ["Transform", "Trample"],
+            "faceNames": ["Huntmaster of the Fells", "Ravager of the Fells"],
             "scryfallId": "6c37fcdc-6187-4ed1-908a-74e2f9e188bf",
             "typeLine": "Creature — Human Werewolf // Creature — Werewolf",
             "frontTypeLine": "Creature — Human Werewolf",
@@ -3384,10 +3202,7 @@
             "name": "Immerwolf",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Transform",
-              "Intimidate"
-            ],
+            "keywords": ["Transform", "Intimidate"],
             "faceNames": [],
             "scryfallId": "53f70a6e-0f5c-4420-938d-d84e0c88e352",
             "typeLine": "Creature — Wolf",
@@ -3403,10 +3218,7 @@
             "name": "Inscription of Abundance",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Fight",
-              "Kicker"
-            ],
+            "keywords": ["Fight", "Kicker"],
             "faceNames": [],
             "scryfallId": "fcd2e01e-a143-4b62-8b01-d253fb35c590",
             "typeLine": "Instant",
@@ -3438,15 +3250,8 @@
             "name": "Kessig Naturalist // Lord of the Ulvenwald",
             "quantity": 1,
             "layout": "transform",
-            "keywords": [
-              "Transform",
-              "Daybound",
-              "Nightbound"
-            ],
-            "faceNames": [
-              "Kessig Naturalist",
-              "Lord of the Ulvenwald"
-            ],
+            "keywords": ["Transform", "Daybound", "Nightbound"],
+            "faceNames": ["Kessig Naturalist", "Lord of the Ulvenwald"],
             "scryfallId": "8ab5f2e6-0e0a-4f7d-a959-3d07948ff317",
             "typeLine": "Creature — Human Werewolf // Creature — Werewolf",
             "frontTypeLine": "Creature — Human Werewolf",
@@ -3466,15 +3271,8 @@
             "name": "Kruin Outlaw // Terror of Kruin Pass",
             "quantity": 1,
             "layout": "transform",
-            "keywords": [
-              "Transform",
-              "First strike",
-              "Double strike"
-            ],
-            "faceNames": [
-              "Kruin Outlaw",
-              "Terror of Kruin Pass"
-            ],
+            "keywords": ["Transform", "First strike", "Double strike"],
+            "faceNames": ["Kruin Outlaw", "Terror of Kruin Pass"],
             "scryfallId": "8d722e19-9aaf-4b47-b175-28f0d5c587a1",
             "typeLine": "Creature — Human Rogue Werewolf // Creature — Werewolf",
             "frontTypeLine": "Creature — Human Rogue Werewolf",
@@ -3494,13 +3292,8 @@
             "name": "Mayor of Avabruck // Howlpack Alpha",
             "quantity": 1,
             "layout": "transform",
-            "keywords": [
-              "Transform"
-            ],
-            "faceNames": [
-              "Mayor of Avabruck",
-              "Howlpack Alpha"
-            ],
+            "keywords": ["Transform"],
+            "faceNames": ["Mayor of Avabruck", "Howlpack Alpha"],
             "scryfallId": "af4bf1fc-19fe-4300-9842-9828178c419a",
             "typeLine": "Creature — Human Advisor Werewolf // Creature — Werewolf",
             "frontTypeLine": "Creature — Human Advisor Werewolf",
@@ -3520,9 +3313,7 @@
             "name": "Moonmist",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Transform"
-            ],
+            "keywords": ["Transform"],
             "faceNames": [],
             "scryfallId": "efcabe01-4740-4a62-83d5-528547403caa",
             "typeLine": "Instant",
@@ -3570,9 +3361,7 @@
             "name": "Nightpack Ambusher",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Flash"
-            ],
+            "keywords": ["Flash"],
             "faceNames": [],
             "scryfallId": "2c9b1f70-9861-4c66-a52f-c40002679e75",
             "typeLine": "Creature — Wolf",
@@ -3588,15 +3377,8 @@
             "name": "Outland Liberator // Frenzied Trapbreaker",
             "quantity": 1,
             "layout": "transform",
-            "keywords": [
-              "Transform",
-              "Daybound",
-              "Nightbound"
-            ],
-            "faceNames": [
-              "Outland Liberator",
-              "Frenzied Trapbreaker"
-            ],
+            "keywords": ["Transform", "Daybound", "Nightbound"],
+            "faceNames": ["Outland Liberator", "Frenzied Trapbreaker"],
             "scryfallId": "60e53d61-fcc3-4def-8206-052b46f62deb",
             "typeLine": "Creature — Human Werewolf // Creature — Werewolf",
             "frontTypeLine": "Creature — Human Werewolf",
@@ -3648,15 +3430,8 @@
             "name": "Reckless Stormseeker // Storm-Charged Slasher",
             "quantity": 1,
             "layout": "transform",
-            "keywords": [
-              "Transform",
-              "Daybound",
-              "Nightbound"
-            ],
-            "faceNames": [
-              "Reckless Stormseeker",
-              "Storm-Charged Slasher"
-            ],
+            "keywords": ["Transform", "Daybound", "Nightbound"],
+            "faceNames": ["Reckless Stormseeker", "Storm-Charged Slasher"],
             "scryfallId": "a33af331-0746-4adf-935a-bf61ff9d8d4b",
             "typeLine": "Creature — Human Werewolf // Creature — Werewolf",
             "frontTypeLine": "Creature — Human Werewolf",
@@ -3724,9 +3499,7 @@
             "name": "Storm the Festival",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Flashback"
-            ],
+            "keywords": ["Flashback"],
             "faceNames": [],
             "scryfallId": "b4f1f69c-122d-472a-b82d-fed7c253a4cd",
             "typeLine": "Sorcery",
@@ -3790,16 +3563,8 @@
             "name": "Tovolar's Huntmaster // Tovolar's Packleader",
             "quantity": 1,
             "layout": "transform",
-            "keywords": [
-              "Transform",
-              "Daybound",
-              "Fight",
-              "Nightbound"
-            ],
-            "faceNames": [
-              "Tovolar's Huntmaster",
-              "Tovolar's Packleader"
-            ],
+            "keywords": ["Transform", "Daybound", "Fight", "Nightbound"],
+            "faceNames": ["Tovolar's Huntmaster", "Tovolar's Packleader"],
             "scryfallId": "3983a304-5040-4b8d-945a-bf4ede3104a8",
             "typeLine": "Creature — Human Werewolf // Creature — Werewolf",
             "frontTypeLine": "Creature — Human Werewolf",
@@ -3819,10 +3584,7 @@
             "name": "Ulrich of the Krallenhorde // Ulrich, Uncontested Alpha",
             "quantity": 1,
             "layout": "transform",
-            "keywords": [
-              "Transform",
-              "Fight"
-            ],
+            "keywords": ["Transform", "Fight"],
             "faceNames": [
               "Ulrich of the Krallenhorde",
               "Ulrich, Uncontested Alpha"
@@ -3846,9 +3608,7 @@
             "name": "Unnatural Moonrise",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Flashback"
-            ],
+            "keywords": ["Flashback"],
             "faceNames": [],
             "scryfallId": "bfdd9df1-6a3b-4f03-8eca-00ed22c02566",
             "typeLine": "Sorcery",
@@ -3864,9 +3624,7 @@
             "name": "Utopia Sprawl",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Enchant"
-            ],
+            "keywords": ["Enchant"],
             "faceNames": [],
             "scryfallId": "8ee63809-729b-48b1-a06d-3edc2a26208f",
             "typeLine": "Enchantment — Aura",
@@ -3882,15 +3640,8 @@
             "name": "Village Messenger // Moonrise Intruder",
             "quantity": 1,
             "layout": "transform",
-            "keywords": [
-              "Transform",
-              "Haste",
-              "Menace"
-            ],
-            "faceNames": [
-              "Village Messenger",
-              "Moonrise Intruder"
-            ],
+            "keywords": ["Transform", "Haste", "Menace"],
+            "faceNames": ["Village Messenger", "Moonrise Intruder"],
             "scryfallId": "956a0997-411f-40f0-9797-87d3a9c80831",
             "typeLine": "Creature — Human Werewolf // Creature — Werewolf",
             "frontTypeLine": "Creature — Human Werewolf",
@@ -3910,16 +3661,8 @@
             "name": "Village Watch // Village Reavers",
             "quantity": 1,
             "layout": "transform",
-            "keywords": [
-              "Transform",
-              "Daybound",
-              "Haste",
-              "Nightbound"
-            ],
-            "faceNames": [
-              "Village Watch",
-              "Village Reavers"
-            ],
+            "keywords": ["Transform", "Daybound", "Haste", "Nightbound"],
+            "faceNames": ["Village Watch", "Village Reavers"],
             "scryfallId": "1bf48d2b-eb68-4f47-a80a-4751a4fa20a7",
             "typeLine": "Creature — Human Werewolf // Creature — Werewolf",
             "frontTypeLine": "Creature — Human Werewolf",
@@ -3939,15 +3682,8 @@
             "name": "Weaver of Blossoms // Blossom-Clad Werewolf",
             "quantity": 1,
             "layout": "transform",
-            "keywords": [
-              "Transform",
-              "Daybound",
-              "Nightbound"
-            ],
-            "faceNames": [
-              "Weaver of Blossoms",
-              "Blossom-Clad Werewolf"
-            ],
+            "keywords": ["Transform", "Daybound", "Nightbound"],
+            "faceNames": ["Weaver of Blossoms", "Blossom-Clad Werewolf"],
             "scryfallId": "73bf2a0a-b97d-4b90-abd6-d1755734ea15",
             "typeLine": "Creature — Human Werewolf // Creature — Werewolf",
             "frontTypeLine": "Creature — Human Werewolf",
@@ -3967,9 +3703,7 @@
             "name": "Werewolf Pack Leader",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Pack tactics"
-            ],
+            "keywords": ["Pack tactics"],
             "faceNames": [],
             "scryfallId": "e88e6b39-bb4d-4d69-8007-d42f31bcbc29",
             "typeLine": "Creature — Human Werewolf",
@@ -4033,9 +3767,7 @@
             "name": "Young Wolf",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Undying"
-            ],
+            "keywords": ["Undying"],
             "faceNames": [],
             "scryfallId": "00c08222-4c57-4bd4-9ec7-d4efae8e76bb",
             "typeLine": "Creature — Wolf",
@@ -4050,7 +3782,6 @@
         ]
       }
     ],
-    "decklist": "Commander\n1 Tovolar, Dire Overlord\n\nDeck\n1 Arena of Glory\n1 Arlinn Kord\n1 Arlinn, the Pack's Hope\n1 Ascendant Packleader\n1 Avabruck Caretaker\n1 Beast Within\n1 Bejeweled Warg\n1 Bite Down\n1 Boseiju, Who Endures\n1 Castle Garenbrig\n1 Cavern of Souls\n1 Chrome Mox\n1 Command Tower\n1 Commercial District\n1 Copperline Gorge\n1 Cragcrown Pathway\n1 Duskwatch Recruiter\n1 Farseek\n3 Forest\n1 Game Trail\n1 Gemstone Caverns\n1 Howling Moon\n1 Huntmaster of the Fells\n1 Immerwolf\n1 Inscription of Abundance\n1 Karplusan Forest\n1 Kessig Naturalist\n1 Kruin Outlaw\n1 Mayor of Avabruck\n1 Moonmist\n2 Mountain\n1 Natural Order\n1 Nightpack Ambusher\n1 Outland Liberator\n1 Prismatic Vista\n1 Ranger Class\n1 Reckless Stormseeker\n1 Rhythm of the Wild\n1 Rootbound Crag\n1 Stomping Ground\n1 Storm the Festival\n1 Summon: Fenrir\n1 Thornspire Verge\n1 Torgal, A Fine Hound\n1 Tovolar's Huntmaster\n1 Ulrich of the Krallenhorde\n1 Unnatural Moonrise\n1 Utopia Sprawl\n1 Village Messenger\n1 Village Watch\n1 Weaver of Blossoms\n1 Werewolf Pack Leader\n1 Wooded Foothills\n1 Worldly Tutor\n1 Yavimaya, Cradle of Growth\n1 Young Wolf",
     "lastSynced": "2026-10-02T16:36:55.135Z"
   },
   "zVlzsMZdz0SCsXssPb_x_Q": {
@@ -4064,9 +3795,7 @@
         "name": "Elenda, the Dusk Rose",
         "quantity": 1,
         "layout": "normal",
-        "keywords": [
-          "Lifelink"
-        ],
+        "keywords": ["Lifelink"],
         "faceNames": [],
         "scryfallId": "e18feca3-1b1b-4456-8873-25a24849a917",
         "typeLine": "Legendary Creature — Vampire Knight",
@@ -4098,9 +3827,7 @@
         "name": "Susurian Voidborn",
         "quantity": 1,
         "layout": "normal",
-        "keywords": [
-          "Warp"
-        ],
+        "keywords": ["Warp"],
         "faceNames": [],
         "scryfallId": "beb97e7b-0ae7-4b08-9ceb-6a7f825bcd49",
         "typeLine": "Creature — Vampire Soldier",
@@ -4133,10 +3860,7 @@
         "quantity": 1,
         "layout": "split",
         "keywords": [],
-        "faceNames": [
-          "Funeral Room",
-          "Awakening Hall"
-        ],
+        "faceNames": ["Funeral Room", "Awakening Hall"],
         "scryfallId": "48237c98-5067-47a8-af74-7b9bce57c6a4",
         "typeLine": "Enchantment — Room // Enchantment — Room",
         "frontTypeLine": "Enchantment — Room",
@@ -4168,9 +3892,7 @@
         "name": "Bloodghast",
         "quantity": 1,
         "layout": "normal",
-        "keywords": [
-          "Landfall"
-        ],
+        "keywords": ["Landfall"],
         "faceNames": [],
         "scryfallId": "cf5fe0bc-02b7-4bcf-8adf-93af7ad76963",
         "typeLine": "Creature — Vampire Spirit",
@@ -4218,9 +3940,7 @@
         "name": "Sanguine Evangelist",
         "quantity": 1,
         "layout": "normal",
-        "keywords": [
-          "Battle Cry"
-        ],
+        "keywords": ["Battle Cry"],
         "faceNames": [],
         "scryfallId": "269ddd84-fdc4-4c94-b183-32ecec56967c",
         "typeLine": "Creature — Vampire Cleric",
@@ -4237,9 +3957,7 @@
         "quantity": 1,
         "scryfallId": "6e9d8fe4-fd9b-4923-92bf-7dd6b8fa02e7",
         "layout": "normal",
-        "keywords": [
-          "Revolt"
-        ],
+        "keywords": ["Revolt"],
         "typeLine": "Instant",
         "cardUrl": "https://scryfall.com/card/2xm/93/fatal-push?utm_source=api",
         "images": [
@@ -4269,9 +3987,7 @@
         "name": "Damn",
         "quantity": 1,
         "layout": "normal",
-        "keywords": [
-          "Overload"
-        ],
+        "keywords": ["Overload"],
         "faceNames": [],
         "scryfallId": "efeae088-9ac5-4d2f-a15c-d8675a471ac5",
         "typeLine": "Sorcery",
@@ -4303,9 +4019,7 @@
         "name": "Rite of Oblivion",
         "quantity": 1,
         "layout": "normal",
-        "keywords": [
-          "Flashback"
-        ],
+        "keywords": ["Flashback"],
         "faceNames": [],
         "scryfallId": "fe1f8d52-565e-4900-8357-fd29f2022dc1",
         "typeLine": "Sorcery",
@@ -4337,9 +4051,7 @@
         "name": "Fanatical Offering",
         "quantity": 1,
         "layout": "normal",
-        "keywords": [
-          "Explore"
-        ],
+        "keywords": ["Explore"],
         "faceNames": [],
         "scryfallId": "d896dd52-b134-4b55-ab91-ccb05ecc50f4",
         "typeLine": "Instant",
@@ -4387,10 +4099,7 @@
         "name": "Bloodthirsty Conqueror",
         "quantity": 1,
         "layout": "normal",
-        "keywords": [
-          "Deathtouch",
-          "Flying"
-        ],
+        "keywords": ["Deathtouch", "Flying"],
         "faceNames": [],
         "scryfallId": "ce860ed4-a5bd-4347-9eab-dd716ea84db1",
         "typeLine": "Creature — Vampire Knight",
@@ -4443,9 +4152,7 @@
             "name": "Elenda, the Dusk Rose",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Lifelink"
-            ],
+            "keywords": ["Lifelink"],
             "faceNames": [],
             "scryfallId": "e18feca3-1b1b-4456-8873-25a24849a917",
             "typeLine": "Legendary Creature — Vampire Knight",
@@ -4467,10 +4174,7 @@
             "quantity": 1,
             "layout": "modal_dfc",
             "keywords": [],
-            "faceNames": [
-              "Agadeem's Awakening",
-              "Agadeem, the Undercrypt"
-            ],
+            "faceNames": ["Agadeem's Awakening", "Agadeem, the Undercrypt"],
             "scryfallId": "67f4c93b-080c-4196-b095-6a120a221988",
             "typeLine": "Sorcery // Land",
             "frontTypeLine": "Sorcery",
@@ -4554,9 +4258,7 @@
             "name": "Bloodghast",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Landfall"
-            ],
+            "keywords": ["Landfall"],
             "faceNames": [],
             "scryfallId": "cf5fe0bc-02b7-4bcf-8adf-93af7ad76963",
             "typeLine": "Creature — Vampire Spirit",
@@ -4572,9 +4274,7 @@
             "name": "Bloodletter of Aclazotz",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Flying"
-            ],
+            "keywords": ["Flying"],
             "faceNames": [],
             "scryfallId": "d4f6027a-003a-4f9d-929a-0b6da1fa42c9",
             "typeLine": "Creature — Vampire Demon",
@@ -4590,10 +4290,7 @@
             "name": "Bloodthirsty Conqueror",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Deathtouch",
-              "Flying"
-            ],
+            "keywords": ["Deathtouch", "Flying"],
             "faceNames": [],
             "scryfallId": "ce860ed4-a5bd-4347-9eab-dd716ea84db1",
             "typeLine": "Creature — Vampire Knight",
@@ -4610,10 +4307,7 @@
             "quantity": 1,
             "layout": "modal_dfc",
             "keywords": [],
-            "faceNames": [
-              "Brightclimb Pathway",
-              "Grimclimb Pathway"
-            ],
+            "faceNames": ["Brightclimb Pathway", "Grimclimb Pathway"],
             "scryfallId": "d24c3d51-795d-4c01-a34a-3280fccd2d78",
             "typeLine": "Land // Land",
             "frontTypeLine": "Land",
@@ -4745,9 +4439,7 @@
             "name": "Damn",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Overload"
-            ],
+            "keywords": ["Overload"],
             "faceNames": [],
             "scryfallId": "efeae088-9ac5-4d2f-a15c-d8675a471ac5",
             "typeLine": "Sorcery",
@@ -4827,9 +4519,7 @@
             "name": "Falkenrath Noble",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Flying"
-            ],
+            "keywords": ["Flying"],
             "faceNames": [],
             "scryfallId": "28f6e33d-9258-4bad-8f39-31afff272415",
             "typeLine": "Creature — Vampire Noble",
@@ -4845,9 +4535,7 @@
             "name": "Fanatical Offering",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Explore"
-            ],
+            "keywords": ["Explore"],
             "faceNames": [],
             "scryfallId": "d896dd52-b134-4b55-ab91-ccb05ecc50f4",
             "typeLine": "Instant",
@@ -4896,10 +4584,7 @@
             "quantity": 1,
             "layout": "split",
             "keywords": [],
-            "faceNames": [
-              "Funeral Room",
-              "Awakening Hall"
-            ],
+            "faceNames": ["Funeral Room", "Awakening Hall"],
             "scryfallId": "48237c98-5067-47a8-af74-7b9bce57c6a4",
             "typeLine": "Enchantment — Room // Enchantment — Room",
             "frontTypeLine": "Enchantment — Room",
@@ -4931,9 +4616,7 @@
             "name": "Indulgent Aristocrat",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Lifelink"
-            ],
+            "keywords": ["Lifelink"],
             "faceNames": [],
             "scryfallId": "37f6200d-caaf-49ca-b021-48186e404ace",
             "typeLine": "Creature — Vampire Noble",
@@ -4965,13 +4648,8 @@
             "name": "Legion's Landing // Adanto, the First Fort",
             "quantity": 1,
             "layout": "transform",
-            "keywords": [
-              "Transform"
-            ],
-            "faceNames": [
-              "Legion's Landing",
-              "Adanto, the First Fort"
-            ],
+            "keywords": ["Transform"],
+            "faceNames": ["Legion's Landing", "Adanto, the First Fort"],
             "scryfallId": "05e2a5e6-3aaa-4096-bdd0-fcc1afe5a36c",
             "typeLine": "Legendary Enchantment // Legendary Land",
             "frontTypeLine": "Legendary Enchantment",
@@ -5055,9 +4733,7 @@
             "name": "Path of Peril",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Cleave"
-            ],
+            "keywords": ["Cleave"],
             "faceNames": [],
             "scryfallId": "061be997-1519-41b6-9933-eb625db88eb2",
             "typeLine": "Sorcery",
@@ -5105,9 +4781,7 @@
             "name": "Rite of Oblivion",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Flashback"
-            ],
+            "keywords": ["Flashback"],
             "faceNames": [],
             "scryfallId": "fe1f8d52-565e-4900-8357-fd29f2022dc1",
             "typeLine": "Sorcery",
@@ -5155,9 +4829,7 @@
             "name": "Sanguine Evangelist",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Battle Cry"
-            ],
+            "keywords": ["Battle Cry"],
             "faceNames": [],
             "scryfallId": "269ddd84-fdc4-4c94-b183-32ecec56967c",
             "typeLine": "Creature — Vampire Cleric",
@@ -5173,9 +4845,7 @@
             "name": "Shadowy Backstreet",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Surveil"
-            ],
+            "keywords": ["Surveil"],
             "faceNames": [],
             "scryfallId": "69c1b656-1d67-499c-bf0f-417682a86c7d",
             "typeLine": "Land — Plains Swamp",
@@ -5239,9 +4909,7 @@
             "name": "Susurian Voidborn",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Warp"
-            ],
+            "keywords": ["Warp"],
             "faceNames": [],
             "scryfallId": "beb97e7b-0ae7-4b08-9ceb-6a7f825bcd49",
             "typeLine": "Creature — Vampire Soldier",
@@ -5273,10 +4941,7 @@
             "name": "Takenuma, Abandoned Mire",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Mill",
-              "Channel"
-            ],
+            "keywords": ["Mill", "Channel"],
             "faceNames": [],
             "scryfallId": "499037cc-a577-41cb-8ca2-5e117945634f",
             "typeLine": "Legendary Land",
@@ -5292,13 +4957,8 @@
             "name": "Tarrian's Journal // The Tomb of Aclazotz",
             "quantity": 1,
             "layout": "transform",
-            "keywords": [
-              "Transform"
-            ],
-            "faceNames": [
-              "Tarrian's Journal",
-              "The Tomb of Aclazotz"
-            ],
+            "keywords": ["Transform"],
+            "faceNames": ["Tarrian's Journal", "The Tomb of Aclazotz"],
             "scryfallId": "99255a66-b868-45fc-a2a9-0c89bd851b69",
             "typeLine": "Legendary Artifact — Book // Legendary Land — Cave",
             "frontTypeLine": "Legendary Artifact — Book",
@@ -5334,10 +4994,7 @@
             "name": "Vein Ripper",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Flying",
-              "Ward"
-            ],
+            "keywords": ["Flying", "Ward"],
             "faceNames": [],
             "scryfallId": "078933b3-6d82-45f2-94e8-addf54cf1704",
             "typeLine": "Creature — Vampire Assassin",
@@ -5417,9 +5074,7 @@
             "name": "Welcoming Vampire",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Flying"
-            ],
+            "keywords": ["Flying"],
             "faceNames": [],
             "scryfallId": "d8f69cea-823c-482b-a605-8138b3d950e6",
             "typeLine": "Creature — Vampire",
@@ -5434,7 +5089,6 @@
         ]
       }
     ],
-    "decklist": "Commander\n1 Elenda, the Dusk Rose\n\nDeck\n1 Agadeem's Awakening\n1 Ancient Tomb\n1 Bartolomé del Presidio\n1 Bleachbone Verge\n1 Blood Artist\n1 Bloodghast\n1 Bloodletter of Aclazotz\n1 Bloodthirsty Conqueror\n1 Brightclimb Pathway\n1 Castle Locthwain\n1 Cavern of Souls\n1 Caves of Koilos\n1 Command Tower\n1 Concealed Courtyard\n1 Creeping Bloodsucker\n1 Cruel Celebrant\n1 Damn\n1 Deadly Rollick\n1 Dusk Legion Zealot\n1 Edgar, Ancient Bloodlord\n1 Exquisite Blood\n1 Falkenrath Noble\n1 Fanatical Offering\n1 Flare of Malice\n1 Forerunner of the Legion\n1 Funeral Room // Awakening Hall\n1 Godless Shrine\n1 Indulgent Aristocrat\n1 Isolated Chapel\n1 Legion's Landing\n1 Marauding Blight-Priest\n1 Marsh Flats\n1 Martyr of Dusk\n1 Oathsworn Vampire\n1 Path of Peril\n1 Plains\n1 Prismatic Vista\n1 Rite of Oblivion\n1 Ruthless Lawbringer\n1 Sanguine Bond\n1 Sanguine Evangelist\n1 Shadowy Backstreet\n1 Shineshadow Snarl\n1 Silent Clearing\n1 Sorin, Imperious Bloodlord\n1 Susurian Voidborn\n4 Swamp\n1 Takenuma, Abandoned Mire\n1 Tarrian's Journal\n1 Vampiric Tutor\n1 Vein Ripper\n1 Vengeful Bloodwitch\n1 Village Rites\n1 Voldaren Estate\n1 Vraan, Executioner Thane\n1 Welcoming Vampire",
     "lastSynced": "2026-10-02T16:36:56.676Z"
   },
   "6MiGHQoE-0awnIUf30-jgg": {
@@ -5452,10 +5106,7 @@
             "name": "Rakdos, the Showstopper",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Flying",
-              "Trample"
-            ],
+            "keywords": ["Flying", "Trample"],
             "faceNames": [],
             "scryfallId": "210d07ab-7608-4fda-adb6-562cf194192f",
             "typeLine": "Legendary Creature — Demon",
@@ -5573,10 +5224,7 @@
             "quantity": 1,
             "layout": "modal_dfc",
             "keywords": [],
-            "faceNames": [
-              "Blightstep Pathway",
-              "Searstep Pathway"
-            ],
+            "faceNames": ["Blightstep Pathway", "Searstep Pathway"],
             "scryfallId": "0ce39a19-f51d-4a35-ae80-5b82eb15fcff",
             "typeLine": "Land // Land",
             "frontTypeLine": "Land",
@@ -5612,9 +5260,7 @@
             "name": "Bloodgift Demon",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Flying"
-            ],
+            "keywords": ["Flying"],
             "faceNames": [],
             "scryfallId": "04151a78-eb5a-4cb2-aa1f-e4835f3124c1",
             "typeLine": "Creature — Demon",
@@ -5631,10 +5277,7 @@
             "quantity": 1,
             "layout": "modal_dfc",
             "keywords": [],
-            "faceNames": [
-              "Bloodsoaked Insight",
-              "Sanguine Morass"
-            ],
+            "faceNames": ["Bloodsoaked Insight", "Sanguine Morass"],
             "scryfallId": "0a08e0d2-1e60-47f5-9228-4c11a127089d",
             "typeLine": "Sorcery // Land",
             "frontTypeLine": "Sorcery",
@@ -5718,9 +5361,7 @@
             "name": "Collective Brutality",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Escalate"
-            ],
+            "keywords": ["Escalate"],
             "faceNames": [],
             "scryfallId": "a4566f2e-ef46-40d1-9f5e-d7fad6590053",
             "typeLine": "Sorcery",
@@ -5752,10 +5393,7 @@
             "name": "Curse-Marred Demon",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Flying",
-              "Trample"
-            ],
+            "keywords": ["Flying", "Trample"],
             "faceNames": [],
             "scryfallId": "8f827e50-0a08-4bc8-98b1-b26c9af15ef2",
             "typeLine": "Creature — Demon",
@@ -5803,9 +5441,7 @@
             "name": "Demonic Counsel",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Delirium"
-            ],
+            "keywords": ["Delirium"],
             "faceNames": [],
             "scryfallId": "ff79c845-4115-4fbf-b20f-37470f2bf7fb",
             "typeLine": "Sorcery",
@@ -5853,10 +5489,7 @@
             "name": "Demonlord Belzenlok",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Flying",
-              "Trample"
-            ],
+            "keywords": ["Flying", "Trample"],
             "faceNames": [],
             "scryfallId": "ffb4dbe8-15fa-467f-9366-66382b192113",
             "typeLine": "Legendary Creature — Elder Demon",
@@ -5872,9 +5505,7 @@
             "name": "Desecration Demon",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Flying"
-            ],
+            "keywords": ["Flying"],
             "faceNames": [],
             "scryfallId": "52bf6460-0df6-4dd3-8af8-df728683bcaa",
             "typeLine": "Creature — Demon",
@@ -5955,10 +5586,7 @@
             "quantity": 1,
             "layout": "modal_dfc",
             "keywords": [],
-            "faceNames": [
-              "Fell the Profane",
-              "Fell Mire"
-            ],
+            "faceNames": ["Fell the Profane", "Fell Mire"],
             "scryfallId": "a3cb782d-c459-468d-9779-9b5669abc337",
             "typeLine": "Instant // Land",
             "frontTypeLine": "Instant",
@@ -5994,10 +5622,7 @@
             "name": "Griselbrand",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Flying",
-              "Lifelink"
-            ],
+            "keywords": ["Flying", "Lifelink"],
             "faceNames": [],
             "scryfallId": "f01a8af1-b893-4503-93c1-b4d18c8ae0b9",
             "typeLine": "Legendary Creature — Demon",
@@ -6029,15 +5654,8 @@
             "name": "Heirloom Mirror // Inherited Fiend",
             "quantity": 1,
             "layout": "transform",
-            "keywords": [
-              "Flying",
-              "Transform",
-              "Mill"
-            ],
-            "faceNames": [
-              "Heirloom Mirror",
-              "Inherited Fiend"
-            ],
+            "keywords": ["Flying", "Transform", "Mill"],
+            "faceNames": ["Heirloom Mirror", "Inherited Fiend"],
             "scryfallId": "e6dd05f0-a3c0-4bd6-a1d1-a74540623093",
             "typeLine": "Artifact // Creature — Demon",
             "frontTypeLine": "Artifact",
@@ -6137,9 +5755,7 @@
             "name": "Ob Nixilis, the Adversary",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Casualty"
-            ],
+            "keywords": ["Casualty"],
             "faceNames": [],
             "scryfallId": "80226520-6b0a-48ea-a868-a29eb3fbd403",
             "typeLine": "Legendary Planeswalker — Nixilis",
@@ -6155,10 +5771,7 @@
             "name": "Orcus, Prince of Undeath",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Flying",
-              "Trample"
-            ],
+            "keywords": ["Flying", "Trample"],
             "faceNames": [],
             "scryfallId": "91f5c6d3-fb04-4a2e-87b6-9ed2314085a8",
             "typeLine": "Legendary Creature — Demon",
@@ -6206,10 +5819,7 @@
             "name": "Rakdos, Patron of Chaos",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Flying",
-              "Trample"
-            ],
+            "keywords": ["Flying", "Trample"],
             "faceNames": [],
             "scryfallId": "cc6fd2d5-8eb2-4265-a1bf-d4ae635285af",
             "typeLine": "Legendary Creature — Demon",
@@ -6225,9 +5835,7 @@
             "name": "Raucous Theater",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Surveil"
-            ],
+            "keywords": ["Surveil"],
             "faceNames": [],
             "scryfallId": "b598c93e-dae1-4d71-a9e4-917abf76d2d0",
             "typeLine": "Land — Swamp Mountain",
@@ -6259,10 +5867,7 @@
             "name": "Reaper from the Abyss",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Flying",
-              "Morbid"
-            ],
+            "keywords": ["Flying", "Morbid"],
             "faceNames": [],
             "scryfallId": "1465dbbf-d34f-4e07-8b24-15f0f4875957",
             "typeLine": "Creature — Demon",
@@ -6342,10 +5947,7 @@
             "name": "Takenuma, Abandoned Mire",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Mill",
-              "Channel"
-            ],
+            "keywords": ["Mill", "Channel"],
             "faceNames": [],
             "scryfallId": "499037cc-a577-41cb-8ca2-5e117945634f",
             "typeLine": "Legendary Land",
@@ -6361,9 +5963,7 @@
             "name": "Temple of Malice",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Scry"
-            ],
+            "keywords": ["Scry"],
             "faceNames": [],
             "scryfallId": "9490a495-9f17-45a8-b10c-7de4fcbd2778",
             "typeLine": "Land",
@@ -6396,10 +5996,7 @@
             "quantity": 1,
             "layout": "split",
             "keywords": [],
-            "faceNames": [
-              "Unholy Annex",
-              "Ritual Chamber"
-            ],
+            "faceNames": ["Unholy Annex", "Ritual Chamber"],
             "scryfallId": "0fb4c734-c698-46f2-bc78-5f036f472e5b",
             "typeLine": "Enchantment — Room // Enchantment — Room",
             "frontTypeLine": "Enchantment — Room",
@@ -6438,10 +6035,7 @@
               "Transform",
               "Haste"
             ],
-            "faceNames": [
-              "Westvale Abbey",
-              "Ormendahl, Profane Prince"
-            ],
+            "faceNames": ["Westvale Abbey", "Ormendahl, Profane Prince"],
             "scryfallId": "20c2c22f-5115-4a66-bcad-e70619d43448",
             "typeLine": "Land // Legendary Creature — Demon",
             "frontTypeLine": "Land",
@@ -6460,7 +6054,6 @@
         ]
       }
     ],
-    "decklist": "Commander\n1 Rakdos, the Showstopper\n\nDeck\n1 Ancient Tomb\n1 Bedevil\n1 Bitter Triumph\n1 Blackcleave Cliffs\n1 Blasphemous Edict\n1 Blazemire Verge\n1 Blightstep Pathway\n1 Blood Crypt\n1 Bloodgift Demon\n1 Bloodsoaked Insight\n1 Bloodstained Mire\n1 Buried Alive\n1 Castle Locthwain\n1 Cavern of Souls\n1 Collective Brutality\n1 Command Tower\n1 Curse-Marred Demon\n1 Dark Ritual\n1 Deadly Rollick\n1 Demonic Counsel\n1 Demonic Pact\n1 Demonic Tutor\n1 Demonlord Belzenlok\n1 Desecration Demon\n1 Dragonskull Summit\n1 Dreadbore\n1 Eliminate\n1 Entomb\n1 Fell the Profane\n1 Foreboding Ruins\n1 Griselbrand\n1 Haunted Ridge\n1 Heirloom Mirror\n1 Infernal Grasp\n1 Kardur's Vicious Return\n1 Liliana of the Veil\n2 Mountain\n1 Necromancy\n1 Ob Nixilis, the Adversary\n1 Orcus, Prince of Undeath\n1 Prismatic Vista\n1 Rakdos Joins Up\n1 Rakdos, Patron of Chaos\n1 Raucous Theater\n1 Reanimate\n1 Reaper from the Abyss\n1 Sign in Blood\n1 Sulfurous Springs\n1 Summon: G.F. Ifrit\n3 Swamp\n1 Takenuma, Abandoned Mire\n1 Temple of Malice\n1 The Meathook Massacre\n1 Unholy Annex // Ritual Chamber\n1 Unmarked Grave\n1 Westvale Abbey",
     "lastSynced": "2026-10-02T16:36:58.016Z"
   },
   "W5-gXmh4CU67_2M1mG-pLg": {
@@ -6474,9 +6067,7 @@
         "name": "Sigarda, Font of Blessings",
         "quantity": 1,
         "layout": "normal",
-        "keywords": [
-          "Flying"
-        ],
+        "keywords": ["Flying"],
         "faceNames": [],
         "scryfallId": "cba71725-d6df-44d7-a93b-934573759711",
         "typeLine": "Legendary Creature — Angel",
@@ -6492,11 +6083,7 @@
         "name": "Lyra Dawnbringer",
         "quantity": 1,
         "layout": "normal",
-        "keywords": [
-          "Flying",
-          "Lifelink",
-          "First strike"
-        ],
+        "keywords": ["Flying", "Lifelink", "First strike"],
         "faceNames": [],
         "scryfallId": "93be6799-7b9d-44d4-84dc-2961692b5a85",
         "typeLine": "Legendary Creature — Angel",
@@ -6512,9 +6099,7 @@
         "name": "Resplendent Angel",
         "quantity": 1,
         "layout": "normal",
-        "keywords": [
-          "Flying"
-        ],
+        "keywords": ["Flying"],
         "faceNames": [],
         "scryfallId": "e827612d-5a43-4a29-b0c1-ab7f3285ad98",
         "typeLine": "Creature — Angel",
@@ -6530,9 +6115,7 @@
         "name": "Righteous Valkyrie",
         "quantity": 1,
         "layout": "normal",
-        "keywords": [
-          "Flying"
-        ],
+        "keywords": ["Flying"],
         "faceNames": [],
         "scryfallId": "02fb5f9f-8750-4eb5-a03a-6dacc60e0b90",
         "typeLine": "Creature — Angel Cleric",
@@ -6548,10 +6131,7 @@
         "name": "Giada, Font of Hope",
         "quantity": 1,
         "layout": "normal",
-        "keywords": [
-          "Flying",
-          "Vigilance"
-        ],
+        "keywords": ["Flying", "Vigilance"],
         "faceNames": [],
         "scryfallId": "bae077bd-fc8d-44d7-8c75-8dc8699c168e",
         "typeLine": "Legendary Creature — Angel",
@@ -6631,9 +6211,7 @@
         "name": "Utopia Sprawl",
         "quantity": 1,
         "layout": "normal",
-        "keywords": [
-          "Enchant"
-        ],
+        "keywords": ["Enchant"],
         "faceNames": [],
         "scryfallId": "44d14297-f84b-40bd-bd0a-b67d13787ca0",
         "typeLine": "Enchantment — Aura",
@@ -6680,9 +6258,7 @@
         "name": "Shalai, Voice of Plenty",
         "quantity": 1,
         "layout": "normal",
-        "keywords": [
-          "Flying"
-        ],
+        "keywords": ["Flying"],
         "faceNames": [],
         "scryfallId": "db827ee7-6f2e-4e10-aac0-120fc2b69fbd",
         "typeLine": "Legendary Creature — Angel",
@@ -6714,9 +6290,7 @@
         "name": "Platinum Angel",
         "quantity": 1,
         "layout": "normal",
-        "keywords": [
-          "Flying"
-        ],
+        "keywords": ["Flying"],
         "faceNames": [],
         "scryfallId": "59bb5aee-b334-4c24-875b-56751d4add02",
         "typeLine": "Artifact Creature — Angel",
@@ -6764,9 +6338,7 @@
         "name": "Winds of Abandon",
         "quantity": 1,
         "layout": "normal",
-        "keywords": [
-          "Overload"
-        ],
+        "keywords": ["Overload"],
         "faceNames": [],
         "scryfallId": "3bb17913-fe4d-4acd-9b75-71f5a90f898b",
         "typeLine": "Sorcery",
@@ -6782,9 +6354,7 @@
         "name": "Devout Decree",
         "quantity": 1,
         "layout": "normal",
-        "keywords": [
-          "Scry"
-        ],
+        "keywords": ["Scry"],
         "faceNames": [],
         "scryfallId": "2dcde8fe-d4a4-4c6e-926e-c4a1b45045e4",
         "typeLine": "Sorcery",
@@ -6848,10 +6418,7 @@
         "name": "Metropolis Reformer",
         "quantity": 1,
         "layout": "normal",
-        "keywords": [
-          "Flying",
-          "Vigilance"
-        ],
+        "keywords": ["Flying", "Vigilance"],
         "faceNames": [],
         "scryfallId": "2f76739e-03fb-401a-8444-ac7fd16f21ef",
         "typeLine": "Creature — Angel Cleric",
@@ -6867,9 +6434,7 @@
         "name": "Angel of Vitality",
         "quantity": 1,
         "layout": "normal",
-        "keywords": [
-          "Flying"
-        ],
+        "keywords": ["Flying"],
         "faceNames": [],
         "scryfallId": "c279947e-168f-4af5-902b-aba724f52b8a",
         "typeLine": "Creature — Angel",
@@ -6917,9 +6482,7 @@
         "name": "Inspiring Overseer",
         "quantity": 1,
         "layout": "normal",
-        "keywords": [
-          "Flying"
-        ],
+        "keywords": ["Flying"],
         "faceNames": [],
         "scryfallId": "c3e9aa54-e5d5-4cbb-9d2a-263b9eba398f",
         "typeLine": "Creature — Angel Cleric",
@@ -6935,9 +6498,7 @@
         "name": "Exemplar of Light",
         "quantity": 1,
         "layout": "normal",
-        "keywords": [
-          "Flying"
-        ],
+        "keywords": ["Flying"],
         "faceNames": [],
         "scryfallId": "920c8fc5-fdd2-446a-a676-5c363f96928f",
         "typeLine": "Creature — Angel",
@@ -6953,11 +6514,7 @@
         "name": "Wojek Investigator",
         "quantity": 1,
         "layout": "normal",
-        "keywords": [
-          "Flying",
-          "Investigate",
-          "Vigilance"
-        ],
+        "keywords": ["Flying", "Investigate", "Vigilance"],
         "faceNames": [],
         "scryfallId": "58eccc85-bdfe-48f4-a79e-76d9ef122815",
         "typeLine": "Creature — Angel Detective",
@@ -7026,9 +6583,7 @@
             "name": "Sigarda, Font of Blessings",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Flying"
-            ],
+            "keywords": ["Flying"],
             "faceNames": [],
             "scryfallId": "cba71725-d6df-44d7-a93b-934573759711",
             "typeLine": "Legendary Creature — Angel",
@@ -7065,10 +6620,7 @@
             "name": "Angel of the Dire Hour",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Flying",
-              "Flash"
-            ],
+            "keywords": ["Flying", "Flash"],
             "faceNames": [],
             "scryfallId": "b7ab81d4-aaf7-4c72-9651-5e1482126928",
             "typeLine": "Creature — Angel",
@@ -7084,9 +6636,7 @@
             "name": "Angel of Vitality",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Flying"
-            ],
+            "keywords": ["Flying"],
             "faceNames": [],
             "scryfallId": "c279947e-168f-4af5-902b-aba724f52b8a",
             "typeLine": "Creature — Angel",
@@ -7134,12 +6684,7 @@
             "name": "Baneslayer Angel",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Flying",
-              "Lifelink",
-              "First strike",
-              "Protection"
-            ],
+            "keywords": ["Flying", "Lifelink", "First strike", "Protection"],
             "faceNames": [],
             "scryfallId": "ff70c4ff-a241-4333-bd8f-9f0ed5a0333b",
             "typeLine": "Creature — Angel",
@@ -7188,10 +6733,7 @@
             "quantity": 1,
             "layout": "modal_dfc",
             "keywords": [],
-            "faceNames": [
-              "Branchloft Pathway",
-              "Boulderloft Pathway"
-            ],
+            "faceNames": ["Branchloft Pathway", "Boulderloft Pathway"],
             "scryfallId": "0511e232-2a72-40f5-a400-4f7ebc442d17",
             "typeLine": "Land // Land",
             "frontTypeLine": "Land",
@@ -7307,9 +6849,7 @@
             "name": "Devout Decree",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Scry"
-            ],
+            "keywords": ["Scry"],
             "faceNames": [],
             "scryfallId": "2dcde8fe-d4a4-4c6e-926e-c4a1b45045e4",
             "typeLine": "Sorcery",
@@ -7326,10 +6866,7 @@
             "quantity": 1,
             "layout": "modal_dfc",
             "keywords": [],
-            "faceNames": [
-              "Emeria's Call",
-              "Emeria, Shattered Skyclave"
-            ],
+            "faceNames": ["Emeria's Call", "Emeria, Shattered Skyclave"],
             "scryfallId": "c470539a-9cc7-4175-8f7c-c982b6072b6d",
             "typeLine": "Sorcery // Land",
             "frontTypeLine": "Sorcery",
@@ -7349,9 +6886,7 @@
             "name": "Exemplar of Light",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Flying"
-            ],
+            "keywords": ["Flying"],
             "faceNames": [],
             "scryfallId": "920c8fc5-fdd2-446a-a676-5c363f96928f",
             "typeLine": "Creature — Angel",
@@ -7415,10 +6950,7 @@
             "name": "Giada, Font of Hope",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Flying",
-              "Vigilance"
-            ],
+            "keywords": ["Flying", "Vigilance"],
             "faceNames": [],
             "scryfallId": "bae077bd-fc8d-44d7-8c75-8dc8699c168e",
             "typeLine": "Legendary Creature — Angel",
@@ -7466,9 +6998,7 @@
             "name": "Inspiring Overseer",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Flying"
-            ],
+            "keywords": ["Flying"],
             "faceNames": [],
             "scryfallId": "c3e9aa54-e5d5-4cbb-9d2a-263b9eba398f",
             "typeLine": "Creature — Angel Cleric",
@@ -7500,9 +7030,7 @@
             "name": "Lush Portico",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Surveil"
-            ],
+            "keywords": ["Surveil"],
             "faceNames": [],
             "scryfallId": "c17816e8-28b1-4295-a637-efb0e5c18873",
             "typeLine": "Land — Forest Plains",
@@ -7518,11 +7046,7 @@
             "name": "Lyra Dawnbringer",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Flying",
-              "Lifelink",
-              "First strike"
-            ],
+            "keywords": ["Flying", "Lifelink", "First strike"],
             "faceNames": [],
             "scryfallId": "93be6799-7b9d-44d4-84dc-2961692b5a85",
             "typeLine": "Legendary Creature — Angel",
@@ -7538,9 +7062,7 @@
             "name": "Lyra, Archangel of Dawn",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Flying"
-            ],
+            "keywords": ["Flying"],
             "faceNames": [],
             "scryfallId": "86a3866e-68a8-402c-baf0-1908e98e3995",
             "typeLine": "Legendary Creature — Angel Knight",
@@ -7556,10 +7078,7 @@
             "name": "Metropolis Reformer",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Flying",
-              "Vigilance"
-            ],
+            "keywords": ["Flying", "Vigilance"],
             "faceNames": [],
             "scryfallId": "2f76739e-03fb-401a-8444-ac7fd16f21ef",
             "typeLine": "Creature — Angel Cleric",
@@ -7575,9 +7094,7 @@
             "name": "Orim's Chant",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Kicker"
-            ],
+            "keywords": ["Kicker"],
             "faceNames": [],
             "scryfallId": "ee241079-1e5a-4224-b9cb-4fd3e0da687c",
             "typeLine": "Instant",
@@ -7625,9 +7142,7 @@
             "name": "Platinum Angel",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Flying"
-            ],
+            "keywords": ["Flying"],
             "faceNames": [],
             "scryfallId": "59bb5aee-b334-4c24-875b-56751d4add02",
             "typeLine": "Artifact Creature — Angel",
@@ -7691,9 +7206,7 @@
             "name": "Resplendent Angel",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Flying"
-            ],
+            "keywords": ["Flying"],
             "faceNames": [],
             "scryfallId": "e827612d-5a43-4a29-b0c1-ab7f3285ad98",
             "typeLine": "Creature — Angel",
@@ -7709,9 +7222,7 @@
             "name": "Righteous Valkyrie",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Flying"
-            ],
+            "keywords": ["Flying"],
             "faceNames": [],
             "scryfallId": "02fb5f9f-8750-4eb5-a03a-6dacc60e0b90",
             "typeLine": "Creature — Angel Cleric",
@@ -7743,9 +7254,7 @@
             "name": "Shalai, Voice of Plenty",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Flying"
-            ],
+            "keywords": ["Flying"],
             "faceNames": [],
             "scryfallId": "db827ee7-6f2e-4e10-aac0-120fc2b69fbd",
             "typeLine": "Legendary Creature — Angel",
@@ -7777,11 +7286,7 @@
             "name": "Steel Seraph",
             "quantity": 1,
             "layout": "prototype",
-            "keywords": [
-              "Prototype",
-              "Flying",
-              "Vigilance"
-            ],
+            "keywords": ["Prototype", "Flying", "Vigilance"],
             "faceNames": [],
             "scryfallId": "1b6ef5f5-4058-4f89-a573-9e2da87a9f2e",
             "typeLine": "Artifact Creature — Angel",
@@ -7829,9 +7334,7 @@
             "name": "Temple of Plenty",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Scry"
-            ],
+            "keywords": ["Scry"],
             "faceNames": [],
             "scryfallId": "69762774-c8e1-42de-90b3-5a4d50f5d84d",
             "typeLine": "Land",
@@ -7895,9 +7398,7 @@
             "name": "Utopia Sprawl",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Enchant"
-            ],
+            "keywords": ["Enchant"],
             "faceNames": [],
             "scryfallId": "44d14297-f84b-40bd-bd0a-b67d13787ca0",
             "typeLine": "Enchantment — Aura",
@@ -7913,9 +7414,7 @@
             "name": "Winds of Abandon",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Overload"
-            ],
+            "keywords": ["Overload"],
             "faceNames": [],
             "scryfallId": "3bb17913-fe4d-4acd-9b75-71f5a90f898b",
             "typeLine": "Sorcery",
@@ -7947,11 +7446,7 @@
             "name": "Wojek Investigator",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Flying",
-              "Investigate",
-              "Vigilance"
-            ],
+            "keywords": ["Flying", "Investigate", "Vigilance"],
             "faceNames": [],
             "scryfallId": "58eccc85-bdfe-48f4-a79e-76d9ef122815",
             "typeLine": "Creature — Angel Detective",
@@ -7983,9 +7478,7 @@
             "name": "Youthful Valkyrie",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Flying"
-            ],
+            "keywords": ["Flying"],
             "faceNames": [],
             "scryfallId": "566d79a0-cff4-4c60-9d11-b24ca3131290",
             "typeLine": "Creature — Angel",
@@ -8000,7 +7493,6 @@
         ]
       }
     ],
-    "decklist": "Commander\n1 Sigarda, Font of Blessings\n\nDeck\n1 Akroma's Will\n1 Angel of the Dire Hour\n1 Angel of Vitality\n1 Authority of the Consuls\n1 Avacyn's Pilgrim\n1 Baneslayer Angel\n1 Banishing Light\n1 Bishop of Wings\n1 Branchloft Pathway\n1 Brushland\n1 Canopy Vista\n1 Cavern of Souls\n1 Cleric Class\n1 Command Tower\n1 Deafening Silence\n1 Devout Decree\n1 Emeria's Call\n1 Exemplar of Light\n1 Farseek\n2 Forest\n1 Fortified Village\n1 Giada, Font of Hope\n1 Herald's Horn\n1 Hushwood Verge\n1 Inspiring Overseer\n1 Land Tax\n1 Lush Portico\n1 Lyra Dawnbringer\n1 Lyra, Archangel of Dawn\n1 Metropolis Reformer\n1 Orim's Chant\n1 Overgrown Farmland\n4 Plains\n1 Platinum Angel\n1 Prismatic Vista\n1 Rampant Growth\n1 Razorverge Thicket\n1 Resplendent Angel\n1 Righteous Valkyrie\n1 Serra the Benevolent\n1 Shalai, Voice of Plenty\n1 Starnheim Aspirant\n1 Steel Seraph\n1 Sunpetal Grove\n1 Temple Garden\n1 Temple of Plenty\n1 The Book of Exalted Deeds\n1 The Wind Crystal\n1 Three Tree City\n1 Utopia Sprawl\n1 Winds of Abandon\n1 Windswept Heath\n1 Wojek Investigator\n1 Wrath of God\n1 Youthful Valkyrie",
     "lastSynced": "2026-10-02T16:36:59.377Z"
   },
   "xY8EAxZBX0aZkQI8zW2V3A": {
@@ -8018,10 +7510,7 @@
             "name": "Adeliz, the Cinder Wind",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Flying",
-              "Haste"
-            ],
+            "keywords": ["Flying", "Haste"],
             "faceNames": [],
             "scryfallId": "b3c950e2-a43b-47f8-9ad6-1909ccc7acbf",
             "typeLine": "Legendary Creature — Human Wizard",
@@ -8042,9 +7531,7 @@
             "name": "Balmor, Battlemage Captain",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Flying"
-            ],
+            "keywords": ["Flying"],
             "faceNames": [],
             "scryfallId": "0b45ab13-9bb6-48af-8b37-d97b25801ac8",
             "typeLine": "Legendary Creature — Bird Wizard",
@@ -8108,9 +7595,7 @@
             "name": "Consider",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Surveil"
-            ],
+            "keywords": ["Surveil"],
             "faceNames": [],
             "scryfallId": "268dcd7d-e91f-4110-bf9c-78aad0f26321",
             "typeLine": "Instant",
@@ -8142,9 +7627,7 @@
             "name": "Dreadhorde Arcanist",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Trample"
-            ],
+            "keywords": ["Trample"],
             "faceNames": [],
             "scryfallId": "83b7c93b-06c1-4377-b516-171f6c6a1b9c",
             "typeLine": "Creature — Zombie Wizard",
@@ -8160,9 +7643,7 @@
             "name": "Electrostatic Infantry",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Trample"
-            ],
+            "keywords": ["Trample"],
             "faceNames": [],
             "scryfallId": "5ed2d72f-f1cf-45a7-adf7-969f531721ce",
             "typeLine": "Creature — Dwarf Wizard",
@@ -8291,10 +7772,7 @@
             "quantity": 1,
             "layout": "adventure",
             "keywords": [],
-            "faceNames": [
-              "Gandalf, Goblins' Bane",
-              "Flameshape"
-            ],
+            "faceNames": ["Gandalf, Goblins' Bane", "Flameshape"],
             "scryfallId": "9b0d29a1-7da9-4fb3-8536-8ff8d8acae0b",
             "typeLine": "Legendary Creature — Avatar Wizard // Sorcery — Adventure",
             "frontTypeLine": "Legendary Creature — Avatar Wizard",
@@ -8310,9 +7788,7 @@
             "name": "Harmonic Prodigy",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Prowess"
-            ],
+            "keywords": ["Prowess"],
             "faceNames": [],
             "scryfallId": "22579ac0-ad3f-4000-a65a-46a17a7f1aa5",
             "typeLine": "Creature — Human Wizard",
@@ -8376,10 +7852,7 @@
             "name": "Maximize Velocity",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Jump",
-              "Jump-start"
-            ],
+            "keywords": ["Jump", "Jump-start"],
             "faceNames": [],
             "scryfallId": "ebb7a2aa-f002-4f05-b9ec-8adee4c65e46",
             "typeLine": "Sorcery",
@@ -8411,9 +7884,7 @@
             "name": "Merfolk Trickster",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Flash"
-            ],
+            "keywords": ["Flash"],
             "faceNames": [],
             "scryfallId": "359b2f2b-7b58-47b6-b00c-8616f981e3a3",
             "typeLine": "Creature — Merfolk Wizard",
@@ -8477,9 +7948,7 @@
             "name": "Preordain",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Scry"
-            ],
+            "keywords": ["Scry"],
             "faceNames": [],
             "scryfallId": "8221b564-acf0-4d82-94f5-2ba1337ff5e1",
             "typeLine": "Sorcery",
@@ -8495,9 +7964,7 @@
             "name": "Prismari Charm",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Surveil"
-            ],
+            "keywords": ["Surveil"],
             "faceNames": [],
             "scryfallId": "8f6c2a5e-fe13-407c-aadd-c9caf2884ff1",
             "typeLine": "Instant",
@@ -8545,9 +8012,7 @@
             "name": "Reckless Charge",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Flashback"
-            ],
+            "keywords": ["Flashback"],
             "faceNames": [],
             "scryfallId": "1754a8db-060e-470f-94c0-37f12d82978a",
             "typeLine": "Sorcery",
@@ -8596,10 +8061,7 @@
             "quantity": 1,
             "layout": "modal_dfc",
             "keywords": [],
-            "faceNames": [
-              "Riverglide Pathway",
-              "Lavaglide Pathway"
-            ],
+            "faceNames": ["Riverglide Pathway", "Lavaglide Pathway"],
             "scryfallId": "2668ac91-6cda-4f81-a08d-4fc5f9cb35b2",
             "typeLine": "Land // Land",
             "frontTypeLine": "Land",
@@ -8652,10 +8114,7 @@
             "quantity": 1,
             "layout": "modal_dfc",
             "keywords": [],
-            "faceNames": [
-              "Sink into Stupor",
-              "Soporific Springs"
-            ],
+            "faceNames": ["Sink into Stupor", "Soporific Springs"],
             "scryfallId": "5358b87a-1a29-426d-b165-40c97da2c14d",
             "typeLine": "Instant // Land",
             "frontTypeLine": "Instant",
@@ -8675,11 +8134,7 @@
             "name": "Slickshot Show-Off",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Flying",
-              "Plot",
-              "Haste"
-            ],
+            "keywords": ["Flying", "Plot", "Haste"],
             "faceNames": [],
             "scryfallId": "7054012b-4f9d-44a0-aaf9-7fd3bddc7b2d",
             "typeLine": "Creature — Bird Wizard",
@@ -8695,9 +8150,7 @@
             "name": "Snapcaster Mage",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Flash"
-            ],
+            "keywords": ["Flash"],
             "faceNames": [],
             "scryfallId": "96791b5f-88d1-4455-95cb-73d529977b1c",
             "typeLine": "Creature — Human Wizard",
@@ -8713,9 +8166,7 @@
             "name": "Soul-Scar Mage",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Prowess"
-            ],
+            "keywords": ["Prowess"],
             "faceNames": [],
             "scryfallId": "cd925b9d-da4f-4454-a942-43cf06e6e653",
             "typeLine": "Creature — Human Wizard",
@@ -8779,9 +8230,7 @@
             "name": "Stingcaster Mage",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Haste"
-            ],
+            "keywords": ["Haste"],
             "faceNames": [],
             "scryfallId": "2d8e8e5f-3bf5-490d-aa9c-9df2b26f1460",
             "typeLine": "Creature — Human Wizard",
@@ -8813,10 +8262,7 @@
             "name": "Stormcatch Mentor",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Prowess",
-              "Haste"
-            ],
+            "keywords": ["Prowess", "Haste"],
             "faceNames": [],
             "scryfallId": "99754055-6d67-4fde-aff3-41f6af6ea764",
             "typeLine": "Creature — Otter Wizard",
@@ -8832,11 +8278,7 @@
             "name": "Stormchaser Mage",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Flying",
-              "Prowess",
-              "Haste"
-            ],
+            "keywords": ["Flying", "Prowess", "Haste"],
             "faceNames": [],
             "scryfallId": "662ecceb-1246-42ed-9334-592847e6b2f5",
             "typeLine": "Creature — Human Wizard",
@@ -8852,10 +8294,7 @@
             "name": "Symmetry Sage",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Flying",
-              "Magecraft"
-            ],
+            "keywords": ["Flying", "Magecraft"],
             "faceNames": [],
             "scryfallId": "3e726fc7-36cf-405c-9b7c-d1e41cd6c68f",
             "typeLine": "Creature — Human Wizard",
@@ -8871,9 +8310,7 @@
             "name": "Thundering Falls",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Surveil"
-            ],
+            "keywords": ["Surveil"],
             "faceNames": [],
             "scryfallId": "17260fff-b239-4af4-9306-3236ae3fa5a5",
             "typeLine": "Land — Island Mountain",
@@ -8889,9 +8326,7 @@
             "name": "Tomik, Izzet Sparkmage",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Prowess"
-            ],
+            "keywords": ["Prowess"],
             "faceNames": [],
             "scryfallId": "5c5afd5f-6f37-4c3e-83f0-68fdcea98810",
             "typeLine": "Legendary Creature — Human Wizard",
@@ -8907,9 +8342,7 @@
             "name": "Treasure Cruise",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Delve"
-            ],
+            "keywords": ["Delve"],
             "faceNames": [],
             "scryfallId": "13a7fecb-9241-40ee-8b6b-30ab4760d836",
             "typeLine": "Sorcery",
@@ -8957,9 +8390,7 @@
             "name": "Wizard's Staff",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Equip"
-            ],
+            "keywords": ["Equip"],
             "faceNames": [],
             "scryfallId": "0de529a7-bdc5-4581-a169-1ad123bc099a",
             "typeLine": "Artifact — Equipment",
@@ -8974,7 +8405,6 @@
         ]
       }
     ],
-    "decklist": "Commander\n1 Adeliz, the Cinder Wind\n\nDeck\n1 Balmor, Battlemage Captain\n1 Brainstorm\n1 Chain Lightning\n1 Command Tower\n1 Consider\n1 Counterspell\n1 Dreadhorde Arcanist\n1 Electrostatic Infantry\n1 Expedite\n1 Expressive Iteration\n1 Fierce Guardianship\n1 Fiery Islet\n1 Flame of Anor\n1 Flashback\n1 Force of Will\n1 Gandalf, Goblins' Bane\n1 Harmonic Prodigy\n3 Island\n1 Lightning Bolt\n1 Mana Confluence\n1 Maximize Velocity\n1 Memory Lapse\n1 Merfolk Trickster\n4 Mountain\n1 Mystical Tutor\n1 Ponder\n1 Preordain\n1 Prismari Charm\n1 Prismatic Vista\n1 Pyrokinesis\n1 Reckless Charge\n1 Remand\n1 Riptide Laboratory\n1 Riverglide Pathway\n1 Scalding Tarn\n1 Shivan Reef\n1 Sink into Stupor\n1 Slickshot Show-Off\n1 Snapcaster Mage\n1 Soul-Scar Mage\n1 Spell Pierce\n1 Spirebluff Canal\n1 Steam Vents\n1 Stingcaster Mage\n1 Stormcarved Coast\n1 Stormcatch Mentor\n1 Stormchaser Mage\n1 Symmetry Sage\n1 Thundering Falls\n1 Tomik, Izzet Sparkmage\n1 Treasure Cruise\n1 Wizard's Lightning\n1 Wizard's Retort\n1 Wizard's Staff",
     "lastSynced": "2026-10-02T16:37:00.650Z"
   },
   "1qiZaqxm2UKbEAqijzaUKQ": {
@@ -8992,9 +8422,7 @@
             "name": "Yuriko, the Tiger's Shadow",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Commander ninjutsu"
-            ],
+            "keywords": ["Commander ninjutsu"],
             "faceNames": [],
             "scryfallId": "fe9be3e0-076c-4703-9750-2a6b0a178bc9",
             "typeLine": "Legendary Creature — Human Ninja",
@@ -9031,9 +8459,7 @@
             "name": "An Offer You Can't Refuse",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Treasure"
-            ],
+            "keywords": ["Treasure"],
             "faceNames": [],
             "scryfallId": "b9d349f3-5be2-4b1f-a4c3-ba94822cf0cf",
             "typeLine": "Instant",
@@ -9049,10 +8475,7 @@
             "name": "Aqueous Form",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Enchant",
-              "Scry"
-            ],
+            "keywords": ["Enchant", "Scry"],
             "faceNames": [],
             "scryfallId": "d51da202-b436-492e-8ae7-4def7afe95b0",
             "typeLine": "Enchantment — Aura",
@@ -9068,9 +8491,7 @@
             "name": "Biting-Palm Ninja",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Ninjutsu"
-            ],
+            "keywords": ["Ninjutsu"],
             "faceNames": [],
             "scryfallId": "3017df51-67ae-4c3d-8210-086f83bc2040",
             "typeLine": "Creature — Human Ninja",
@@ -9102,9 +8523,7 @@
             "name": "Changeling Outcast",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Changeling"
-            ],
+            "keywords": ["Changeling"],
             "faceNames": [],
             "scryfallId": "08151d00-513a-4957-aa16-01c0f0245112",
             "typeLine": "Creature — Shapeshifter",
@@ -9137,10 +8556,7 @@
             "quantity": 1,
             "layout": "modal_dfc",
             "keywords": [],
-            "faceNames": [
-              "Clearwater Pathway",
-              "Murkwater Pathway"
-            ],
+            "faceNames": ["Clearwater Pathway", "Murkwater Pathway"],
             "scryfallId": "b4b99ebb-0d54-4fe5-a495-979aaa564aa8",
             "typeLine": "Land // Land",
             "frontTypeLine": "Land",
@@ -9176,13 +8592,8 @@
             "name": "Consign // Oblivion",
             "quantity": 1,
             "layout": "split",
-            "keywords": [
-              "Aftermath"
-            ],
-            "faceNames": [
-              "Consign",
-              "Oblivion"
-            ],
+            "keywords": ["Aftermath"],
+            "faceNames": ["Consign", "Oblivion"],
             "scryfallId": "1c1ead90-10d8-4217-80e4-6f40320c5569",
             "typeLine": "Instant // Sorcery",
             "frontTypeLine": "Instant",
@@ -9262,9 +8673,7 @@
             "name": "Dokuchi Silencer",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Ninjutsu"
-            ],
+            "keywords": ["Ninjutsu"],
             "faceNames": [],
             "scryfallId": "a24d5664-e214-466d-bb53-4e8f6f75a009",
             "typeLine": "Creature — Human Ninja",
@@ -9312,9 +8721,7 @@
             "name": "Fatal Push",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Revolt"
-            ],
+            "keywords": ["Revolt"],
             "faceNames": [],
             "scryfallId": "dc187caf-3551-4d6a-8cdd-42c5d08bfaf2",
             "typeLine": "Instant",
@@ -9378,9 +8785,7 @@
             "name": "Ingenious Infiltrator",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Ninjutsu"
-            ],
+            "keywords": ["Ninjutsu"],
             "faceNames": [],
             "scryfallId": "919cd266-b796-4a1c-937f-76b565c82495",
             "typeLine": "Creature — Vedalken Ninja",
@@ -9412,10 +8817,7 @@
             "name": "Kaito, Bane of Nightmares",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Surveil",
-              "Ninjutsu"
-            ],
+            "keywords": ["Surveil", "Ninjutsu"],
             "faceNames": [],
             "scryfallId": "55a14f30-4ff9-4472-90a6-c3139f1c18e5",
             "typeLine": "Legendary Planeswalker — Kaito",
@@ -9447,9 +8849,7 @@
             "name": "Mist-Syndicate Naga",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Ninjutsu"
-            ],
+            "keywords": ["Ninjutsu"],
             "faceNames": [],
             "scryfallId": "65c8f074-e260-4f8e-85d1-1904ca928b51",
             "typeLine": "Creature — Snake Ninja",
@@ -9465,9 +8865,7 @@
             "name": "Moon-Circuit Hacker",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Ninjutsu"
-            ],
+            "keywords": ["Ninjutsu"],
             "faceNames": [],
             "scryfallId": "c6e466d1-943d-41e6-a47d-c9d951ca4262",
             "typeLine": "Enchantment Creature — Human Ninja",
@@ -9483,9 +8881,7 @@
             "name": "Moonsnare Specialist",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Ninjutsu"
-            ],
+            "keywords": ["Ninjutsu"],
             "faceNames": [],
             "scryfallId": "1e8b209f-f577-45cc-9d18-03c1d67d391e",
             "typeLine": "Creature — Human Ninja",
@@ -9501,9 +8897,7 @@
             "name": "Murderous Cut",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Delve"
-            ],
+            "keywords": ["Delve"],
             "faceNames": [],
             "scryfallId": "b2dadff2-883f-4134-a881-be145cdcbd84",
             "typeLine": "Instant",
@@ -9519,9 +8913,7 @@
             "name": "Ninja of the Deep Hours",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Ninjutsu"
-            ],
+            "keywords": ["Ninjutsu"],
             "faceNames": [],
             "scryfallId": "fb245a12-4cbd-4291-af67-f3677ca822dc",
             "typeLine": "Creature — Human Ninja",
@@ -9537,11 +8929,7 @@
             "name": "Ninja's Blades",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Job select",
-              "Equip",
-              "Mutsunokami"
-            ],
+            "keywords": ["Job select", "Equip", "Mutsunokami"],
             "faceNames": [],
             "scryfallId": "a6b5af82-3646-44f9-ac12-1d7fa698f037",
             "typeLine": "Artifact — Equipment",
@@ -9557,9 +8945,7 @@
             "name": "Otawara, Soaring City",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Channel"
-            ],
+            "keywords": ["Channel"],
             "faceNames": [],
             "scryfallId": "486d7edc-d983-41f0-8b78-c99aecd72996",
             "typeLine": "Legendary Land",
@@ -9623,10 +9009,7 @@
             "name": "Prosperous Thief",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Treasure",
-              "Ninjutsu"
-            ],
+            "keywords": ["Treasure", "Ninjutsu"],
             "faceNames": [],
             "scryfallId": "da3f683e-5a28-4ae7-b53b-851b957123ba",
             "typeLine": "Creature — Human Ninja",
@@ -9658,11 +9041,7 @@
             "name": "Saiba Cryptomancer",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Backup",
-              "Hexproof",
-              "Flash"
-            ],
+            "keywords": ["Backup", "Hexproof", "Flash"],
             "faceNames": [],
             "scryfallId": "3934d535-740d-471a-bbf1-c3b26b1cd596",
             "typeLine": "Creature — Moonfolk Ninja",
@@ -9694,9 +9073,7 @@
             "name": "Satoru, the Infiltrator",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Menace"
-            ],
+            "keywords": ["Menace"],
             "faceNames": [],
             "scryfallId": "acc9a5cc-2b3c-4c2f-8176-4a2d86265cc5",
             "typeLine": "Legendary Creature — Human Ninja Rogue",
@@ -9728,9 +9105,7 @@
             "name": "Silver-Fur Master",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Ninjutsu"
-            ],
+            "keywords": ["Ninjutsu"],
             "faceNames": [],
             "scryfallId": "cacc36d9-4c4b-43b2-a8b4-d265deb1e6b2",
             "typeLine": "Creature — Rat Ninja",
@@ -9747,10 +9122,7 @@
             "quantity": 1,
             "layout": "modal_dfc",
             "keywords": [],
-            "faceNames": [
-              "Sink into Stupor",
-              "Soporific Springs"
-            ],
+            "faceNames": ["Sink into Stupor", "Soporific Springs"],
             "scryfallId": "5358b87a-1a29-426d-b165-40c97da2c14d",
             "typeLine": "Instant // Land",
             "frontTypeLine": "Instant",
@@ -9786,9 +9158,7 @@
             "name": "Smoke Shroud",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Enchant"
-            ],
+            "keywords": ["Enchant"],
             "faceNames": [],
             "scryfallId": "d78c2f9f-46f8-4743-b760-d2c797abf3cc",
             "typeLine": "Enchantment — Aura",
@@ -9836,10 +9206,7 @@
             "name": "Thousand-Faced Shadow",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Flying",
-              "Ninjutsu"
-            ],
+            "keywords": ["Flying", "Ninjutsu"],
             "faceNames": [],
             "scryfallId": "89a698a5-f4ac-4b04-96dc-32e1eeef6ac7",
             "typeLine": "Creature — Human Ninja",
@@ -9871,9 +9238,7 @@
             "name": "Treasure Cruise",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Delve"
-            ],
+            "keywords": ["Delve"],
             "faceNames": [],
             "scryfallId": "13a7fecb-9241-40ee-8b6b-30ab4760d836",
             "typeLine": "Sorcery",
@@ -9889,9 +9254,7 @@
             "name": "Undercity Sewers",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Surveil"
-            ],
+            "keywords": ["Surveil"],
             "faceNames": [],
             "scryfallId": "2b5801fb-2026-4f25-98bc-ebb2f99684b9",
             "typeLine": "Land — Island Swamp",
@@ -9955,10 +9318,7 @@
             "name": "Yuriko, Hope from the Shadows",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Surveil",
-              "Flash"
-            ],
+            "keywords": ["Surveil", "Flash"],
             "faceNames": [],
             "scryfallId": "45e81487-8b8c-480b-922a-eaa9edc7201d",
             "typeLine": "Legendary Creature — Human Ninja",
@@ -9973,7 +9333,6 @@
         ]
       }
     ],
-    "decklist": "Commander\n1 Yuriko, the Tiger's Shadow\n\nDeck\n1 Access Tunnel\n1 An Offer You Can't Refuse\n1 Aqueous Form\n1 Biting-Palm Ninja\n1 Cavern of Souls\n1 Changeling Outcast\n1 Choked Estuary\n1 Clearwater Pathway\n1 Command Tower\n1 Consign /// Oblivion\n1 Darkslick Shores\n1 Daze\n1 Deadly Rollick\n1 Dismember\n1 Dokuchi Silencer\n1 Drowned Catacomb\n1 Enter the Enigma\n1 Fatal Push\n1 Fierce Guardianship\n1 Flare of Denial\n1 Gloomlake Verge\n1 Ingenious Infiltrator\n4 Island\n1 Kaito, Bane of Nightmares\n1 Magic Damper\n1 Mist-Syndicate Naga\n1 Moon-Circuit Hacker\n1 Moonsnare Specialist\n1 Murderous Cut\n1 Ninja of the Deep Hours\n1 Ninja's Blades\n1 Otawara, Soaring City\n1 Peek\n1 Polluted Delta\n1 Prismatic Vista\n1 Prosperous Thief\n1 Rapid Hybridization\n1 Saiba Cryptomancer\n1 Satoru Umezawa\n1 Satoru, the Infiltrator\n1 Shipwreck Marsh\n1 Silver-Fur Master\n1 Sink into Stupor\n1 Slip Out the Back\n1 Smoke Shroud\n1 Stifle\n2 Swamp\n1 Thousand-Faced Shadow\n1 Throatseeker\n1 Treasure Cruise\n1 Undercity Sewers\n1 Underground River\n1 Watery Grave\n1 You See a Guard Approach\n1 Yuriko, Hope from the Shadows",
     "lastSynced": "2026-10-02T16:37:03.546Z"
   },
   "uUX9CLKHJ0q7oW9Jty2sWQ": {
@@ -9987,9 +9346,7 @@
         "name": "Tatyova, Benthic Druid",
         "quantity": 1,
         "layout": "normal",
-        "keywords": [
-          "Landfall"
-        ],
+        "keywords": ["Landfall"],
         "faceNames": [],
         "scryfallId": "eabc978a-0666-472d-bdc6-d4b29d29eca4",
         "typeLine": "Legendary Creature — Merfolk Druid",
@@ -10005,9 +9362,7 @@
         "name": "Druid Class",
         "quantity": 1,
         "layout": "class",
-        "keywords": [
-          "Landfall"
-        ],
+        "keywords": ["Landfall"],
         "faceNames": [],
         "scryfallId": "09278e95-eaae-4cd4-a0d8-a2d15b0abb58",
         "typeLine": "Enchantment — Class",
@@ -10028,9 +9383,7 @@
             "name": "Tatyova, Benthic Druid",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Landfall"
-            ],
+            "keywords": ["Landfall"],
             "faceNames": [],
             "scryfallId": "eabc978a-0666-472d-bdc6-d4b29d29eca4",
             "typeLine": "Legendary Creature — Merfolk Druid",
@@ -10051,9 +9404,7 @@
             "name": "Ancient Greenwarden",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Reach"
-            ],
+            "keywords": ["Reach"],
             "faceNames": [],
             "scryfallId": "dfe08e59-fdc4-436f-b05c-6ad386c46310",
             "typeLine": "Creature — Elemental",
@@ -10085,9 +9436,7 @@
             "name": "Boseiju, Who Endures",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Channel"
-            ],
+            "keywords": ["Channel"],
             "faceNames": [],
             "scryfallId": "dda82840-1f3f-4be7-9bc7-66ff551ef5c0",
             "typeLine": "Legendary Land",
@@ -10135,9 +9484,7 @@
             "name": "Craterhoof Behemoth",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Haste"
-            ],
+            "keywords": ["Haste"],
             "faceNames": [],
             "scryfallId": "276f5cee-a501-4658-bd4d-7a044bf1ccbc",
             "typeLine": "Creature — Beast",
@@ -10169,9 +9516,7 @@
             "name": "Dancing from Dark to Dawn",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Landfall"
-            ],
+            "keywords": ["Landfall"],
             "faceNames": [],
             "scryfallId": "550cd0b6-ca61-4db7-9d20-0b68c48066f9",
             "typeLine": "Enchantment",
@@ -10188,10 +9533,7 @@
             "quantity": 1,
             "layout": "modal_dfc",
             "keywords": [],
-            "faceNames": [
-              "Disciple of Freyalise",
-              "Garden of Freyalise"
-            ],
+            "faceNames": ["Disciple of Freyalise", "Garden of Freyalise"],
             "scryfallId": "a8e9ea5a-5e10-4b77-baef-0352ff035483",
             "typeLine": "Creature — Elf Druid // Land",
             "frontTypeLine": "Creature — Elf Druid",
@@ -10227,9 +9569,7 @@
             "name": "Druid Class",
             "quantity": 1,
             "layout": "class",
-            "keywords": [
-              "Landfall"
-            ],
+            "keywords": ["Landfall"],
             "faceNames": [],
             "scryfallId": "09278e95-eaae-4cd4-a0d8-a2d15b0abb58",
             "typeLine": "Enchantment — Class",
@@ -10437,9 +9777,7 @@
             "name": "Hedge Maze",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Surveil"
-            ],
+            "keywords": ["Surveil"],
             "faceNames": [],
             "scryfallId": "5260f8ae-805b-4eae-badf-62de0f768867",
             "typeLine": "Land — Forest Island",
@@ -10599,10 +9937,7 @@
             "name": "Sapling Nursery",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Affinity",
-              "Landfall"
-            ],
+            "keywords": ["Affinity", "Landfall"],
             "faceNames": [],
             "scryfallId": "3199bea9-fef7-45fe-8777-2103d84a9347",
             "typeLine": "Enchantment",
@@ -10650,9 +9985,7 @@
             "name": "Shifting Woodland",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Delirium"
-            ],
+            "keywords": ["Delirium"],
             "faceNames": [],
             "scryfallId": "059164e1-894d-4586-9800-e60d6fbd6eb6",
             "typeLine": "Land",
@@ -10716,9 +10049,7 @@
             "name": "Sylvan Awakening",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Indestructible"
-            ],
+            "keywords": ["Indestructible"],
             "faceNames": [],
             "scryfallId": "93ac4d3d-064e-459d-b3a4-6c0872a2da8c",
             "typeLine": "Sorcery",
@@ -10750,9 +10081,7 @@
             "name": "Utopia Sprawl",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Enchant"
-            ],
+            "keywords": ["Enchant"],
             "faceNames": [],
             "scryfallId": "44d14297-f84b-40bd-bd0a-b67d13787ca0",
             "typeLine": "Enchantment — Aura",
@@ -10816,9 +10145,7 @@
             "name": "Zendikar's Roil",
             "quantity": 1,
             "layout": "normal",
-            "keywords": [
-              "Landfall"
-            ],
+            "keywords": ["Landfall"],
             "faceNames": [],
             "scryfallId": "180aa3d6-8475-4c98-a140-af736a9c135e",
             "typeLine": "Enchantment",
@@ -10833,7 +10160,6 @@
         ]
       }
     ],
-    "decklist": "Commander\n1 Tatyova, Benthic Druid\n\nDeck\n1 Ancient Greenwarden\n1 Archdruid's Charm\n1 Boseiju, Who Endures\n1 Breeding Pool\n1 Command Tower\n1 Craterhoof Behemoth\n1 Crucible of Worlds\n1 Dancing from Dark to Dawn\n1 Disciple of Freyalise\n1 Disdainful Stroke\n1 Druid Class\n1 Elvish Mystic\n1 Entish Restoration\n1 Evolving Wilds\n1 Exploration\n1 Explore\n1 Fabled Passage\n1 Farseek\n1 Fierce Guardianship\n1 Flood of Tears\n10 Forest\n1 Growth Spiral\n1 Harrow\n1 Hedge Maze\n4 Island\n1 Llanowar Elves\n1 Misty Rainforest\n1 Negate\n1 Nissa, Vital Force\n1 Paradise Druid\n1 Prismatic Vista\n1 Rampant Growth\n1 Rapid Hybridization\n1 Sapling Nursery\n1 Scapeshift\n1 Shared Roots\n1 Shifting Woodland\n1 Simulacrum Shaper\n1 Springbloom Druid\n1 Swan Song\n1 Sylvan Awakening\n1 Terramorphic Expanse\n1 Utopia Sprawl\n1 Voidslime\n1 Worldly Tutor\n1 Yavimaya, Cradle of Growth\n1 Zendikar's Roil",
     "lastSynced": "2026-10-02T16:37:04.801Z"
   }
 }
