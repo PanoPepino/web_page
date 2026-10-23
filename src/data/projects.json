@@ -12,7 +12,7 @@
       "TypeScript",
       "Cloudflare R2"
     ],
-    "description": "Da Timeless is a data platform to collect, store, analyse and provide insights on online competitive strategy game (Magic The Gathering). It puts together tournament, league and community challenge results into one place. \n\nAll results are checked and validated before publication. The platform supports analysis, reporting, a Discord bot associated with a server and everything gets reported on the front end, the webpage.",
+    "description": "I built a data platform for competitive MTG Arena Timeless,\ncovering data collection, validation, storage, analysis,\nDiscord integration and web presentation.\n\nThe platform brings together tournament and league results\nwith community-submitted Metagame Challenge runs.\n\nIncoming records pass through validation and review before\npublication. PostgreSQL stores published facts. Separate source\nevidence allows records to be traced and checked.\n\nA shared Python backend provides reporting and administrative\ntools for the React website and Discord bot. Analysis covers\nevent results, deck performance and leaderboards.\n\nSource code is private.",
     "url": "https://www.datimeless.com/"
   },
   {
@@ -39,11 +39,11 @@
       "Manim Slides",
       "LaTeX"
     ],
-    "description": "[Beanim](https://github.com/PanoPepino/beanim) adds Beamer-like LaTeX styles; [Digital Presenter](https://github.com/PanoPepino/digital_presenter) adds animated creatures and scripted dialogue; [String Cosmo](https://github.com/PanoPepino/string_cosmo_communication) provides theoretical physics animations.\n\nEach has its own docs and examples.",
+    "description": "Three complementary libraries for scientific presentations,\nanimated companions and physics explanations:\n\n- BeAnim provides presentation components and shared styling.\n- Digital Presenter adds animated companions and scripted dialogue.\n- String Cosmo provides objects and animations for string theory\n  and braneworld cosmology.\n\nEach library keeps its own repository, documentation and examples.\nComponents can be combined within the same Manim presentation.",
     "components": [
       {
         "id": "beanim",
-        "title": "Beanim",
+        "title": "BeAnim",
         "technologies": [
           "Python",
           "Manim",
