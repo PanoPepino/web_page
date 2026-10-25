@@ -5,7 +5,9 @@ on:
     branches: [main]
   workflow_dispatch:
   schedule:
-    - cron: "0 6 * * 5,6,0"
+    - cron: "0 6 * * 5"
+      timezone: "Europe/Stockholm"
+    - cron: "0 6 * * 6,0"
       timezone: "Europe/Stockholm"
 
 permissions:
@@ -32,20 +34,15 @@ jobs:
         run: |
           mkdir -p "$RUNNER_TEMP/content-before"
           cp src/data/moxfield-seeds.json src/data/projects.json src/data/project-tree.json "$RUNNER_TEMP/content-before/"
-      - name: Check out project copy sources
-        uses: actions/checkout@v4
-        with:
-          repository: PanoPepino/PanoPepino
-          ref: main
-          path: project-sources
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Refresh project descriptions
+      - name: Refresh project descriptions from Notion
+        if: github.event_name == 'workflow_dispatch' || (github.event_name == 'schedule' && github.event.schedule == '0 6 * * 5')
         env:
-          GH_TOKEN: ${{ github.token }}
-        run: python3 scripts/refresh-projects.py --remote --profile-root project-sources
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+        run: python3 scripts/notion-sync.py website
       - name: Set up Bun
         uses: oven-sh/setup-bun@v2
         with:

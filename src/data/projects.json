@@ -39,7 +39,8 @@
       "Manim Slides",
       "LaTeX"
     ],
-    "description": "Three complementary libraries for scientific presentations,\nanimated companions and physics explanations:\n\n- BeAnim provides presentation components and shared styling.\n- Digital Presenter adds animated companions and scripted dialogue.\n- String Cosmo provides objects and animations for string theory\n  and braneworld cosmology.\n\nEach library keeps its own repository, documentation and examples.\nComponents can be combined within the same Manim presentation.",
+    "description": "This is a collection of [Manim](https://www.manim.community/) libraries created to help user with slides, mascots for videos and physics related animations:\n\n- Beanim for presentation structure and styling,\n- Digital Presenter for animated companions,\n- String Cosmo for physics visualisations.",
+    "url": "https://github.com/PanoPepino/beanim",
     "components": [
       {
         "id": "beanim",

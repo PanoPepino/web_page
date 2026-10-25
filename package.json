@@ -12,7 +12,6 @@
     "build:pages": "GITHUB_PAGES=true bun run build",
     "verify:static": "node scripts/verify-static-site.mjs",
     "redirects": "node scripts/generate-legacy-redirects.mjs",
-    "refresh:projects": "python3 scripts/refresh-projects.py",
     "refresh:decks": "bun run scripts/refresh-moxfield-snapshots.ts",
     "typecheck": "tsc --noEmit"
   },

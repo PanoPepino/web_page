@@ -11,7 +11,7 @@ One-time GitHub setup: choose **Settings → Pages → Build and deployment → 
 
 After setup, each push to `main` installs the locked Bun 1.4.2 dependencies, builds and checks the site, then deploys `.output/public` through GitHub Pages Actions. Schedule runs each Friday at 05:00 Europe/Stockholm and refresh every deck. They commit refreshed snapshots and deploy them within that run. Manual dispatch on the default branch runs the same refresh and deployment. Runs dispatched from other branches are skipped, avoiding feature-branch deployment or writes to `main`.
 
-Every deployment also refreshes `/projects` descriptions and its complete navigation tree from the approved project registry in `PanoPepino/PanoPepino` and each public project repository. `projects.json` contains the selected project cards; `project-tree.json` contains every registered project and its ecosystem nesting. Source validation failure stops deployment before either snapshot is replaced.
+Friday deployments refresh `/projects` descriptions from Overview sections on the existing Notion pages. Weekend deployments refresh decks only. Push deployments use checked-in project snapshots. Configure `NOTION_TOKEN` as an Actions secret and share the project parent pages with the integration. The cloud refresh reads fixed page IDs; Tasks and README content remain outside the website sync. dAIana stays out of website cards. Source validation failure stops deployment before project snapshots change.
 
 GitHub Actions supports IANA timezone schedules such as `Europe/Stockholm`; runs can be delayed during high load. [Schedule documentation](https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax#onschedule)
 
