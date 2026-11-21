@@ -57,7 +57,7 @@ for (const [relativePath, destination] of destinations) {
   await mkdir(dirname(filePath), { recursive: true });
   const html = `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="refresh" content="0;url=${redirectUrl}"><link rel="canonical" href="https://panopepino.github.io/web_page${destination}">
+<meta http-equiv="refresh" content="0;url=${redirectUrl}"><link rel="canonical" href="https://panizofisico.github.io/web_page${destination}">
 <title>Page moved — Daniel Panizo</title></head><body><p>This page moved. <a href="${redirectUrl}">Open the new page</a>.</p>
 <script>
   const target = new URL(${JSON.stringify(redirectUrl)}, location.href);

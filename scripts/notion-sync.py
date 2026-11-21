@@ -24,12 +24,12 @@ PROJECTS = {
     "string-cosmo": "401662e3-8d25-814b-b732-d5727aeb0099",
 }
 REPOSITORY_URLS = {
-    "da-timeless": "https://github.com/PanoPepino/da-timeless-platform",
-    "daiana": "https://github.com/PanoPepino/Daiana",
-    "pokeml": "https://github.com/PanoPepino/ml_pokemon",
-    "beanim": "https://github.com/PanoPepino/mtheoretical",
-    "digital-presenter": "https://github.com/PanoPepino/digital_presenter",
-    "string-cosmo": "https://github.com/PanoPepino/string_cosmo_communication",
+    "da-timeless": "https://github.com/PanizoFisico/da-timeless-platform",
+    "daiana": "https://github.com/PanizoFisico/Daiana",
+    "pokeml": "https://github.com/PanizoFisico/ml_pokemon",
+    "beanim": "https://github.com/PanizoFisico/mtheoretical",
+    "digital-presenter": "https://github.com/PanizoFisico/digital_presenter",
+    "string-cosmo": "https://github.com/PanizoFisico/string_cosmo_communication",
 }
 
 

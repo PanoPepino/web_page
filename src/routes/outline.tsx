@@ -47,17 +47,17 @@ const docs = [
     icon: GraduationCap,
     label: "Research CV",
     note: "Academic training, appointments, talks and awards",
-    href: publicUrl("/downloads/cv_letter_proposal/cv_academy_dpp.pdf"),
+    href: publicUrl("/downloads/cv_letter_proposal/cv_academic_dpp.pdf"),
   },
   {
     icon: ScrollText,
     label: "Publication List",
     note: "Peer-reviewed work in string theory and cosmology",
-    href: publicUrl("/downloads/cv_letter_proposal/publications_dpp.pdf"),
+    href: "https://inspirehep.net/authors/1804691?ui-citation-summary=true",
   },
 ];
 const timeline: Array<[string, string, string]> = [
-  ["2026—Now", "Exploring Opportunities in Industry", "Sweden"],
+  ["2026—Now", "Pricing Analyst", "Protector Försäkring"],
   ["2024—2026", "Postdoctoral Researcher", "Kyoto University · JSPS"],
   ["2019—2024", "PhD in Theoretical Physics", "Uppsala University"],
   ["2016—2019", "MSc in Physics", "Uppsala University"],
@@ -74,9 +74,9 @@ function Outline() {
             title="Physics trained. Industry focused."
           >
             <p>
-              Quantitative Researcher with 7+ years of experience, bringing
+              Pricing Analyst with 7+ years of research experience, bringing
               rigorous mathematical modelling and clear technical judgement to
-              complex industrial problems.
+              business decisions.
             </p>
           </PageIntro>
           <aside className="strengths-tile tile-companion panel col-span-12 flex flex-col justify-between p-6 md:col-span-4">

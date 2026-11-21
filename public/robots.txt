@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://panopepino.github.io/web_page/sitemap.xml
+Sitemap: https://panizofisico.github.io/web_page/sitemap.xml

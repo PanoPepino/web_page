@@ -58,7 +58,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
       <footer className="mx-auto max-w-6xl px-4 pb-8 pt-4 md:px-8">
         <div className="flex flex-col gap-5 border-t border-border px-2 pt-7 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-sm text-muted-foreground">
-            Daniel Panizo · Quantitative Researcher
+            Daniel Panizo · Pricing Analyst
           </p>
           <div className="flex items-center gap-5">
             <a
@@ -70,7 +70,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
             </a>
             <a
               className="footer-link inline-flex items-center gap-1.5"
-              href="https://github.com/PanoPepino"
+              href="https://github.com/PanizoFisico"
               target="_blank"
               rel="noreferrer"
             >

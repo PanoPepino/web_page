@@ -14,17 +14,17 @@ import { siteUrl } from "@/lib/site-url";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Daniel Panizo — Physics to Industry" },
+      { title: "Daniel Panizo — Pricing Analyst & Theoretical Physics PhD" },
       {
         name: "description",
         content:
-          "Daniel Panizo brings theoretical physics, modelling and scientific software to industry in Sweden.",
+          "Daniel Panizo is a pricing analyst with a PhD in theoretical physics.",
       },
-      { property: "og:title", content: "Daniel Panizo — Physics to Industry" },
+      { property: "og:title", content: "Daniel Panizo — Pricing Analyst & Theoretical Physics PhD" },
       {
         property: "og:description",
         content:
-          "Theoretical physics, modelling and data analysis applied in Swedish industry.",
+          "Pricing analyst with a PhD in theoretical physics.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: siteUrl("/") },
@@ -75,7 +75,7 @@ function Home() {
             <SpacetimeGrid />
             <div className="pointer-events-none relative z-10 flex h-full flex-col justify-between gap-20">
               <p className="eyebrow text-primary">
-                Quantitative Researcher · PhD Theoretical physics{" "}
+                Pricing Analyst · PhD in Theoretical Physics
               </p>
               <div>
                 <h1 className="font-display text-5xl font-semibold leading-none sm:text-7xl md:text-8xl">
@@ -84,8 +84,8 @@ function Home() {
                   Panizo
                 </h1>
                 <p className="mt-6 max-w-lg text-base leading-7 text-muted-foreground">
-                  From fundamental physics to modelling, data and software in
-                  Sweden.
+                  Pricing analyst with a background in theoretical physics,
+                  mathematical modelling and data analysis.
                 </p>
               </div>
             </div>
@@ -98,7 +98,7 @@ function Home() {
                 Mathematical Modelling, Applied
               </p>
               <p className="mt-2 text-sm leading-6 text-muted-foreground">
-                Research depth translated into practical industrial work.
+                Research depth applied to accurate insurance modelling.
               </p>
             </div>
           </aside>

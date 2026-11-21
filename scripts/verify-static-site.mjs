@@ -6,7 +6,7 @@ const project = fileURLToPath(new URL("../", import.meta.url));
 const output = join(project, ".output/public");
 const source = join(project, "public");
 const base = process.env.GITHUB_PAGES === "true" ? "/web_page/" : "/";
-const origin = "https://panopepino.github.io";
+const origin = "https://panizofisico.github.io";
 const routes = [
   "",
   "outline",

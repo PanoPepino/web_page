@@ -2,8 +2,8 @@
 
 ## Target
 
-Repository: `PanoPepino/web_page`
-Site: `https://panopepino.github.io/web_page/`
+Repository: `PanizoFisico/web_page`
+Site: `https://panizofisico.github.io/web_page/`
 
 The workflow builds and deploys this repository's source to GitHub Pages. It preserves the existing repository history and publishes only `.output/public`.
 

@@ -28,7 +28,7 @@
       "Jupyter"
     ],
     "description": "The idea of this project is simple: Can next generation Pokémon stats be \npredicted by training ML with current Pokédex data (1082 Pokémon + variants)?\n\nThis project works out the end-to end process. From data preparation, \nexploratory analysis, feature engineering, to model comparison and predictions.\nIt compares direct regression with a baseline-plus-correction\napproach using CatBoost, LightGBM and XGBoost.\n\nResults remain retrospective. All validation generations guide\nmodel selection, so no untouched final test exists. Predictions\nalso depend on supplied evolution-stage and rarity assumptions.",
-    "url": "https://github.com/PanoPepino/pokeml"
+    "url": "https://github.com/PanizoFisico/pokeml"
   },
   {
     "id": "manim-ecosystem",
@@ -40,7 +40,7 @@
       "LaTeX"
     ],
     "description": "This is a collection of [Manim](https://www.manim.community/) libraries created to help user with slides, mascots for videos and physics related animations:\n\n- Beanim for presentation structure and styling,\n- Digital Presenter for animated companions,\n- String Cosmo for physics visualisations.",
-    "url": "https://github.com/PanoPepino/beanim",
+    "url": "https://github.com/PanizoFisico/beanim",
     "components": [
       {
         "id": "beanim",
@@ -52,7 +52,7 @@
           "LaTeX"
         ],
         "description": "Create Beamer-like styles for Manim presentations.\nShared themes and reusable components give titles, equations,\ntables and references a consistent appearance.",
-        "url": "https://github.com/PanoPepino/beanim"
+        "url": "https://github.com/PanizoFisico/beanim"
       },
       {
         "id": "digital-presenter",
@@ -64,7 +64,7 @@
           "CSV-based scripting"
         ],
         "description": "Add animated creatures that help you present content in videos.\nControl their pointing, expressions and dialogue through Python\nor CSV-based scripts.",
-        "url": "https://github.com/PanoPepino/digital_presenter"
+        "url": "https://github.com/PanizoFisico/digital_presenter"
       },
       {
         "id": "string-cosmo",
@@ -76,7 +76,7 @@
           "LaTeX"
         ],
         "description": "Manim objects and animations for string theory and braneworld\ncosmology, including branes, bubbles, black holes, plots and tables.",
-        "url": "https://github.com/PanoPepino/string_cosmo_communication"
+        "url": "https://github.com/PanizoFisico/string_cosmo_communication"
       }
     ]
   }

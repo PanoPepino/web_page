@@ -1,4 +1,4 @@
-const siteOrigin = "https://panopepino.github.io";
+const siteOrigin = "https://panizofisico.github.io";
 
 /** Resolve files and routes inside this deployment, including its Pages base. */
 export const publicUrl = (path: string) =>
